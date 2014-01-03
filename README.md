@@ -1,4 +1,4 @@
 
-[*Marian S*](http://https://github.com/smenarru/)
+[*Marian U*](http://github.com/smenarru/)
 
 A basic score and results tracking (web)app (Rails)
