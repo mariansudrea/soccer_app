@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= full_title(yield(:title)) %></title>
+    <title> Fc Bar United - Home</title>
     <%= stylesheet_link_tag "application", media: "all",
                                            "data-turbolinks-track" => true %>
     <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
@@ -9,8 +9,25 @@
     <%= render 'layouts/shim' %>
   </head>
   <body>
+	
     <div class="container">
-    	<%= yield %>
+		<div class="leftPan">
+			<%= image_tag('bar_united_logo.jpg', width: '70%') %>
+		</div>
+		<div class="rightPan">
+			<div id="controls">
+				<ul>
+					<li>opponents by popularity</li>
+					<li>scores</li>
+					<li>analysis</li>
+				</ul>
+			</div>
+		</div>
+		<div class="leftPan"></br>
+		</div>
+		<div class="rightPan">
+	    	<%= yield %>
+		</div>
     </div>
   </body>
 </html>
