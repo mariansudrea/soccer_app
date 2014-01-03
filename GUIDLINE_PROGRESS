@@ -1,0 +1,27 @@
+plan
+******
+Games model: :home_team_id, :away_team_id, :home_score, :away_score, :game_id
+	belongs_to team_id, 
+User model: fname, lname, email, password_digest
+	belongs_to team_id,
+Goals_Assist model: goals, assists, game_id, user_id
+	belongs_to user
+
+
+(to be implemented later completly, preliminary)
+Teams model: :name, players
+
+
+
+
+
+
+
+next steps
+********
+
+
+
+
+
+
