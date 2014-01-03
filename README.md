@@ -1,5 +1,4 @@
-# Ruby on Rails Tutorial: sample application
 
-This is the sample application.
 [*Marian S*](http://https://github.com/smenarru/)
 
+A basic score and results tracking (web)app (Rails)
