@@ -18,6 +18,7 @@ ActiveRecord::Schema.define(version: 20140103214828) do
     t.string   "away_team_id"
     t.integer  "home_score"
     t.integer  "away_score"
+    t.datetime "played_at"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
