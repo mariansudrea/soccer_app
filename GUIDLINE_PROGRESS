@@ -1,11 +1,43 @@
 plan
 ******
-Games model: :home_team_id, :away_team_id, :home_score, :away_score, :game_id
+
+
+
+{________***__MODELS__***_____________}
+
+
+Game : :home_team_id, :away_team_id, :home_score, :away_score, 
 	belongs_to team_id, 
-User model: fname, lname, email, password_digest
+	belongs_to away_id,
+User : fname, lname, email 
 	belongs_to team_id,
-Goals_Assist model: goals, assists, game_id, user_id
+	has_many stats
+
+Stat : goals, assists, game_id, user_id
 	belongs_to user
+	belongs_to game
+Team : Name
+	has_many users
+	has_many home_games through games, foreign_key: home_team_id
+	has_many away_games through games, foreign_key: away_team_id
+	
+	def matches
+		home_games + away_games
+	end
+
+	
+	
+ 
+
+***************--------CONTROLLERS-------------_*****************
+stat/new 	now ==> post, to create stat
+				
+			later -- restricted
+user/home
+
+
+
+	
 
 
 (to be implemented later completly, preliminary)
