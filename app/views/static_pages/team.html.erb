@@ -1,0 +1,36 @@
+<h1>Team</h1>
+	<div class="game">
+		<div class="playerNumber">
+			Jersy	
+		</div>
+		<div class="playerName">
+			Name
+		</div>
+		<div class="playerNumber">
+			Goal
+		</div>
+		<div class="playerNumber">
+			Assist
+		</div>
+		</br>
+		</br>
+	</div>
+
+
+<% @players.each do |a| %>
+	<div class="game">
+		<div class="playerNumber">
+			<%= a.id %>
+		</div>
+		<div class="playerName">
+			<%= a.name %>
+		</div>
+		<div class="playerNumber">
+			21
+		</div>
+		<div class="playerNumber">
+			21
+		</div>
+		</br>
+	</div>
+<% end %>

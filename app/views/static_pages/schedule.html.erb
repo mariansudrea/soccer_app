@@ -1,0 +1,12 @@
+<h1> schedule </h1>
+<div>
+	<% @schedule.each do |a| %>
+		<div class="game">
+			<div class="scheduleBox"><b> <%= a.home_team.name %> </b></div>
+			<div class="scheduleBox"><b> <%= a.home_score %> </b>
+			<b> - </b>
+			<b><%= a.away_score %></b> </div>
+			<div class="scheduleBox"><b> <%= a.away_team.name %> </b></div>
+		</div>
+	<% end %>
+</div>
