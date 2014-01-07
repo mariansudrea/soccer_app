@@ -1,6 +1,6 @@
 class StaticPagesController < ApplicationController
   def home
-	@team = Team.find(1)
+	@team = Team.find(8)
 	@player = User.find(1)
   end
 
@@ -8,11 +8,11 @@ class StaticPagesController < ApplicationController
   end
 
   def schedule
-	@schedule = Team.find(1).matches.collect.sort_by { |c| c.id }
+	@schedule = Team.find(8).matches.collect.sort_by { |c| c.id }
   end
 	
   def team
-	@players = Team.find(1).users.collect.sort_by { |c| c.id }
+	@players = Team.find(8).users.collect.sort_by { |c| c.id }
   end
 
   def feed

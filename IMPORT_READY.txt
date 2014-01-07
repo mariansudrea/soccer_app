@@ -1,0 +1,207 @@
+#Crawdads#7 # 9#Buzz De Lore#2012,11,8
+#Maxim#6 # 8#MCA Def Squad#2012,11,8
+#We Pay#7 # 8#FC Bar United#2012,11,8
+#TakeShots#10 # 8#Ogorodnik#2012,11,11
+#TakeShots#5 # 4#MCA Def Squad#2012,11,15
+#Buzz De Lore#4 # 3#Los Padres#2012,11,15
+#We Pay#7 # 5#Maxim#2012,11,15
+#Ogorodnik#10 # 11#FC Bar United#2012,11,29
+#FC Bar United#12 # 3#TakeShots#2012,11,29
+#Los Padres#5 # 13#Ogorodnik#2012,11,29
+#Crawdads#7 # 7#We Pay#2012,11,29
+#Maxim#13 # 11#Buzz De Lore#2012,11,30
+#Crawdads#5 # 4#MCA Def Squad#2012,11,30
+#Maxim#4 # 2#Ogorodnik#2012,11,30
+#We Pay#6 # 6#Buzz De Lore#2012,12,6
+#FC Bar United#6 # 5#Los Padres#2012,12,6
+#MCA Def Squad#6 # 8#We Pay#2012,12,6
+#Buzz De Lore#2 # 10#TakeShots#2012,12,6
+#Maxim#8 # 2#Crawdads#2012,12,13
+#We Pay#1 # 11#Ogorodnik#2012,12,13
+#TakeShots#5 # 10#Maxim#2012,12,13
+#Crawdads#10 # 9#Los Padres#2012,12,13
+#MCA Def Squad#7 # 9#FC Bar United#2012,12,20
+#MCA Def Squad#1 # 7#Los Padres#2012,12,20
+#Ogorodnik#8 # 4#Buzz De Lore#2012,12,20
+#FC Bar United#7 # 8#Crawdads#2012,12,20
+#TakeShots#6 # 4#We Pay#2013,1,3
+#Maxim#9 # 6#Los Padres#2013,1,3
+#MCA Def Squad#3 # 11#Ogorodnik#2013,1,3
+#Crawdads#4 # 13#TakeShots#2013,1,3
+#Buzz De Lore#7 # 12#FC Bar United#2013,1,10
+#Ogorodnik#8 # 4#Crawdads#2013,1,10
+#Los Padres#6 # 10#We Pay#2013,1,10
+#FC Bar United#9 # 6#Maxim#2013,1,10
+#Buzz De Lore#6 # 2#MCA Def Squad#2013,1,11
+#Los Padres#9 # 9#TakeShots#2013,1,17
+#Injured Reserves#7 # 8#Starters#2013,1,17
+#Las Caguamas#3 # 0#DFC#2013,1,17
+#Albanian Dogs#5 # 8#SV Eagles#2013,1,17
+#CPT FC#8 # 11#FC Bar United#2013,1,24
+#SV Eagles#4 # 9#Las Caguamas#2013,1,24
+#FC Bar United#3 # 0#Injured Reserves#2013,1,24
+#CPT FC#3 # 7#Albanian Dogs#2013,1,24
+#Starters#4 # 6#Quakes#2013,1,31
+#DFC#0 # 3#Quakes#2013,1,31
+#Injured Reserves#13 # 10#CPT FC#2013,1,31
+#Albanian Dogs#8 # 14#Starters#2013,1,31
+#Las Caguamas#17 # 9#FC Bar United#2013,2,7
+#DFC#&nbsp;v&nbsp;#Injured Reserves#2013,2,7
+#Quakes#7 # 7#SV Eagles#2013,2,7
+#Starters#2 # 5#Las Caguamas#2013,2,7
+#FC Bar United#10 # 5#Albanian Dogs#2013,2,14
+#Albanian Dogs#8 # 11#Las Caguamas#2013,2,14
+#CPT FC#12 # 7#Quakes#2013,2,14
+#FC Bar United#16 # 8#DFC#2013,2,14
+#SV Eagles#10 # 6#Starters#2013,2,15
+#Starters#0 # 3#FC Bar United#2013,2,15
+#SV Eagles#5 # 10#Injured Reserves#2013,2,15
+#DFC#2 # 8#CPT FC#2013,2,21
+#Albanian Dogs#9 # 10#Quakes#2013,2,21
+#Las Caguamas#6 # 4#Injured Reserves#2013,2,21
+#Starters#7 # 3#DFC#2013,2,21
+#SV Eagles#2 # 5#CPT FC#2013,2,28
+#Quakes#11 # 15#FC Bar United#2013,2,28
+#CPT FC#10 # 16#Las Caguamas#2013,2,28
+#DFC#5 # 9#SV Eagles#2013,2,28
+#Injured Reserves#7 # 8#Albanian Dogs#2013,3,1
+#Las Caguamas#15 # 10#Quakes#2013,3,7
+#Starters#2 # 10#CPT FC#2013,3,7
+#SV Eagles#12 # 8#FC Bar United#2013,3,7
+#DFC#6 # 7#Albanian Dogs#2013,3,7
+#Quakes#9 # 9#Injured Reserves#
+#Maxim#5 # 8#Ogorodnik#2013,5,9
+#Crawdads#8 # 5#Injured Reserves#2013,5,9
+#CPT FC#6 # 9#Albanian Dogs#2013,5,9
+#FC Bar United#9 # 13#Starters#2013,5,16
+#Albanian Dogs#5 # 6#Crawdads#2013,5,16
+#Starters#5 # 7#Maxim#2013,5,16
+#FC Bar United#3 # 6#CPT FC#2013,5,16
+#Ogorodnik#4 # 7#I wey#2013,5,23
+#I wey#7 # 9#Starters#2013,5,23
+#FC Bar United#8 # 12#Crawdads#2013,5,23
+#Injured Reserves#13 # 9#Albanian Dogs#2013,5,23
+#Maxim#10 # 6#CPT FC#2013,5,30
+#Injured Reserves#8 # 4#Maxim#2013,5,30
+#I wey#13 # 11#Albanian Dogs#2013,5,30
+#Ogorodnik#8 # 9#Crawdads#2013,5,30
+#Starters#5 # 4#CPT FC#2013,6,6
+#CPT FC#3 # 0#Crawdads#2013,6,6
+#Starters#4 # 11#Injured Reserves#2013,6,6
+#FC Bar United#8 # 10#I wey#2013,6,6
+#Albanian Dogs#11 # 11#Ogorodnik#2013,6,13
+#CPT FC#2 # 7#I wey#2013,6,13
+#Crawdads#4 # 4#Maxim#2013,6,13
+#Ogorodnik#2 # 9#Injured Reserves#2013,6,13
+#Albanian Dogs#11 # 10#FC Bar United#2013,6,20
+#Crawdads#7 # 5#Starters#2013,6,20
+#Maxim#9 # 12#FC Bar United#2013,6,20
+#CPT FC#11 # 5#Ogorodnik#2013,6,20
+#Injured Reserves#7 # 5#I wey#2013,6,21
+#Ogorodnik#10 # 4#Starters#2013,6,21
+#Injured Reserves#9 # 0#FC Bar United#2013,6,21
+#Crawdads#2 # 8#I wey#2013,6,27
+#Ogorodnik#6 # 8#FC Bar United#2013,6,27
+#Albanian Dogs#3 # 7#Starters#2013,6,27
+#Injured Reserves#12 # 2#CPT FC#2013,6,27
+#I wey#8 # 7#Maxim#2013,6,28
+#Albanian Dogs#4 # 12#Maxim#2013,7,11
+#Uniballers#3 # 8#Papa Karlo#2013,7,11
+#Buzz De Lore#12 # 4#Shahin#2013,7,11
+#WePay#7 # 15#Maxim#2013,7,11
+#Box FC#5 # 6#FC Bar United#2013,7,18
+#Shahin#11 # 12#Box FC#2013,7,18
+#Papa Karlo#11 # 7#Uniballers#2013,7,18
+#Buzz De Lore#9 # 6#WePay#2013,7,18
+#Maxim#14 # 8#FC Bar United#2013,7,25
+#Uniballers#5 # 5#Box FC#2013,7,25
+#Shahin#6 # 7#WePay#2013,7,25
+#Buzz De Lore#2 # 13#FC Bar United#2013,7,25
+#Papa Karlo#6 # 11#Maxim#2013,8,1
+#FC Bar United#12 # 8#Maxim#2013,8,1
+#Uniballers#8 # 19#Buzz De Lore#2013,8,1
+#Shahin#8 # 8#Box FC#2013,8,1
+#WePay#5 # 15#Papa Karlo#2013,8,2
+#WePay#0 # 3#Uniballers#2013,8,2
+#Shahin#9 # 6#Maxim#2013,8,2
+#FC Bar United#21 # 8#Papa Karlo#2013,8,2
+#Box FC#6 # 7#Buzz De Lore#2013,8,8
+#Maxim#7 # 7#Box FC#2013,8,8
+#FC Bar United#17 # 2#Uniballers#2013,8,8
+#Papa Karlo#7 # 4#Shahin#2013,8,8
+#WePay#8 # 2#Buzz De Lore#2013,8,15
+#Buzz De Lore#14 # 8#Papa Karlo#2013,8,15
+#Box FC#13 # 16#WePay#2013,8,15
+#Shahin#7 # 14#FC Bar United#2013,8,15
+#Uniballers#1 # 12#Maxim#2013,8,22
+#WePay#6 # 11#FC Bar United#2013,8,22
+#Maxim#2 # 0#Buzz De Lore#2013,8,22
+#Papa Karlo#9 # 7#Box FC#2013,8,22
+#Uniballers#5 # 13#Shahin#2013,8,29
+#InterCali#7 # 5#Maxim#2013,8,29
+#Riviera FC#7 # 6#CPT FC#2013,8,29
+#Starters#8 # 14#I wey#2013,8,29
+#SV Eagles#3 # 7#FC Bar United#2013,9,5
+#CPT FC#9 # 3#Starters#2013,9,5
+#I wey#5 # 4#InterCali#2013,9,5
+#FC Bar United#5 # 4#Maxim#2013,9,5
+#SV Eagles#2 # 5#Riviera FC#2013,9,12
+#Riviera FC#6 # 11#I wey#2013,9,12
+#Maxim#9 # 5#SV Eagles#2013,9,12
+#Starters#7 # 15#FC Bar United#2013,9,12
+#InterCali#4 # 7#CPT FC#2013,9,19
+#Maxim#5 # 9#Riviera FC#2013,9,19
+#SV Eagles#7 # 8#CPT FC#2013,9,19
+#FC Bar United#7 # 11#I wey#2013,9,19
+#InterCali#2 # 4#Starters#2013,9,26
+#SV Eagles#13 # 6#Starters#2013,9,26
+#CPT FC#7 # 8#FC Bar United#2013,9,26
+#InterCali#5 # 11#Riviera FC#2013,9,26
+#I wey#9 # 7#Maxim#2013,10,3
+#FC Bar United#5 # 12#I wey#2013,10,3
+#Starters#4 # 6#SV Eagles#2013,10,3
+#CPT FC#5 # 4#InterCali#2013,10,3
+#Riviera FC#8 # 3#Maxim#2013,10,10
+#SV Eagles#7 # 11#I wey#2013,10,10
+#FC Bar United#8 # 6#InterCali#2013,10,10
+#CPT FC#8 # 6#Maxim#2013,10,10
+#Starters#0 # 3#Riviera FC#2013,10,17
+#InterCali#7 # 9#SV Eagles#2013,10,17
+#FC Bar United#11 # 8#Riviera FC#2013,10,17
+#Maxim#11 # 10#Starters#2013,10,17
+#I wey#6 # 5#CPT FC#2013,10,24
+#SV Eagles#12 # 16#Riviera FC#2013,10,24
+#FC Bar United#12 # 9#I wey#2013,10,24
+#Maxim#5 # 4#Peru Sport#2013,10,24
+#Starters#3 # 12#CPT FC#2013,10,31
+#I wey#8 # 4#Maxim#2013,10,31
+#Peru Sport#3 # 3#SV Eagles#2013,10,31
+#CPT FC#5 # 5#Riviera FC#2013,10,31
+#Starters#5 # 15#FC Bar United#2013,11,7
+#FC Bar United#8 # 11#Peru Sport#2013,11,7
+#Riviera FC#17 # 4#Starters#2013,11,7
+#Maxim#4 # 7#CPT FC#2013,11,7
+#SV Eagles#10 # 14#I wey#2013,11,14
+#Riviera FC#12 # 4#FC Bar United#2013,11,14
+#Starters#0 # 3#I wey#2013,11,14
+#CPT FC#5 # 10#Peru Sport#2013,11,14
+#SV Eagles#3 # 4#Maxim#2013,11,21
+#Starters#3 # 15#Maxim#2013,11,21
+#I wey#6 # 9#CPT FC#2013,11,21
+#SV Eagles#12 # 10#FC Bar United#2013,11,21
+#Peru Sport#8 # 7#Riviera FC#2013,11,22
+#SV Eagles#3 # (Forfeit) 0#Starters#2013,11,22
+#CPT FC#5 # 6#FC Bar United#2013,11,22
+#Riviera FC#5 # 4#Maxim#2013,11,22
+#Peru Sport#9 # 5#I wey#2013,11,28
+#Starters#5 # 16#Peru Sport#2013,12,5
+#CPT FC#10 # 7#SV Eagles#2013,12,5
+#I wey#7 # 9#Riviera FC#2013,12,5
+#Maxim#8 # 6#FC Bar United#2013,12,12
+#CPT FC#3 # 4#Peru Sport#2013,12,12
+#Maxim#3 # 0#Starters#2013,12,12
+#SV Eagles#7 # 10#Riviera FC#2013,12,12
+#FC Bar United#10 # 2#I wey#2013,12,13
+#I wey#10 # 1#CPT FC#2013,12,19
+#SV Eagles#10 # 13#FC Bar United#2013,12,19
+#HP Software FC#11 # 7#InterCali#2013,12,19
