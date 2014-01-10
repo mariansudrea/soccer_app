@@ -1,0 +1,37 @@
+<div class="rightPan gameContainer">
+	<div class="gameHeader">
+		<h1 style="width:610px"> 
+			<%= @game.home_team.name %> _ vs _ <%= @game.away_team.name %>
+		</h1>
+		<h2 style="width:610px">
+			Played on <%= @game.played_at.to_date %>
+		<h2>
+		<h2 style="width:610px">
+			OffTheWall Arena, Santa Clara
+		</h2>
+	</div>
+	<div class="game">
+		<div class="scheduleBox" style="margin-left:100px">
+			Player
+		</div>
+		<div class="scheduleBox">
+			Goals
+		</div>
+		<div class="scheduleBox">
+			Assists
+		</div>
+	</div>
+	<% @stats.each do |s| %>
+		<div class="game">
+			<div class="scheduleBox" style="margin-left:100px">
+				<%= s.user.name %>
+			</div>
+			<div class="scheduleBox">
+				<%= s.goals %>
+			</div>
+			<div class="scheduleBox">
+				<%= s.assists %>
+			</div>
+		</div>
+	<% end %>
+</div>

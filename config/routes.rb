@@ -5,6 +5,7 @@ SampleApp::Application.routes.draw do
   match '/team',	  	to: 'static_pages#team',            via: 'get'
   match '/feed',    	to: 'static_pages#feed',    via: 'get'
   match '/schedule',   	to: 'static_pages#schedule',   via: 'get'
+  get 'games/:id' => 'games#view'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

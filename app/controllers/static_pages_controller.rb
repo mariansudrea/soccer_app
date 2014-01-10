@@ -8,7 +8,7 @@ class StaticPagesController < ApplicationController
   end
 
   def schedule
-	@schedule = Team.find(8).matches.collect.sort_by { |c| c.id }
+	@schedule = Team.find(8).matches.collect.sort_by { |c| c.played_at }.reverse
   end
 	
   def team

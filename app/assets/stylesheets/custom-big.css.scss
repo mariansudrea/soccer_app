@@ -1,7 +1,68 @@
-h1{
+.first
+{
+margin-left:100px;
+}
+body
+{
+background: rgb(198,129,130); /* Old browsers */
+background: -moz-linear-gradient(left,  rgba(198,129,130,1) 0%, rgba(204,204,204,1) 50%, rgba(191,112,114,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(198,129,130,1)), color-stop(50%,rgba(204,204,204,1)), color-stop(100%,rgba(191,112,114,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(left,  rgba(198,129,130,1) 0%,rgba(204,204,204,1) 50%,rgba(191,112,114,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(left,  rgba(198,129,130,1) 0%,rgba(204,204,204,1) 50%,rgba(191,112,114,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(left,  rgba(198,129,130,1) 0%,rgba(204,204,204,1) 50%,rgba(191,112,114,1) 100%); /* IE10+ */
+background: linear-gradient(to right,  rgba(198,129,130,1) 0%,rgba(204,204,204,1) 50%,rgba(191,112,114,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c68182', endColorstr='#bf7072',GradientType=1 ); /* IE6-9 */
+}
+.seasonDivider
+{
+width:600px;
+height:4px;
+background-color:black;
+float:left;
+position:relative;
+margin-bottom:5px;
+}
+.win
+{
+background-color:green !important;
+}
+.loss
+{
+background-color:red !important;
+}
+.gameContainer
+{
+width:700px;
+overflow:hide;
+padding-left:80px;
+background:url('newspaper.jpeg');
+background-size:100% 100%;
+background-repeat:no-repeat;
+text-align:center;
+padding-bottom:400px;
+border:1px solid black;
+}
+.mainContainer
+{
+width:700px;
+overflow:hide;
+padding-left:80px;
+text-align:center;
+padding-bottom:400px;
+}
+h1
+{
+margin-top:60px;
 color:BLACK;
 font-weight:normal;
 font-family: Ewert;
+}
+h2
+{
+font-family:'The Girl Next Door', cursive;
+font-size:22px;
+text-align:center;
+font-style:italic;
 }
 .leftPan
 {
@@ -17,10 +78,8 @@ font-size:2em;
 .rightPan
 {
 position:relative;
-width: 81%;
 float: left;
 height:auto;
-
 }
 .logo
 {
@@ -30,32 +89,77 @@ text-align:center;
 }
 .navLink
 {
-font-weight:bold;
+font-weight:normal;
+font-family:Romanesco;
 color:black;
 text-decoration:none;
 margin-top:40px;
-margin-left:2%;
+margin-left:20px;
 text-align:center;
-line-height:100px;
-height:100px;
-border:1px solid black;
+line-height:60px;
+font-size:29px;
+height:50px;
 border-radius:10px;
-width:25%;
+width:90px;
 float:left;
 position:relative;
 }
 .game
 {
 position:relative;
+float:center;
+cursor:pointer;
+border-radius:10px;
+margin-bottom:2px;
+clear:left;
+padding:5px 0 5px 0;
+}
+.gameHeader
+{
+color:black;
+position:relative;
 float:left;
-width:100%;
+cursor:pointer;
+margin-bottom:2px;
+clear:left;
+padding:5px 0 5px 0;
+text-align:center;
+width:675px;
+}
+.titleBox
+{
+font-size:12px;
+width: 120px;
+float:left;
+text-align:center;
+height:20px;
+position:relative;
+margin-right:10px;
+margin-left:10px;
+margin:0 10px 20px 10px;
+line-height:20px;
+font-family:sans-serif;
 }
 .scheduleBox
 {
-width: 33%;
+font-size:12px;
+width: 120px;
 float:left;
-height:30px;
+text-align:center;
+height:20px;
 position:relative;
+border:1px solid black;
+border-radius:10px;
+margin-right:10px;
+margin-left:10px;
+line-height:20px;
+background: -moz-linear-gradient(top,  rgba(140,61,63,0) 0%, rgba(140,61,63,0.9) 90%, rgba(165,0,2,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(140,61,63,0)), color-stop(90%,rgba(140,61,63,0.9)), color-stop(100%,rgba(165,0,2,1))); /*Chrome,Safari4+*/
+background: -webkit-linear-gradient(top,  rgba(140,61,63,0) 0%,rgba(140,61,63,0.9) 90%,rgba(165,0,2,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(140,61,63,0) 0%,rgba(140,61,63,0.9) 90%,rgba(165,0,2,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(140,61,63,0) 0%,rgba(140,61,63,0.9) 90%,rgba(165,0,2,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(140,61,63,0) 0%,rgba(140,61,63,0.9) 90%,rgba(165,0,2,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#008c3d3f', endColorstr='#a50002',GradientType=0 ); /* IE6-9 */
 }
 .playerNumber
 {
@@ -67,11 +171,17 @@ float:left;
 }
 .playerName
 {
-width:150px;
+width:300px;
 font-weight:bold;
 position:relative;
 float:left;
 text-align:center;
+}
+.score
+{
+text-align:center;
+font-weight:bold;
+text-decoration:underline;
 }
 
 
@@ -79,8 +189,3 @@ text-align:center;
 
 
 
-
-/*body{
-background-image:url('turf1.jpg');
-background-size:100%;
-}*/

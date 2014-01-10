@@ -46,7 +46,7 @@
 #Injured Reserves#13 # 10#CPT FC#2013,1,31
 #Albanian Dogs#8 # 14#Starters#2013,1,31
 #Las Caguamas#17 # 9#FC Bar United#2013,2,7
-#DFC#&nbsp;v&nbsp;#Injured Reserves#2013,2,7
+#DFC#0#0#Injured Reserves#2013,2,7
 #Quakes#7 # 7#SV Eagles#2013,2,7
 #Starters#2 # 5#Las Caguamas#2013,2,7
 #FC Bar United#10 # 5#Albanian Dogs#2013,2,14
@@ -69,7 +69,7 @@
 #Starters#2 # 10#CPT FC#2013,3,7
 #SV Eagles#12 # 8#FC Bar United#2013,3,7
 #DFC#6 # 7#Albanian Dogs#2013,3,7
-#Quakes#9 # 9#Injured Reserves#
+#Quakes#9 # 9#Injured Reserves#2013,3,7
 #Maxim#5 # 8#Ogorodnik#2013,5,9
 #Crawdads#8 # 5#Injured Reserves#2013,5,9
 #CPT FC#6 # 9#Albanian Dogs#2013,5,9

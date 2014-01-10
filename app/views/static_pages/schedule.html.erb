@@ -1,12 +1,54 @@
-<h1> schedule </h1>
-<div>
-	<% @schedule.each do |a| %>
-		<div class="game">
-			<div class="scheduleBox"><b> <%= a.home_team.name %> </b></div>
-			<div class="scheduleBox"><b> <%= a.home_score %> </b>
-			<b> - </b>
-			<b><%= a.away_score %></b> </div>
-			<div class="scheduleBox"><b> <%= a.away_team.name %> </b></div>
-		</div>
-	<% end %>
+<div class="rightPan mainContainer">	
+	<h1 style="width:600px"> schedule </h1>
+	<div class="titleBox">
+		Home
+	</div>
+	<div class="titleBox">
+		-	
+	</div>
+	<div class="titleBox">
+		Away
+	</div>
+	<div class="titleBox">
+		Date
+	</div>
+	<div>
+		<% @seasonEnd = ["2013-12-13","2013-10-17","2013-8-22", "2013-6-27","2013-3-7","2013-1-10"]
+			@seasonEnd.map! { |date| date.to_datetime }
+		%>
+
+		<% @schedule.each do |a| %>
+			<div class="game" title="Game Details" onclick="window.location.href='/games/<%= a.id %>'">
+				<% if @seasonEnd.include?(a.played_at.to_datetime) %>
+					<div class="seasonDivider"></div>
+				<% end %>
+					<div class="scheduleBox"><b> <%= a.home_team.name %> </b></div>
+				<% if a.home_score %>
+					<div class="scheduleBox score
+						<% if a.home_team.id == 8 && a.home_score > a.away_score %>
+						<%=	"win" %>
+						<% elsif a.away_team.id == 8 && a.home_score < a.away_score %>
+						<%=	"win" %>
+						<% else %>
+						<%= "loss" %>
+						<% end %>">
+						<b> <%= a.home_score %> </b>
+						<b> - </b>
+						<b><%= a.away_score %></b> 
+						<% if a.stats.any? %>
+							<%= image_tag('ball.png', width: '15') %>
+						<% end %>
+					</div>
+				<% else %>
+					<div class="scheduleBox">
+						<%= a.played_at.strftime("%H:%M") %> 
+					</div>
+				<% end %>
+				<div class="scheduleBox away"><b> <%= a.away_team.name %> </b></div>
+				<div class="scheduleBox away"><b> 
+					<%= a.played_at.to_date %> 
+				</b></div>
+			</div>
+		<% end %>
+	</div>
 </div>
