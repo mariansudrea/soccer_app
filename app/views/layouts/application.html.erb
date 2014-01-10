@@ -2,11 +2,13 @@
 <html>
   <head>
     <title> Fc Bar United - Home</title>
-    <%= stylesheet_link_tag "custom-small", media: "(max-width:800px)",
-                                           "data-turbolinks-track" => true %>
-    <%= stylesheet_link_tag "custom-big", media: "(min-width:801px)",
+    <!--%= stylesheet_link_tag "custom-small", media: "(max-width:800px)",
+                                           "data-turbolinks-track" => true %-->
+    <%= stylesheet_link_tag "custom-big", media: "(min-width:301px)",
                                            "data-turbolinks-track" => true %>
 	<link href='http://fonts.googleapis.com/css?family=Ewert' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Romanesco' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=The+Girl+Next+Door' rel='stylesheet' type='text/css'>
     <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
     <%= csrf_meta_tags %>
     <%= render 'layouts/shim' %>
@@ -15,7 +17,7 @@
 	
     <div class="container">
 		<div class="leftPan logo">
-			<%= image_tag('m1.gif', width: '120') %>
+			<%= link_to image_tag("m1.gif", width: "120"), root_path %>
 		</div>
 		<div class="rightPan">
 			<div id="controls">
@@ -27,9 +29,7 @@
 		</div>
 		<div class="leftPan"></br>
 		</div>
-		<div class="rightPan">
 	    	<%= yield %>
-		</div>
     </div>
   </body>
 </html>
