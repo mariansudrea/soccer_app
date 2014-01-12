@@ -1,38 +1,112 @@
-<div class="rightPan mainContainer">
-	<h1 style="width:500px">Team</h1>
-		<div class="game">
-			<div class="playerNumber">
-				Jersy	
-			</div>
-			<div class="playerName">
-				Name
-			</div>
-			<div class="playerNumber">
-				Goal
-			</div>
-			<div class="playerNumber">
-				Assist
-			</div>
-			</br>
-			</br>
-		</div>
-	
-	
-	<% @players.each do |a| %>
-		<div class="game">
-			<div class="playerNumber">
-				<%= a.id %>
-			</div>
-			<div class="playerName">
-				<%= a.name %>
-			</div>
-			<div class="playerNumber">
-				21
-			</div>
-			<div class="playerNumber">
-				21
-			</div>
-			</br>
-		</div>
-	<% end %>
-</div>
+<div class="rightPan teamContainer">
+	<div class="teamPadding">
+	</div>
+	<div class="teamSkip">
+	</div>
+	<div class="teamSkipQuarter">
+	</div>
+	<div class="teamSkipQuarter">
+	</div>
+	<div class="teamSkipQuarter">
+	</div>
+	<div class="teamMap" onclick="window.location.href='/players/1'">
+		<%= image_tag("flag_romania.png", :class => 'flagSmall') %>
+		Marian Udrea
+	</div>
+	<div class="teamSkip">
+	</div>
+	<div class="teamMap" onclick="window.location.href='/players/6'">
+		<%= image_tag("flag_usa.png", :class => 'flagSmall') %>
+		Paul Bryan
+	</div>
+	<div class="teamSkip">
+	</div>
+	<div class="teamMap" onclick="window.location.href='/players/12'">
+		<%= image_tag("flag_bosnia.png", :class => 'flagSmall') %>
+		Omar Maslic
+	</div>
+	<div class="teamSkip newLine">
+	</div>
+	<div class="teamMap" onclick="window.location.href='/players/4'">
+		<%= image_tag("flag_usa.png", :class => 'flagSmall') %>
+		Brian Tomlin
+	</div>
+	<div class="teamSkipQuarter">
+	</div>
+	<div class="teamMap" onclick="window.location.href='/players/8'">
+		<%= image_tag("flag_bosnia.png", :class => 'flagSmall') %>
+		Asmir Avdic
+	</div>
+	<div class="teamSkip">
+	</div>
+	<div class="teamMap" onclick="window.location.href='/players/2'">
+		<%= image_tag("flag_bosnia.png", :class => 'flagSmall') %>
+		Alin Obhodas
+	</div>
+	<div class="teamSkip">
+	</div>
+	<div class="teamSkip">
+	</div>
+	<div class="teamMap" onclick="window.location.href='/players/13'">
+		<%= image_tag("flag_germany.png", :class => 'flagSmall') %>
+		Turker Sus	
+	</div>
+	<div class="teamSkip">
+	</div>
+	<div class="teamSkip">
+	</div>
+	<div class="teamMap" onclick="window.location.href='/players/3'">
+		<%= image_tag("flag_bosnia.png", :class => 'flagSmall') %>
+		Sanjin Obhodas
+	</div>
+	<div class="teamSkip">
+	</div>
+	<div class="teamSkip">
+	</div>
+	<div class="teamMap" onclick="window.location.href='/players/9'">
+		<%= image_tag("flag_bosnia.png", :class => 'flagSmall') %>
+		Asmir Pinjic
+	</div>
+	<div class="teamSkipQuarter">
+	</div>
+	<div class="teamSkipQuarter">
+	</div>
+	<div class="teamMap" onclick="window.location.href='/players/7'">
+		<%= image_tag("flag_bosnia.png", :class => 'flagSmall') %>
+		Nihad Hidic
+	</div>
+	<div class="teamSkip">
+	</div>
+	<div class="teamSkip">
+	</div>
+	<div class="teamSkipQuarter">
+	</div>
+	<div class="teamSkipQuarter">
+	</div>
+	<div class="teamMap" style="width:130px" onclick="window.location.href='/players/11'">
+		<%= image_tag("flag_bosnia.png", :class => 'flagSmall') %>
+		Mirza Sabanovic
+	</div>
+	<div class="teamSkip">
+	</div>
+	<div class="teamSkip">
+	</div>
+	<div class="teamSkipQuarter">
+	</div>
+	<div class="teamMap" onclick="window.location.href='/players/5'">
+		<%= image_tag("flag_usa.png", :class => 'flagSmall') %>
+		Brian Morgan
+	</div>
+	<div class="teamSkip newLine">
+	</div>
+	<div class="teamSkip">
+	</div>
+	<div class="teamSkip">
+	</div>
+	<div class="teamSkipQuarter">
+	</div>
+	<div class="teamMap" onclick="window.location.href='/players/10'">
+		<%= image_tag("flag_bosnia.png", :class => 'flagSmall') %>
+		Salmir Modric
+	</div>
+
