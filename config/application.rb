@@ -26,7 +26,7 @@ module SampleApp
     # config.i18n.default_locale = :de
 	config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif)
 	config.assets.precomplie += [
-		custom-big.css
+		custom-big.css.scss
 	]
   end
 end
