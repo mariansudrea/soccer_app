@@ -11,3 +11,44 @@
  *= require_self
  *= require_tree .
  */
+.playerPic
+{
+width:100px;
+height:130px;
+background-color:pink;
+border: 1px solid black;
+position:relative;
+float:left;
+}
+.flagSmall
+{
+height:12px;
+margin-top:3px;
+}
+.controls
+{
+border-bottom:1px solid black;
+}
+.first
+{
+margin-left:100px;
+}
+body
+{
+min-width:1300px;
+background: rgb(198,129,130); /* Old browsers */
+background: -moz-linear-gradient(left,  rgba(198,129,130,1) 0%, rgba(204,204,204,1) 50%, rgba(191,112,114,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(198,129,130,1)), color-stop(50%,rgba(204,204,204,1)), color-stop(100%,rgba(191,112,114,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(left,  rgba(198,129,130,1) 0%,rgba(204,204,204,1) 50%,rgba(191,112,114,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(left,  rgba(198,129,130,1) 0%,rgba(204,204,204,1) 50%,rgba(191,112,114,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(left,  rgba(198,129,130,1) 0%,rgba(204,204,204,1) 50%,rgba(191,112,114,1) 100%); /* IE10+ */
+background: linear-gradient(to right,  rgba(198,129,130,1) 0%,rgba(204,204,204,1) 50%,rgba(191,112,114,1) 100%); /* W3C */
+}
+.seasonDivider
+{
+width:600px;
+height:4px;
+background-color:black;
+float:left;
+                                                                                                                               10,1          Top
+
