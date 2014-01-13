@@ -11,10 +11,10 @@
  *= require_self
  *= require_tree .
  */
-h1
+div
 {
 background-color:black;
-
+border:1px solid black;
 
 }
 
