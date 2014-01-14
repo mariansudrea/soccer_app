@@ -14,9 +14,30 @@ margin-top:3px;
 }
 .controls
 {
+padding:40px 0 0 200px;
+border-left:1px solid black;
 border-bottom:1px solid black;
-width:800px;
+min-width:800px;
+height:160px;
 background-color:pink;
+background: rgb(125,126,125); /* Old browsers */
+
+background: -moz-linear-gradient(top,  rgba(125,126,125,1) 0%, rgba(168,168,168,1) 100%); /* FF3.6+ */
+
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(125,126,125,1)), color-stop(100%,rgba(168,168,168,1))); /* Chrome,Safari4+ */
+
+background: -webkit-linear-gradient(top,  rgba(125,126,125,1) 0%,rgba(168,168,168,1) 100%); /* Chrome10+,Safari5.1+ */
+
+background: -o-linear-gradient(top,  rgba(125,126,125,1) 0%,rgba(168,168,168,1) 100%); /* Opera 11.10+ */
+
+background: -ms-linear-gradient(top,  rgba(125,126,125,1) 0%,rgba(168,168,168,1) 100%); /* IE10+ */
+
+background: linear-gradient(to bottom,  rgba(125,126,125,1) 0%,rgba(168,168,168,1) 100%); /* W3C */
+
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#a8a8a8',GradientType=0 ); /* IE6-9 */
+
+
+
 }
 .first
 {
@@ -25,6 +46,8 @@ margin-left:100px;
 body
 {
 min-width:1300px;
+margin:0;
+padding:0;
 background: rgb(198,129,130); /* Old browsers */
 background: -moz-linear-gradient(left,  rgba(198,129,130,1) 0%, rgba(204,204,204,1) 50%, rgba(191,112,114,1) 100%); /* FF3.6+ */
 background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(198,129,130,1)), color-stop(50%,rgba(204,204,204,1)), color-stop(100%,rgba(191,112,114,1))); /* Chrome,Safari4+ */
@@ -60,22 +83,48 @@ background-size:cover;
 }
 .gameContainer
 {
-width:700px;
+width:820px;
 overflow:hide;
-padding-left:80px;
+padding-left:180px;
 background:url('newspaper.jpeg');
 background-size:100% 100%;
 background-repeat:no-repeat;
 text-align:center;
 padding-bottom:400px;
 }
+.playerContainer
+{
+width:800px !important;
+padding:10px 99px 400px 99px !important;
+
+}
 .mainContainer
 {
+padding:10px 149px 400px 149px;
+border:1px solid black;
+-webkit-box-shadow: 0px 9px 20px 0px rgba(224, 0, 75, 0.82);
+-moz-box-shadow:    0px 9px 20px 0px rgba(224, 0, 75, 0.82);
+box-shadow:         0px 9px 20px 0px rgba(224, 0, 75, 0.82);
 width:700px;
 overflow:hide;
-padding-left:80px;
 text-align:center;
-padding-bottom:400px;
+background: rgb(188,188,188); /* Old browsers */
+
+background: -moz-linear-gradient(left,  rgba(188,188,188,1) 1%, rgba(246,246,246,1) 47%, rgba(204,204,204,1) 100%); /* FF3.6+ */
+
+background: -webkit-gradient(linear, left top, right top, color-stop(1%,rgba(188,188,188,1)), color-stop(47%,rgba(246,246,246,1)), color-stop(100%,rgba(204,204,204,1))); /* Chrome,Safari4+ */
+
+background: -webkit-linear-gradient(left,  rgba(188,188,188,1) 1%,rgba(246,246,246,1) 47%,rgba(204,204,204,1) 100%); /* Chrome10+,Safari5.1+ */
+
+background: -o-linear-gradient(left,  rgba(188,188,188,1) 1%,rgba(246,246,246,1) 47%,rgba(204,204,204,1) 100%); /* Opera 11.10+ */
+
+background: -ms-linear-gradient(left,  rgba(188,188,188,1) 1%,rgba(246,246,246,1) 47%,rgba(204,204,204,1) 100%); /* IE10+ */
+
+background: linear-gradient(to right,  rgba(188,188,188,1) 1%,rgba(246,246,246,1) 47%,rgba(204,204,204,1) 100%); /* W3C */
+
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bcbcbc', endColorstr='#cccccc',GradientType=1 ); /* IE6-9 */
+
+
 }
 h1
 {
@@ -106,7 +155,6 @@ font-size:2em;
 {
 position:relative;
 float: left;
-height:auto;
 }
 .logo
 {
@@ -118,6 +166,8 @@ background:url('flagpost.png');
 background-size:9em 5.5em;
 background-repeat:no-repeat;
 background-position:center top;
+border-bottom:1px solid black;
+height:180px;
 }
 .navLink
 {
@@ -128,13 +178,22 @@ text-decoration:none;
 margin-top:40px;
 margin-left:20px;
 text-align:center;
-line-height:60px;
-font-size:29px;
+line-height:50px;
+font-size:39px;
 height:50px;
 border-radius:10px;
 width:90px;
 float:left;
 position:relative;
+border:1px solid black;
+}
+.navLink:hover
+{
+border:1px solid black;
+color:white;
+-webkit-box-shadow: 0px 9px 20px 0px rgba(224, 0, 75, 0.82);
+-moz-box-shadow:    0px 9px 20px 0px rgba(224, 0, 75, 0.82);
+box-shadow:         0px 9px 20px 0px rgba(224, 0, 75, 0.82);
 }
 .game
 {
