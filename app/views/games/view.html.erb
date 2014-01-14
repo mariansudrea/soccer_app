@@ -1,7 +1,7 @@
 <div class="rightPan gameContainer">
 	<div class="gameHeader">
 		<h1 style="width:610px"> 
-			<%= @game.home_team.name %> _ vs _ <%= @game.away_team.name %>
+			<%= @game.home_team.name %> <%= @game.home_score %> - <%= @game.away_score %> <%= @game.away_team.name %>
 		</h1>
 		<h2 style="width:610px">
 			Played on <%= @game.played_at.to_date %>
