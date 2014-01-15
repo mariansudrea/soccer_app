@@ -11,7 +11,7 @@ class StaticPagesController < ApplicationController
 	@schedule = Team.find(8).matches.collect.sort_by { |c| c.played_at }.reverse
 	respond_to do |format|
       format.html
-      format.xml { render :xml => @schedule.to_xml }
+      format.xml 
     end
   end
 	
