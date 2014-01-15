@@ -1,0 +1,13 @@
+<games>
+<% @schedule.each do |x| %>
+	<game>
+        <homeTeamName><%= x.home_team.name %></homeTeamName>
+	    <homeTeamId><%= x.home_team_id %></homeTeamId>
+        <awayTeamName><%= x.away_team.name %></awayTeamName>
+    	<awayTeamId><%= x.away_team_id %></awayTeamId>
+        <homeTeamScore><%= x.home_score %></homeTeamScore>
+    	<awayTeamScore><%= x.away_score %></awayTeamScore>
+        <date><%= x.played_at %></date>
+	</game>
+<% end %>
+</games>
