@@ -14,7 +14,13 @@ class StaticPagesController < ApplicationController
       format.xml 
     end
   end
-	
+  def results
+	@schedule = Team.find(8).matches.collect.sort_by { |c| c.played_at }.reverse
+	respond_to do |format|
+      format.xml 
+    end
+  end
+
   def team
 	@players = Team.find(8).users.collect.sort_by { |c| c.id }
   end

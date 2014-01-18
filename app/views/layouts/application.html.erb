@@ -3,30 +3,47 @@
   <head>
     <title> Fc Bar United - Home</title>
     <%= stylesheet_link_tag "custom-big", "data-turbolinks-track" => true %>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Diplomata+SC' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Ewert' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Romanesco' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=The+Girl+Next+Door' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Emblema+One' rel='stylesheet' type='text/css'>
     <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
     <%= csrf_meta_tags %>
     <%= render 'layouts/shim' %>
 
   </head>
   <body>
+	<script>
+   // 	alert(window.innerWidth);
+   // 	$('body').css("width",window.innerWidth);
+	</script>
 	
     <div class="container">
-		<div class="leftPan logo">
-			<%= link_to image_tag("m1.gif", width: "120"), root_path %>
+		<div class="leftPan logo" style="background:none;height:12px;border-bottom:1px solid black;border-top:none">
 		</div>
-		<div class="rightPan controls">
+		<div class="rightPan controls" style="z-index:2">
 					<%= link_to "Home", root_path , :class => "navLink" %>
 					<%= link_to "Schedule", schedule_path , :class => "navLink" %>
 					<%= link_to "Team", team_path , :class => "navLink" %>
-					<%= link_to "Feed", feed_path , :class => "navLink" %>
+					<%= link_to "Video", feed_path , :class => "navLink" %>
 					<%= link_to "About", about_path , :class => "navLink" %>
 		</div>
-		<div class="leftPan"></br>
+		<div class="leftPan logo" style="border-bottom:3px solid black">
+			<%= link_to image_tag("m1.gif", width: "120"), root_path %>
+		</div>
+	    <div class="rightPan homeMain">
+			<div class="headerFont">
+				FC BAR UNITED
+			</div>
+	    </div>
+		<div class="leftPan">
 		</div>
 	    	<%= yield %>
+		<div class="leftPan">
+		</div>
+		<div class="footer">
+		</div>
     </div>
   </body>
 </html>
