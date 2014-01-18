@@ -1,0 +1,16 @@
+<games> 
+	<% @schedule.each do |x| %>
+    	<% if Time.now.getutc > x.played_at.getutc %>
+        	<game>
+            	<homeTeamName><%= x.home_team.name %></homeTeamName>
+            	<homeTeamId><%= x.home_team_id %></homeTeamId>
+            	<awayTeamName><%= x.away_team.name %></awayTeamName>
+            	<awayTeamId><%= x.away_team_id %></awayTeamId>
+            	<homeScore><%= x.home_score %></homeScore>
+            	<awayScore><%= x.away_score %></awayScore>
+            	<date><%= x.played_at %></date>
+        	</game>
+    	<% end %>
+	<% end %>
+</games>
+
