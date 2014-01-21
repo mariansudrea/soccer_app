@@ -6,6 +6,7 @@ SampleApp::Application.routes.draw do
   match '/feed',    	to: 'static_pages#feed',    via: 'get'
   match '/schedule',   	to: 'static_pages#schedule',   via: 'get'
   match '/results',   	to: 'static_pages#results',   via: 'get'
+  match '/roster',   	to: 'static_pages#roster',   via: 'get'
   match '/about',   	to: 'static_pages#about',   via: 'get'
   get 'games/:id' => 'games#view'
   get 'players/:id' => 'players#view'
