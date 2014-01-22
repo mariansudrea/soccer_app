@@ -1,20 +1,23 @@
 class StaticPagesController < ApplicationController
+include ActionView::Helpers::NumberHelper
   def home
 	@team = Team.find(8)
 	@schedule = Team.find(8).matches.first(5).collect.sort_by { |c| c.played_at }.reverse
+	@nextGame = Game.where("played_at >= :start_date AND home_team_id = '8'",{start_date: DateTime.now}).first
 	@season = Game.where("played_at >= :start_date",{start_date: DateTime.new(2013,12,15)})
 	@a = Array.new
 	@season.each do |game|
+	  if game.home_score
 		@a[game.home_team_id.to_i] = Hash.new unless @a[game.home_team_id.to_i]
 		@a[game.away_team_id.to_i] = Hash.new unless @a[game.away_team_id.to_i]
 		@a[game.home_team_id.to_i][:id] = game.home_team_id.to_i 
 		@a[game.away_team_id.to_i][:id] = game.away_team_id.to_i 
 		@a[game.home_team_id.to_i][:gp] = !(@a[game.home_team_id.to_i][:gp].nil?) ? @a[game.home_team_id.to_i][:gp].to_i + 1 : 1
 		@a[game.away_team_id.to_i][:gp] = !(@a[game.away_team_id.to_i][:gp].nil?) ? @a[game.away_team_id.to_i][:gp].to_i + 1 : 1
-		@a[game.home_team_id.to_i][:gf] = !(@a[game.home_team_id.to_i][:gf].nil?) ? @a[game.home_team_id.to_i][:gf] + game.home_score : game.home_score
-		@a[game.away_team_id.to_i][:gf] = !(@a[game.away_team_id.to_i][:gf].nil?) ? @a[game.away_team_id.to_i][:gf].to_i + game.away_score : game.away_score
-		@a[game.away_team_id.to_i][:ga] = !(@a[game.away_team_id.to_i][:ga].nil?) ? @a[game.away_team_id.to_i][:ga].to_i + game.home_score : game.home_score
-		@a[game.home_team_id.to_i][:ga] = !(@a[game.home_team_id.to_i][:ga].nil?) ? @a[game.home_team_id.to_i][:ga].to_i + game.away_score : game.away_score
+		@a[game.home_team_id.to_i][:gf] = !(@a[game.home_team_id.to_i][:gf].nil?) ? @a[game.home_team_id.to_i][:gf] + game.home_score||0 : game.home_score||0
+		@a[game.away_team_id.to_i][:gf] = !(@a[game.away_team_id.to_i][:gf].nil?) ? @a[game.away_team_id.to_i][:gf].to_i + game.away_score||0 : game.away_score||0
+		@a[game.away_team_id.to_i][:ga] = !(@a[game.away_team_id.to_i][:ga].nil?) ? @a[game.away_team_id.to_i][:ga].to_i + game.home_score||0 : game.home_score||0
+		@a[game.home_team_id.to_i][:ga] = !(@a[game.home_team_id.to_i][:ga].nil?) ? @a[game.home_team_id.to_i][:ga].to_i + game.away_score||0 : game.away_score||0
 
 	 	if game.home_score == game.away_score 
 			@a[game.away_team_id.to_i][:t] = !(@a[game.away_team_id.to_i][:t].nil?) ? @a[game.away_team_id.to_i][:t].to_i + 1 : 1
@@ -32,7 +35,40 @@ class StaticPagesController < ApplicationController
 			@a[game.away_team_id.to_i][:pts] = !(@a[game.away_team_id.to_i][:pts].nil?) ? @a[game.away_team_id.to_i][:pts].to_i + 3 : 3
 		end
 		@a
+	  end
 	end
+	
+	@goalRankings = Array.new()
+	Stat.all.collect.each do |s|
+		@goalRankings[s.user_id.to_i] = Hash.new() unless !(@goalRankings[s.user_id.to_i].nil?)
+		@goalRankings[s.user_id.to_i][:id] = s.user_id
+	@goalRankings[s.user_id.to_i][:goals] = !(@goalRankings[s.user_id.to_i][:goals].nil?) ? @goalRankings[s.user_id.to_i][:goals] + s.goals : s.goals||0
+	@goalRankings[s.user_id.to_i][:gp] = !(@goalRankings[s.user_id.to_i][:gp].nil?) ? @goalRankings[s.user_id.to_i][:gp] + 1 : 1
+	end
+	@goalRankings.compact.each do |x|
+		f=(x[:goals].to_f/x[:gp]).round(2)
+		x[:gpg] = number_with_precision(f, :precision => 2)
+	end
+	@goalRankings = @goalRankings.compact.sort_by { |x| [x[:gpg],x[:goals]] }.reverse
+
+	@assistRankings = Array.new()
+	Stat.all.collect.each do |s|
+		@assistRankings[s.user_id.to_i] = Hash.new() unless !(@assistRankings[s.user_id.to_i].nil?)
+		@assistRankings[s.user_id.to_i][:id] = s.user_id
+	@assistRankings[s.user_id.to_i][:assists] = !(@assistRankings[s.user_id.to_i][:assists].nil?) ? @assistRankings[s.user_id.to_i][:assists] + s.assists : s.assists||0
+	@assistRankings[s.user_id.to_i][:gp] = !(@assistRankings[s.user_id.to_i][:gp].nil?) ? @assistRankings[s.user_id.to_i][:gp] + 1 : 1
+	end
+	@assistRankings.compact.each do |x|
+		f=(x[:assists].to_f/x[:gp]).round(2)
+		x[:apg] = number_with_precision(f, :precision => 2)
+	end
+	@assistRankings = @assistRankings.compact.sort_by { |x| [x[:apg],x[:assists],-(User.find(x[:id]).id)] }.reverse
+
+
+
+
+
+
   end
 
   def help

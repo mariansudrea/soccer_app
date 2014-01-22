@@ -41,7 +41,7 @@
 					</div>
 				<% else %>
 					<div class="scheduleBox">
-						<%= a.played_at.strftime("%H:%M") %> 
+						<%= a.played_at.strftime("%I:%M%p") %> 
 					</div>
 				<% end %>
 				<div class="scheduleBox away"><b> <%= a.away_team.name %> </b></div>

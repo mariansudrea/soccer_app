@@ -1,3 +1,73 @@
+.nextGameDiv
+{
+width:100%;
+text-align:center;
+height:30px;
+line-height:30px;
+font-weight:bold;
+border-bottom:1px solid black;
+}
+.assistName
+{
+width:130px;
+color:black;
+position:relative;
+float:left;
+height:20px;
+line-height:20px;
+font-size:12px;
+
+}
+.assistNumber
+{
+width:30px;
+color:black;
+position:relative;
+float:left;
+height:20px;
+line-height:20px;
+font-size:12px;
+
+}
+.standingsName
+{
+clear:left;
+color:black;
+position:relative;
+float:left;
+width:161px;
+border:1px solid black;
+border-left:none;
+margin-left:15px;
+height:20px;
+}
+.standingsNumberPts
+{
+border:1px solid black;
+border-right:none;
+background-color:blue;
+background: rgb(235,241,246); /* Old browsers */
+
+background: -moz-linear-gradient(top,  rgba(235,241,246,1) 0%, rgba(171,211,238,1) 72%, rgba(137,195,235,1) 90%, rgba(213,235,251,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(235,241,246,1)), color-stop(72%,rgba(171,211,238,1)), color-stop(90%,rgba(137,195,235,1)), color-stop(100%,rgba(213,235,251,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(235,241,246,1) 0%,rgba(171,211,238,1) 72%,rgba(137,195,235,1) 90%,rgba(213,235,251,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(235,241,246,1) 0%,rgba(171,211,238,1) 72%,rgba(137,195,235,1) 90%,rgba(213,235,251,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(235,241,246,1) 0%,rgba(171,211,238,1) 72%,rgba(137,195,235,1) 90%,rgba(213,235,251,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(235,241,246,1) 0%,rgba(171,211,238,1) 72%,rgba(137,195,235,1) 90%,rgba(213,235,251,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebf1f6', endColorstr='#d5ebfb',GradientType=0 ); /* IE6-9 */
+
+}
+.standingsNumber
+{
+color:black;
+position:relative;
+float:left;
+width:38px;
+height:20px;
+border-bottom:1px solid black;
+border-top:1px solid black;
+
+}
 .headerFont
 {
 text-align:left;
@@ -143,22 +213,21 @@ box-shadow:         7px 7px 30px 0px rgba(185, 29, 47, 0.75);
 width:700px;
 overflow:hide;
 text-align:center;
+background: rgb(165,46,48); /* Old browsers */
 
-background: rgb(198,127,128); /* Old browsers */
+background: -moz-linear-gradient(left,  rgba(165,46,48,1) 0%, rgba(193,193,193,1) 14%, rgba(216,160,161,1) 50%, rgba(178,144,145,1) 94%, rgba(155,35,37,1) 100%); /* FF3.6+ */
 
-background: -moz-linear-gradient(left,  rgba(198,127,128,1) 0%, rgba(222,242,241,1) 50%, rgba(196,125,126,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(165,46,48,1)), color-stop(14%,rgba(193,193,193,1)), color-stop(50%,rgba(216,160,161,1)), color-stop(94%,rgba(178,144,145,1)), color-stop(100%,rgba(155,35,37,1))); /* Chrome,Safari4+ */
 
-background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(198,127,128,1)), color-stop(50%,rgba(222,242,241,1)), color-stop(100%,rgba(196,125,126,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(left,  rgba(165,46,48,1) 0%,rgba(193,193,193,1) 14%,rgba(216,160,161,1) 50%,rgba(178,144,145,1) 94%,rgba(155,35,37,1) 100%); /* Chrome10+,Safari5.1+ */
 
-background: -webkit-linear-gradient(left,  rgba(198,127,128,1) 0%,rgba(222,242,241,1) 50%,rgba(196,125,126,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(left,  rgba(165,46,48,1) 0%,rgba(193,193,193,1) 14%,rgba(216,160,161,1) 50%,rgba(178,144,145,1) 94%,rgba(155,35,37,1) 100%); /* Opera 11.10+ */
 
-background: -o-linear-gradient(left,  rgba(198,127,128,1) 0%,rgba(222,242,241,1) 50%,rgba(196,125,126,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(left,  rgba(165,46,48,1) 0%,rgba(193,193,193,1) 14%,rgba(216,160,161,1) 50%,rgba(178,144,145,1) 94%,rgba(155,35,37,1) 100%); /* IE10+ */
 
-background: -ms-linear-gradient(left,  rgba(198,127,128,1) 0%,rgba(222,242,241,1) 50%,rgba(196,125,126,1) 100%); /* IE10+ */
+background: linear-gradient(to right,  rgba(165,46,48,1) 0%,rgba(193,193,193,1) 14%,rgba(216,160,161,1) 50%,rgba(178,144,145,1) 94%,rgba(155,35,37,1) 100%); /* W3C */
 
-background: linear-gradient(to right,  rgba(198,127,128,1) 0%,rgba(222,242,241,1) 50%,rgba(196,125,126,1) 100%); /* W3C */
-
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c67f80', endColorstr='#c47d7e',GradientType=1 ); /* IE6-9 */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a52e30', endColorstr='#9b2325',GradientType=1 ); /* IE6-9 */
 
 
 
@@ -385,11 +454,29 @@ float:left;
 margin-left:20px;
 margin-bottom:10px;
 width:200px;
-height:120px;
+min-height:120px;
 background-color:#F28789;
 color:white;
-border-radius:10px;
+border-top-left-radius:10px;
+border-top-right-radius:10px;
 border:1px solid black;
+background: rgb(232,234,232); /* Old browsers */
+
+background: -moz-linear-gradient(top,  rgba(232,234,232,1) 0%, rgba(214,186,188,1) 47%, rgba(186,161,164,1) 100%); /* FF3.6+ */
+
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(232,234,232,1)), color-stop(47%,rgba(214,186,188,1)), color-stop(100%,rgba(186,161,164,1))); /* Chrome,Safari4+ */
+
+background: -webkit-linear-gradient(top,  rgba(232,234,232,1) 0%,rgba(214,186,188,1) 47%,rgba(186,161,164,1) 100%); /* Chrome10+,Safari5.1+ */
+
+background: -o-linear-gradient(top,  rgba(232,234,232,1) 0%,rgba(214,186,188,1) 47%,rgba(186,161,164,1) 100%); /* Opera 11.10+ */
+
+background: -ms-linear-gradient(top,  rgba(232,234,232,1) 0%,rgba(214,186,188,1) 47%,rgba(186,161,164,1) 100%); /* IE10+ */
+
+background: linear-gradient(to bottom,  rgba(232,234,232,1) 0%,rgba(214,186,188,1) 47%,rgba(186,161,164,1) 100%); /* W3C */
+
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e8eae8', endColorstr='#baa1a4',GradientType=0 ); /* IE6-9 */
+
+
 
 }
 .formItem
@@ -400,15 +487,34 @@ margin-left:6px;
 margin-top:3px;
 width:30px;
 text-align:center;
-height:70px;
-line-height:70px;
+height:40px;
+line-height:50px;
 margin-top:10px;
-font-size:24px;
+margin-bottom:10px;
+font-size:22px;
 background-color:green;
 border:1px solid black;
 border-radius:6px;
-
 }
+.formItemSmall
+{
+position:relative;
+float:left;
+margin-left:6px;
+margin-top:3px;
+width:30px;
+text-align:center;
+height:40px;
+line-height:20px;
+margin-top:10px;
+margin-bottom:10px;
+font-size:12px;
+background-color:green;
+border:1px solid black;
+border-radius:6px;
+}
+
+
 .homeMain
 {
 width:998px;
@@ -427,7 +533,7 @@ background-size: 100% 100%;
 .footer
 {
 width:999px;
-border-top:1px solid black;
+border:1px solid black;
 height:40px;
 background-color:grey;
 float:left;
