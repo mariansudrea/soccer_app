@@ -1,47 +1,49 @@
 <div class="rightPan mainContainer" style="padding-right:0px;width:849px">
 	<div class="homeFeed">
-		FEED</br>FEED
-		<% b = @a.compact.sort_by { |hsh| hsh[:pts] || 0 }.reverse %>
-		<% b.each do |team|	%>
-			<% if !(team.nil?) then%>
-				<pre><%= Team.find(team[:id]).name %></pre>
-				<pre>GF: <%= team[:gf] %></pre>
-				<pre>GA: <%= team[:ga] %></pre>
-				<pre>Games played: <%= team[:gp] %></pre>
-				<pre>W: <%= team[:w]||0 %></pre>
-				<pre>T: <%= team[:t]||0 %></pre>
-				<pre>L: <%= team[:l]||0 %></pre>
-				<pre style="background-color:red"><%= team[:pts]||0 %></pre>
-
-				</br>
-			<% end %>
-		<% end %>
 	</div>
 	<div class="widget">
 		<h4>Form</h4>
 		<div class="formItem">
 			W
 		</div>
+		<div class="formItem">
+			W	
+		</div>
+		<div class="formItem">
+			W
+		</div>
 		<div class="formItem loss">
-			L	
+			L
 		</div>
 		<div class="formItem">
 			W
 		</div>
-		<div class="formItem">
-			W
+		<div class="formItemSmall">
+			Dec</br>13	
 		</div>
-		<div class="formItem">
-			W
+		<div class="formItemSmall">
+			Dec</br>19	
+		</div>
+		<div class="formItemSmall">
+			Jan</br>09	
+		</div>
+		<div class="formItemSmall loss">
+			Jan</br>16	
+		</div>
+		<div class="formItemSmall">
+			Jan</br>16	
 		</div>
 	</div>
-	<div class="widget">
-		<h4>Schedule</h4>
+	<div class="widget" style="color:black">
+		<h4>Next Game</h4>
+		<div class="nextGameDiv"> <%= @nextGame.away_team.name.upcase %> </div>
+		<div class="nextGameDiv"> vs </div>
+		<div class="nextGameDiv"> <%= @nextGame.home_team.name.upcase %> </div>
+		<div class="nextGameDiv"> <%= @nextGame.played_at.strftime("%a, %b %d %H:%M") %> </div>
 	</div>
 	<div class="widget" style="width:422px">
 		<h4>Standings</h4>
 		<div class="standingsName">
-		Team
 		</div>
 		<div class="standingsNumber">
 			GP
@@ -56,17 +58,23 @@
 			L
 		</div>
 		<div class="standingsNumber">
-			PTS
-		</div>
-		<div class="standingsNumber">
 			GD
 		</div>
-		<% g = @a.compact.sort_by { |hsh| hsh[:gf]-hsh[:ga] || 0 }.reverse %>
-		<% b = g.sort_by { |hsh|  hsh[:pts]|| 0 }.reverse %>
+		<div class="standingsNumber">
+			PTS
+		</div>
+		<!--% g = @a.compact.sort_by { |hsh| hsh[:gf]-hsh[:ga] || 0 } %-->
+		<% b = @a.compact.sort_by { |hsh| [ hsh[:pts]|| 0 , hsh[:gf]-hsh[:ga] ] }.reverse %>
 		<% b.each do |team|	%>
 			<% if !(team.nil?) then %>
 				<div class="standingsName">
-					<%= Team.find(team[:id]).name %>
+					<% if team[:id] == 8 %>
+						<b>
+					<% end %>
+						<%= Team.find(team[:id]).name %>
+					<% if team[:id] == 8 %>
+						</b>
+					<% end %>
 				</div>
 				<div class="standingsNumber">
 					<%= team[:gp]||0 %>
@@ -81,19 +89,60 @@
 					<%= team[:l]||0 %>
 				</div>
 				<div class="standingsNumber">
-					<%= team[:pts]||0 %>
-				</div>
-				<div class="standingsNumber">
 					<%= team[:gf] - team[:ga] %>
+				</div>
+				<div class="standingsNumber standingsNumberPts">
+					<%= team[:pts]||0 %>
 				</div>
 			<% end %>
 		<% end %>
 	</div>
 	<div class="widget">
-		<h4>Assists</h4>
+		<h4>Goals</h4>
+		<div class="assistName">
+			<b>Player</b>
+		</div>
+		<div class="assistNumber">
+			<b>GPG<b>	
+		</div>
+		<div class="assistNumber">
+			<b>TG</b>	
+		</div>
+		<% @goalRankings.compact.each do |x| %>
+		<div class="assistName">
+			<%= User.find(x[:id]).name %>
+		</div>
+		<div class="assistNumber">
+			<%= x[:gpg] %>
+		</div>
+		<div class="assistNumber">
+			<%= x[:goals] %>
+		</div>
+		<% end %>
 	</div>
 	<div class="widget">
-		<h4>Goals</h4>
+		<h4>Assists</h4>
+		<div class="assistName">
+			<b>Player</b>
+		</div>
+		<div class="assistNumber">
+			<b>APG<b>	
+		</div>
+		<div class="assistNumber">
+			<b>TA</b>	
+		</div>
+		<% @assistRankings.compact.each do |x| %>
+		<div class="assistName">
+			<%= User.find(x[:id]).name %>
+		</div>
+		<div class="assistNumber">
+			<%= x[:apg] %>
+		</div>
+		<div class="assistNumber">
+			<%= x[:assists] %>
+		</div>
+		<% end %>
+
 		
 	</div>
 </div>
