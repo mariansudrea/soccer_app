@@ -1,3 +1,14 @@
+.blogFrame
+{
+position:absolute;
+width:100%;
+height:146%;
+background-color:black !important;
+border:3px solid black;
+margin-top:-320px;
+overflow-x:hidden;
+
+}
 .nextGameDiv
 {
 width:100%;
@@ -33,13 +44,14 @@ font-size:12px;
 {
 clear:left;
 color:black;
+font-weight:normal;
 position:relative;
 float:left;
-width:161px;
+width:305px;
 border:1px solid black;
 border-left:none;
 margin-left:15px;
-height:20px;
+height:25px;
 }
 .standingsNumberPts
 {
@@ -62,8 +74,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebf1f6', end
 color:black;
 position:relative;
 float:left;
-width:38px;
-height:20px;
+width:71px;
+height:25px;
 border-bottom:1px solid black;
 border-top:1px solid black;
 
@@ -249,6 +261,12 @@ font-family:'The Girl Next Door', cursive;
 font-size:22px;
 text-align:center;
 font-style:italic;
+}
+p
+{
+font-weight:bold;
+font-size:18px;
+font-family:'The Girl Next Door', cursive;
 }
 .leftPan
 {
@@ -436,14 +454,14 @@ margin-bottom:10px;
 }
 .homeFeed
 {
-margin-left:-120px;
+margin-left:-110px;
 color:yellow;
 text-align:left;
 min-height:800px;
 position:relative;
 background-color:black;
 float:left;
-width:450px;
+width:700px;
 padding:25px ;
 
 }
@@ -522,9 +540,11 @@ margin: 0 0 0;
 height:200px;
 background-color:grey;
 border:1px solid black;
+border-bottom:3px solid black;
 background:url('banner.png');
 background-repeat:no-repeat;
 background-size: 100% 100%;
+z-index:10;
 
 
 
