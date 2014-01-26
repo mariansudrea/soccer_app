@@ -1,5 +1,5 @@
-<div class="rightPan mainContainer">	
-	<h1 style="width:600px"> schedule </h1>
+<div class="rightPan scheduleContainer">	
+	<h1 style="width:900px"> schedule </h1>
 	<div class="titleBox">
 		Home
 	</div>
@@ -18,11 +18,11 @@
 		%>
 
 		<% @schedule.each do |a| %>
-			<div class="game" title="Game Details" onclick="window.location.href='/games/<%= a.id %>'">
 				<% if @seasonEnd.include?(a.played_at.to_datetime) %>
 					<div class="seasonDivider"></div>
 				<% end %>
-					<div class="scheduleBox"><b> <%= a.home_team.name %> </b></div>
+			<div class="game" title="Game Details" onclick="window.location.href='/games/<%= a.id %>'">
+					<div class="scheduleBox newLine"><b> <%= a.home_team.name %> </b></div>
 				<% if a.home_score %>
 					<div class="scheduleBox score
 						<% if a.home_team.id == 8 && a.home_score > a.away_score %>
@@ -36,7 +36,7 @@
 						<b> - </b>
 						<b><%= a.away_score %></b> 
 						<% if a.stats.any? %>
-							<%= image_tag('ball.png', width: '15') %>
+							<%= image_tag('ball.png', width: '25') %>
 						<% end %>
 					</div>
 				<% else %>
