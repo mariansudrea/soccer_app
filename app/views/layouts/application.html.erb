@@ -8,6 +8,7 @@
 	<link href='http://fonts.googleapis.com/css?family=Ewert' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=The+Girl+Next+Door' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Emblema+One' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Russo+One' rel='stylesheet' type='text/css'>
     <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
     <%= csrf_meta_tags %>
     <%= render 'layouts/shim' %>
@@ -20,14 +21,14 @@
 	</script>
 	
     <div class="container">
-		<div class="leftPan logo" style="background:none;height:12px;border-bottom:1px solid black;border-top:none">
+		<div class="leftPan logo" style="background:none;height:52px;border-bottom:1px solid black;border-top:none">
 		</div>
 		<div class="rightPan controls" style="z-index:2">
-					<%= link_to "Home", root_path , :class => "navLink" %>
-					<%= link_to "Schedule", schedule_path , :class => "navLink" %>
-					<%= link_to "Team", team_path , :class => "navLink" %>
-					<%= link_to "Video", feed_path , :class => "navLink" %>
-					<%= link_to "About", about_path , :class => "navLink" %>
+					<%= link_to raw("<img src='/assets/home.png' width='40'/></br>HOME"), root_path , :class => "navLink" %>
+					<%= link_to raw("<img src='/assets/schedule.png' width='40'/></br>SCHEDULE"), schedule_path , :class => "navLink" %>
+					<%= link_to raw("<img src='/assets/team.png' width='40'/></br>TEAM"), team_path , :class => "navLink" %>
+					<%= link_to raw("<img src='/assets/video.png' width='40'/></BR>VIDEO"), feed_path , :class => "navLink" %>
+					<%= link_to raw("<img src='/assets/about.png' width='40'/></BR>ABOUT"), about_path , :class => "navLink" %>
 		</div>
 		<div class="leftPan logo" style="border-bottom:3px solid black">
 			<%= link_to image_tag("m1.gif", width: "120"), root_path %>
@@ -43,6 +44,9 @@
 		<div class="leftPan">
 		</div>
 		<div class="footer">
+			<div style="text-align:center;line-height:40px">
+				&copy;FC Bar United 2014
+			</div>
 		</div>
     </div>
   </body>

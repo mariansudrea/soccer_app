@@ -1,14 +1,14 @@
-<div class="rightPan gameContainer">
+<div class="rightPan scheduleContainer">
 	<div class="gameHeader">
-		<h1 style="width:610px"> 
+		<h1 style="width:900px;font-size:40px;color:white;text-align:center"> 
 			<%= @game.home_team.name %> <%= @game.home_score %> - <%= @game.away_score %> <%= @game.away_team.name %>
 		</h1>
-		<h2 style="width:610px">
-			Played on <%= @game.played_at.to_date %>
-		<h2>
-		<h2 style="width:610px">
+		<h1 style="width:900px;font-size:28px;color:white;text-align:center;margin-bottom:0">
+			<%= @game.played_at.to_date %>
+		<h1>
+		<h1 style="width:900px;font-size:28px;color:white;text-align:center">
 			OffTheWall Arena, Santa Clara
-		</h2>
+		</h1>
 	</div>
 	<div class="game">
 		<div class="scheduleBox" style="margin-left:100px">
