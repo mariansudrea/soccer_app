@@ -4,13 +4,15 @@ color:white;
 }
 .blogFrame
 {
-position:absolute;
-width:100%;
-height:146%;
+position:relative;
+float:left;
+width:700px;
+height:73em;
 background-color:black !important;
 border:3px solid black;
 margin-top:-330px;
 overflow-x:hidden;
+overflow-y:scroll;
 
 }
 .prevButton
@@ -526,11 +528,8 @@ margin-bottom:10px;
 .homeFeed
 {
 margin-left:-110px;
-color:yellow;
 text-align:left;
-min-height:800px;
 position:relative;
-background-color:black;
 float:left;
 width:700px;
 padding:25px ;
