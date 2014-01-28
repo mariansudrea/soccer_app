@@ -1,8 +1,6 @@
 <div class="rightPan mainContainer" style="padding-right:0px;width:849px">
-	<div class="homeFeed" style="padding:0;overflow:hidden">
-		<iframe class="blogFrame" width="700" height="1000" src="https://fcbarunited.wordpress.com/" frameBorder="0" seamless='seamless'>
-	</iframe>
-	</div>
+	<div class="homeHeader"> NEWS 
+	</div>	
 	<div class="widget">
 		<h4>Form</h4>
 		<div class="formItem">
@@ -36,6 +34,11 @@
 			Jan</br>23	
 		</div>
 	</div>
+
+	<div class="homeFeed" style="padding:0;overflow:hidden">
+		<iframe class="blogFrame" width="700" height="1000" src="https://fcbarunited.wordpress.com/" frameBorder="0" seamless='seamless'>
+	</iframe>
+	</div>
 	<div class="widget" style="color:black">
 		<h4>Next Game</h4>
 		<div class="nextGameDiv"> <%= @nextGame.away_team.name.upcase %> </div>
@@ -56,7 +59,7 @@
 		</div>
 		<% @goalRankings.compact.each do |x| %>
 		<div class="assistName">
-			<%= User.find(x[:id]).name %>
+	   		<%= link_to User.find(x[:id]).name, "/players/"+x[:id].to_s, title: "Player Details" %>
 		</div>
 		<div class="assistNumber">
 			<%= x[:gpg] %>
@@ -79,7 +82,7 @@
 		</div>
 		<% @assistRankings.compact.each do |x| %>
 		<div class="assistName">
-			<%= User.find(x[:id]).name %>
+	   <%= link_to User.find(x[:id]).name, "/players/"+x[:id].to_s, title: "Player Details" %>
 		</div>
 		<div class="assistNumber">
 			<%= x[:apg] %>
