@@ -1,3 +1,7 @@
+h3
+{
+color:white;
+}
 .blogFrame
 {
 position:absolute;
@@ -8,6 +12,38 @@ border:3px solid black;
 margin-top:-330px;
 overflow-x:hidden;
 
+}
+.prevButton
+{
+position:relative;
+width:50px;
+height:50px;
+font-size:32px;
+font-weight:bold;
+line-height:50px;
+float:left;
+background-color:black;
+color:white;
+border-radius:25px;
+border:1px solid white;
+cursor:pointer;
+}
+.nextButton
+{
+cursor:pointer;
+background-color:black;
+color:white;
+position:relative;
+border-radius:25px;
+font-weight:bold;
+width:50px;
+height:50px;
+padding:0;
+margin:0 0 0 600px;
+font-size:32px;
+line-height:50px;
+border:1px solid white;
+float:right;
 }
 .nextGameDiv
 {
@@ -211,14 +247,9 @@ background-repeat:no-repeat;
 text-align:center;
 padding-bottom:400px;
 }
-.playerContainer
-{
-width:800px !important;
-padding:10px 99px 400px 99px !important;
-
-}
 .mainContainer
 {
+float:left;
 padding:10px 149px 10px 149px;
 border:1px solid black;
 -webkit-box-shadow: 7px 7px 30px 0px rgba(185, 29, 47, 0.75);
@@ -227,6 +258,7 @@ box-shadow:         7px 7px 30px 0px rgba(185, 29, 47, 0.75);
 width:700px;
 overflow:hide;
 text-align:center;
+
 background: rgb(149,149,149); /* Old browsers */
 
 background: -moz-linear-gradient(left,  rgba(149,149,149,1) 0%, rgba(13,13,13,1) 46%, rgba(1,1,1,1) 50%, rgba(10,10,10,1) 53%, rgba(78,78,78,1) 76%, rgba(56,56,56,1) 87%, rgba(27,27,27,1) 100%); /* FF3.6+ */
@@ -242,6 +274,11 @@ background: -ms-linear-gradient(left,  rgba(149,149,149,1) 0%,rgba(13,13,13,1) 4
 background: linear-gradient(to right,  rgba(149,149,149,1) 0%,rgba(13,13,13,1) 46%,rgba(1,1,1,1) 50%,rgba(10,10,10,1) 53%,rgba(78,78,78,1) 76%,rgba(56,56,56,1) 87%,rgba(27,27,27,1) 100%); /* W3C */
 
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#959595', endColorstr='#1b1b1b',GradientType=1 ); /* IE6-9 */
+
+
+
+
+
 }
 .scheduleContainer
 {
@@ -352,7 +389,6 @@ box-shadow:         0px 4px 19px 0px rgba(255, 255, 255, 0.75);
 {
 position:relative;
 float:left;
-cursor:pointer;
 border-radius:25px;
 margin-bottom:2px;
 clear:left;
@@ -367,12 +403,11 @@ width:900px
 color:black;
 position:relative;
 float:left;
-cursor:pointer;
 margin-bottom:2px;
 clear:left;
 padding:5px 0 5px 0;
 text-align:center;
-width:675px;
+width:900px;
 }
 .titleBox
 {
@@ -387,6 +422,19 @@ margin-left:10px;
 margin:0 10px 20px 10px;
 line-height:20px;
 font-family:sans-serif;
+}
+.playerBox
+{
+font-size:18px;
+color:white;
+width: 150px;
+float:left;
+text-align:center;
+height:40px;
+position:relative;
+margin-right:10px;
+margin-left:10px;
+line-height:40px;
 }
 .scheduleBox
 {
@@ -451,6 +499,7 @@ margin-bottom:3px;
 }
 .teamMap
 {
+color:white;
 cursor:pointer;
 position:relative;
 margin-bottom:3px;
@@ -472,7 +521,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#008c3d3f', e
 }
 iframe
 {
-border:3px solid red;
 margin-bottom:10px;
 }
 .homeFeed

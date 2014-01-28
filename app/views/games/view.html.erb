@@ -1,14 +1,26 @@
 <div class="rightPan scheduleContainer">
 	<div class="gameHeader">
-		<h1 style="width:900px;font-size:40px;color:white;text-align:center"> 
+		<h1 style="width:900px;font-size:28px;color:white;text-align:center"> 
 			<%= @game.home_team.name %> <%= @game.home_score %> - <%= @game.away_score %> <%= @game.away_team.name %>
 		</h1>
-		<h1 style="width:900px;font-size:28px;color:white;text-align:center;margin-bottom:0">
+		<h1 style="width:900px;font-size:18px;color:white;text-align:center;margin:0;padding:0">
 			<%= @game.played_at.to_date %>
 		<h1>
-		<h1 style="width:900px;font-size:28px;color:white;text-align:center">
+		<h1 style="width:900px;font-size:18px;color:white;text-align:center;margin:0;padding:0">
 			OffTheWall Arena, Santa Clara
 		</h1>
+		<% if !(Team.find(8).matches.select { |s| s.id < @game.id }.last.nil?) then %>
+			<% b = Team.find(8).matches.sort_by { |s| s.id }.collect.select { |s| s.id < @game.id }.last.id %>
+				<div class="prevButton" title="Previous Game" onclick="window.location.href='/games/<%= b %>'">	
+					<	
+				</div>
+		<% end %>
+		<% if !(Team.find(8).matches.select { |s| s.id > @game.id }.last.nil?) then %>
+			<% c = Team.find(8).matches.sort_by { |s| s.id }.collect.select { |s| s.id > @game.id }.first.id %>
+				<div class="nextButton" title="Next Game" onclick="window.location.href='/games/<%= c %>'">	
+					>	
+				</div>
+		<% end %>
 	</div>
 	<div class="game">
 		<div class="scheduleBox" style="margin-left:100px">
@@ -24,7 +36,7 @@
 	<% @stats.each do |s| %>
 		<div class="game">
 			<div class="scheduleBox" style="margin-left:100px">
-				<%= s.user.name %>
+				<%= link_to s.user.name, "/players/"+s.user_id.to_s, title: "Player Stats" %>
 			</div>
 			<div class="scheduleBox">
 				<%= s.goals %>
