@@ -1,3 +1,19 @@
+.homeHeader
+{
+position:relative;
+float:left;
+margin-left:20px;
+width:700px;
+min-height:150px;
+background-color:#680104;
+color:white;
+border-top-left-radius:10px;
+border-top-right-radius:10px;
+border:1px solid black;
+margin-left:-110px;
+font-size:72px;
+line-height:150px;
+}
 h3
 {
 color:white;
@@ -428,7 +444,7 @@ font-family:sans-serif;
 .playerBox
 {
 font-size:18px;
-color:white;
+color:black;
 width: 150px;
 float:left;
 text-align:center;

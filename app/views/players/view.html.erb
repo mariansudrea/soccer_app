@@ -6,23 +6,24 @@
 	</h3>
 	<div class="seasonDivider" style="width:895px;float:left;clear:left;margin: 15px 0 15px 5px">
 	</div>
-	<div class="playerBox newLine">
+	<div class="playerBox newline" style="color:white">
 		Home
 	</div>
-	<div class="playerBox">
+	<div class="playerBox" style="color:white">
 	</div>
-	<div class="playerBox">
+	<div class="playerBox" style="color:white">
 		Away
 	</div>
 	<div class="playerBox" style="color:white">
 		Goals
 	</div>
-	<div class="playerBox">
+	<div class="playerBox" style="color:white">
 		Assists
 	</div>
 	</br></br>
 	<% if @player.stats.any? %>
-		<% @player.stats.each do |s| %>
+		<% @player.stats.sort_by { |b| b.game.played_at }.reverse.each do |s| %>
+		<div class="game">
 			<div class="playerBox newLine">
 				<%= s.game.home_team.name %>
 			</div>
@@ -40,6 +41,7 @@
 			<div class="playerBox">
 				<%= s.assists %>
 			</div>
+		</div>
 		<% end %>
 	<% end %>	
 
