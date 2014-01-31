@@ -1,6 +1,6 @@
 <games>
 	<% @schedule.reverse.each do |x| %>
-		<% if Time.now.getutc < x.played_at.getutc %>
+		<% if Time.now.getutc < x.played_at.getutc + 8.hours%>
 		<game>
 	        <homeTeamName><%= x.home_team.name %></homeTeamName>
 		    <homeTeamId><%= x.home_team_id %></homeTeamId>

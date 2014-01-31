@@ -1,0 +1,47 @@
+	<div id="restoreButton" onclick="restoreTeam()">\/</div>
+	<div class="playerPic">
+	</div>
+	<h3 style="position:relative;float:left;text-decoration:none;margin: -10px 0 0 30px">
+		<%= @player.name %>
+	</h3>
+	<div class="seasonDivider" style="width:895px;float:left;clear:left;margin: 15px 0 15px 5px">
+	</div>
+	<div class="playerBox newline" style="color:white">
+		Home
+	</div>
+	<div class="playerBox" style="color:white">
+	</div>
+	<div class="playerBox" style="color:white">
+		Away
+	</div>
+	<div class="playerBox" style="color:white">
+		Goals
+	</div>
+	<div class="playerBox" style="color:white">
+		Assists
+	</div>
+	</br></br>
+	<% if @player.stats.any? %>
+		<% @player.stats.sort_by { |b| b.game.played_at }.reverse.each do |s| %>
+		<div class="game">
+			<div class="playerBox newLine">
+				<%= s.game.home_team.name %>
+			</div>
+			<div class="playerBox">
+				<%= s.game.home_score %>
+					-	
+				<%= s.game.away_score %>
+			</div>
+			<div class="playerBox">
+				<%= s.game.away_team.name %>
+			</div>
+			<div class="playerBox">
+				<%= s.goals %>
+			</div>
+			<div class="playerBox">
+				<%= s.assists %>
+			</div>
+		</div>
+		<% end %>
+	<% end %>	
+
