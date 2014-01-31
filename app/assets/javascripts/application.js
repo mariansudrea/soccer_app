@@ -14,3 +14,28 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+var u,v;
+function restoreTeam(){
+	u = 207;
+	v = 260;
+	a = setInterval(function(){restoreIt()}, 3);
+}
+
+function restoreIt()
+{
+	if ( u <= 0 ) u=0;
+	else ( u = u-7);
+    if ( v <= 150 ) v=150; 
+	else v-=3;
+    b = "-"+u+"px";
+    c = "-"+v+"px";
+    $('#teamContainer').css("margin-top",b);
+    $('#bottomContainer').css("margin-top",c);
+    if ( u == 0 && v == 150)
+        {
+		clearInterval(a);
+		$("#restoreButton").css("display","none");
+		
+		}
+
+}

@@ -1,3 +1,30 @@
+#restoreButton
+{
+width:100%;
+height:20px;
+background-color:none;
+color:black;
+margin-top:-40px;
+border:1px solid black;
+cursor:pointer;
+background: rgb(204,204,204); /* Old browsers */
+
+background: -moz-linear-gradient(top,  rgba(204,204,204,1) 0%, rgba(14,14,14,1) 100%); /* FF3.6+ */
+
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(204,204,204,1)), color-stop(100%,rgba(14,14,14,1))); /* Chrome,Safari4+ */
+
+background: -webkit-linear-gradient(top,  rgba(204,204,204,1) 0%,rgba(14,14,14,1) 100%); /* Chrome10+,Safari5.1+ */
+
+background: -o-linear-gradient(top,  rgba(204,204,204,1) 0%,rgba(14,14,14,1) 100%); /* Opera 11.10+ */
+
+background: -ms-linear-gradient(top,  rgba(204,204,204,1) 0%,rgba(14,14,14,1) 100%); /* IE10+ */
+
+background: linear-gradient(to bottom,  rgba(204,204,204,1) 0%,rgba(14,14,14,1) 100%); /* W3C */
+
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cccccc', endColorstr='#0e0e0e',GradientType=0 ); /* IE6-9 */
+
+
+}
 .homeHeader
 {
 position:relative;
@@ -34,6 +61,7 @@ overflow-y:scroll;
 .prevButton
 {
 position:relative;
+text-decoration:none;
 width:50px;
 height:50px;
 font-size:32px;
@@ -48,6 +76,7 @@ cursor:pointer;
 }
 .nextButton
 {
+text-decoration:none;
 cursor:pointer;
 background-color:black;
 color:white;
@@ -306,6 +335,7 @@ border:1px solid black;
 -moz-box-shadow:    7px 7px 30px 0px rgba(185, 29, 47, 0.75);
 box-shadow:         7px 7px 30px 0px rgba(185, 29, 47, 0.75);
 width:900px;
+min-height:900px;
 overflow:hide;
 text-align:center;
 background: rgb(149,149,149); /* Old browsers */
@@ -518,6 +548,7 @@ margin-bottom:3px;
 .teamMap
 {
 color:white;
+text-decoration:none;
 cursor:pointer;
 position:relative;
 margin-bottom:3px;
@@ -536,6 +567,12 @@ background: -ms-linear-gradient(top,  rgba(140,61,63,0) 0%,rgba(140,61,63,0.9) 9
 background: linear-gradient(to bottom,  rgba(140,61,63,0) 0%,rgba(140,61,63,0.9) 90%,rgba(165,0,2,1) 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#008c3d3f', endColorstr='#a50002',GradientType=0 ); /* IE6-9 */
 
+}
+.teamMap:hover
+{
+-webkit-box-shadow: 4px 4px 30px 0px rgba(50, 50, 50, 0.75);
+-moz-box-shadow:    4px 4px 30px 0px rgba(50, 50, 50, 0.75);
+box-shadow:         4px 4px 30px 0px rgba(50, 50, 50, 0.75);
 }
 iframe
 {

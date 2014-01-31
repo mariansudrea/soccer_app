@@ -11,15 +11,17 @@
 		</h1>
 		<% if !(Team.find(8).matches.select { |s| s.id < @game.id }.last.nil?) then %>
 			<% b = Team.find(8).matches.sort_by { |s| s.id }.collect.select { |s| s.id < @game.id }.last.id %>
-				<div class="prevButton" title="Previous Game" onclick="window.location.href='/games/<%= b %>'">	
+				<!--div class="prevButton" title="Previous Game" onclick="window.location.href='/games/<%= b %>'">	
 					<	
-				</div>
+				</div-->
+				<%= link_to "<", "/games/"+b.to_s, remote: true, class: "prevButton" %>
 		<% end %>
 		<% if !(Team.find(8).matches.select { |s| s.id > @game.id }.last.nil?) then %>
 			<% c = Team.find(8).matches.sort_by { |s| s.id }.collect.select { |s| s.id > @game.id }.first.id %>
-				<div class="nextButton" title="Next Game" onclick="window.location.href='/games/<%= c %>'">	
+				<!--div class="nextButton" remote="true" title="Next Game" onclick="window.location.href='/games/<%= c %>'">	
 					>	
-				</div>
+				</div-->
+				<%= link_to ">", "/games/"+c.to_s, remote: true, class: "nextButton" %>
 		<% end %>
 	</div>
 	<div class="game">
