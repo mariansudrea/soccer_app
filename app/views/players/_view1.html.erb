@@ -15,11 +15,11 @@
 	<div style="clear:left;position:relative;width:100%">dwd
 	</div>
         <% if User.all.select { |s| s.id < @player.id }.sort { |s| s.id }.any? then %>
-            <% b = User.all.select { |s| s.id < @player.id }.sort { |s| s.id }.last.id %> 
+            <% b = User.all.select { |s| s.id < @player.id }.sort_by { |s| s.id }.last.id %> 
                 <%= link_to "<", "/players/"+b.to_s, remote: true, class: "prevButton" %>
         <% end %>
         <% if User.all.select { |s| s.id > @player.id }.sort { |s| s.id }.any? then %>
-            <% c = User.all.select { |s| s.id > @player.id }.sort { |s| s.id }.first.id %> 
+            <% c = User.all.select { |s| s.id > @player.id }.sort_by { |s| s.id }.first.id %> 
                 <%= link_to ">", "/players/"+c.to_s, remote: true, class: "nextButton" %>
         <% end %>
 
