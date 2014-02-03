@@ -19,3 +19,7 @@ function moveIt()
 		{clearInterval(a);}
 	
 }
+
+if ($('#bottomContainer').css('width') == undefined)
+	$('#mainContainer').html("<%= escape_javascript(render(:partial => '/players/view1.html.erb')) %>");
+

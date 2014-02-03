@@ -296,6 +296,7 @@ padding-bottom:400px;
 }
 .mainContainer
 {
+min-height:600px;
 float:left;
 padding:10px 149px 10px 149px;
 border:1px solid black;
