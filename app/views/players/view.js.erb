@@ -1,6 +1,5 @@
 $('#bottomContainer').html("<%= escape_javascript(render(:partial => '/players/view.html.erb')) %>");
 var x = 0;
-var y = 210;
 function scrollUp()
 {
 	if ($("#teamContainer").css("margin-top") == "0px")
@@ -9,13 +8,10 @@ function scrollUp()
 scrollUp();
 function moveIt()
 {
-	x+=7;
-	if ( y < 260 ) y+=3;
-	b = "-"+x+"px";
-	c = "-"+y+"px";
-	$('#teamContainer').css("margin-top",b);
+	x+=11;
+	c = "-"+x+"px";
 	$('#bottomContainer').css("margin-top",c);
-	if ( x >= 205 )
+	if ( x >= 600 )
 		{clearInterval(a);}
 	
 }
