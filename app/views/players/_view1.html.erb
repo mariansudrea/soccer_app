@@ -1,18 +1,16 @@
 <div class="rightPan mainContainer" style="width:900px;padding:50px">
 	<div class="playerPic">
 	</div>
-	<div style="position:relative;float:left">
-	<h3 style="position:relative;float:left;text-decoration:none;margin: -10px 0 0 30px">
-		<%= @player.name %>
-	</h3>
-	<h6 style="position:relative;float:left;text-decoration:none;margin: 10px 0 0 30px;clear:left">
-		Goals per Game : <%= @gpg %>
-	</h6>
-	<h6 style="position:relative;float:left;text-decoration:none;margin: 10px 0 0 30px;clear:left">
-		Assists per Game : <%= @apg %>
-	</h6>
-	</div>
-	<div style="clear:left;position:relative;width:100%">dwd
+	<div class="playerDetails">
+    <h3 style="position:relative;float:left;text-decoration:none;margin: 0px 0 0 30px">
+        <%= @player.name %>
+    </h3>
+    <h6 style="position:relative;float:left;text-decoration:none;margin: 10px 0 0 30px;clear:left;color:white">
+        Goals per Game : <%= @gpg %>
+    </h6>
+    <h6 style="position:relative;float:left;text-decoration:none;margin: 10px 0 0 30px;clear:left;color:white">
+        Assists per Game : <%= @apg %>
+    </h6>
 	</div>
         <% if User.all.select { |s| s.id < @player.id }.sort { |s| s.id }.any? then %>
             <% b = User.all.select { |s| s.id < @player.id }.sort_by { |s| s.id }.last.id %> 
