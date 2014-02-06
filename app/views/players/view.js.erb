@@ -1,18 +1,19 @@
 $('#bottomContainer').html("<%= escape_javascript(render(:partial => '/players/view.html.erb')) %>");
-var x = 0;
+var x = 150;
 function scrollUp()
 {
 	if ($("#teamContainer").css("margin-top") == "0px")
-		{a = setInterval(function(){moveIt()}, 4);}
+		{a = setInterval(function(){moveIt()}, 30);}
 }
 scrollUp();
 function moveIt()
 {
-	x+=11;
+	if ( x >= 580 )
+		{ x=610;
+		clearInterval(a);}
 	c = "-"+x+"px";
 	$('#bottomContainer').css("margin-top",c);
-	if ( x >= 600 )
-		{clearInterval(a);}
+	x+=50;
 	
 }
 

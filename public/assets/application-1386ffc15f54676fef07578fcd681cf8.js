@@ -10612,6 +10612,9 @@ var u,v;
 function restoreTeam(){
 	u = 207;
 	v = 260;
+	    alert('pula');
+    $('#bottomContainer').html("<h2>SELECT PLAYER</h2>");
+
 	a = setInterval(function(){restoreIt()}, 3);
 }
 
