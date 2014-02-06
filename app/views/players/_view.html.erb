@@ -1,6 +1,18 @@
 	<div id="restoreButton" onclick="restoreTeam()">\/</div>
 	<div class="playerPic">
 	</div>
+    <div class="playerDetails">
+    <h3 style="position:relative;float:left;text-decoration:none;margin: 0px 0 0 30px">
+        <%= @player.name %>
+    </h3>
+    <h6 style="position:relative;float:left;text-decoration:none;margin: 10px 0 0 30px;clear:left;color:white">
+        Goals per Game : <%= @gpg %>
+    </h6>
+    <h6 style="position:relative;float:left;text-decoration:none;margin: 10px 0 0 30px;clear:left;color:white">
+        Assists per Game : <%= @apg %>
+    </h6>
+    </div>
+
 	<h3 style="position:relative;float:left;text-decoration:none;margin: -10px 0 0 30px">
 		<%= @player.name %>
 	</h3>
