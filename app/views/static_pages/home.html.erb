@@ -3,14 +3,11 @@
 	</div>	
 	<div class="widget">
 		<h4>Form</h4>
-		<%= link_to "L", "/games/419", :class => "formItem loss" %>
 		<%= link_to "W", "/games/420", :class => "formItem" %>
 		<%= link_to "W", "/games/422", :class => "formItem" %>
 		<%= link_to "L", "/games/423", :class => "formItem loss" %>
 		<%= link_to "W", "/games/425", :class => "formItem" %>
-		<div class="formItemSmall loss">
-			Jan</br>16	
-		</div>
+		<%= link_to "L", "/games/426", :class => "formItem loss" %>
 		<div class="formItemSmall">
 			Jan</br>16	
 		</div>
@@ -23,12 +20,16 @@
 		<div class="formItemSmall">
 			Feb</br>13	
 		</div>
+		<div class="formItemSmall loss">
+			Feb</br>20	
+		</div>
 	</div>
 
 	<div class="homeFeed" style="padding:0;overflow:hidden">
 		<iframe class="blogFrame" width="700" height="1000" src="https://fcbarunited.wordpress.com/" frameBorder="0" seamless='seamless'>
 	</iframe>
 	</div>
+<% if !(@nextGame.nil?) %>
 	<div class="widget" style="color:black">
 		<h4>Next Game</h4>
 		<div class="nextGameDiv"> <%= @nextGame.away_team.name.upcase %> </div>
@@ -36,6 +37,14 @@
 		<div class="nextGameDiv"> <%= @nextGame.home_team.name.upcase %> </div>
 		<div class="nextGameDiv"> <%= @nextGame.played_at.strftime("%a, %b %d %H:%M") %> </div>
 	</div>
+<% else %>
+	<div class="widget" style="color:black">
+		<h4>Next Game</h4>
+		<div class="nextGameDiv"> </div>
+		<div class="nextGameDiv"> SCHEDULE PENDING </div>
+	</div>
+
+<% end %>
 	<div class="widget">
 		<h4>Goals</h4>
 		<div class="assistName">
