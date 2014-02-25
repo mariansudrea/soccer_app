@@ -4,7 +4,7 @@ include ActionView::Helpers::NumberHelper
 	@team = Team.find(8)
 	@schedule = Team.find(8).matches.first(5).collect.sort_by { |c| c.played_at }.reverse
 	@nextGame = Game.where("played_at >= :start_date AND (away_team_id = '8' OR home_team_id = '8')",{start_date: Time.now-8.hours}).first
-	@season = Game.where("played_at >= :start_date",{start_date: DateTime.new(2013,12,15)})
+	@season = Game.where("played_at >= :start_date",{start_date: DateTime.new(2014,02,26)})
 	@a = Array.new
 	@season.each do |game|
 	  if game.home_score
