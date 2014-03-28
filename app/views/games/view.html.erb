@@ -1,12 +1,12 @@
 <div class="rightPan scheduleContainer">
 	<div class="gameHeader">
-		<h1 style="width:900px;font-size:28px;color:white;text-align:center"> 
+		<h1 style="width:900px;font-size:28px;color:black;text-align:center"> 
 			<%= @game.home_team.name %> <%= @game.home_score %> - <%= @game.away_score %> <%= @game.away_team.name %>
 		</h1>
-		<h1 style="width:900px;font-size:18px;color:white;text-align:center;margin:0;padding:0">
+		<h1 style="width:900px;font-size:18px;color:black;text-align:center;margin:0;padding:0">
 			<%= @game.played_at.to_date %>
 		<h1>
-		<h1 style="width:900px;font-size:18px;color:white;text-align:center;margin:0;padding:0">
+		<h1 style="width:900px;font-size:18px;color:black;text-align:center;margin:0;padding:0">
 			OffTheWall Arena, Santa Clara
 		</h1>
 		<% if !(Team.find(8).matches.select { |s| s.id < @game.id }.last.nil?) then %>
