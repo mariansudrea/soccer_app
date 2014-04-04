@@ -49,7 +49,7 @@ include ActionView::Helpers::NumberHelper
 		f=(x[:goals].to_f/x[:gp]).round(2)
 		x[:gpg] = number_with_precision(f, :precision => 2)
 	end
-	@goalRankings = @goalRankings.compact.sort_by { |x| [x[:gpg],x[:goals]] }.reverse
+	@goalRankings = @goalRankings.compact.sort_by { |x| [x[:goals],x[:gpg]] }.reverse
 
 	@assistRankings = Array.new()
 	Stat.all.collect.each do |s|
@@ -62,7 +62,7 @@ include ActionView::Helpers::NumberHelper
 		f=(x[:assists].to_f/x[:gp]).round(2)
 		x[:apg] = number_with_precision(f, :precision => 2)
 	end
-	@assistRankings = @assistRankings.compact.sort_by { |x| [x[:apg],x[:assists],-(User.find(x[:id]).id)] }.reverse
+	@assistRankings = @assistRankings.compact.sort_by { |x| [x[:assists],x[:apg],-(User.find(x[:id]).id)] }.reverse
 
 
 
