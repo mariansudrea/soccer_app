@@ -257,6 +257,11 @@ color:green !important;
 {
 color:red !important;
 }
+.tie
+{
+color:blue !important;
+
+}
 .teamContainer
 {
 min-height:500px;
