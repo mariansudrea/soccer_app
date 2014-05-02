@@ -17,6 +17,10 @@
 						<%=	"win" %>
 						<% elsif a.away_team.id == 8 && a.home_score < a.away_score %>
 						<%=	"win" %>
+						<% elsif a.away_team.id == 8 && a.home_score == a.away_score %>
+						<%= "tie" %>
+						<% elsif a.home_team.id == 8 && a.home_score == a.away_score %>
+						<%= "tie" %>
 						<% else %>
 						<%= "loss" %>
 						<% end %>">
