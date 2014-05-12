@@ -35,6 +35,7 @@
 		<div class="nextGameDiv"> vs </div>
 		<div class="nextGameDiv"> <%= @nextGame.home_team.name.upcase %> </div>
 		<div class="nextGameDiv"> <%= @nextGame.played_at.strftime("%a, %b %d %H:%M") %> </div>
+		<div class="nextGameDiv"> Field <%= @nextGame.field %> </div>
 	</div>
 <% else %>
 	<div class="widget" style="color:black">
