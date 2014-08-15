@@ -13,10 +13,11 @@
 development:
   adapter: postgresql
   encoding: utf8
-  database: postgres
+  database: postgres 
   pool: 5
   username: postgres
   password: m111111
+  host: /tmp
 test:
   adapter: postgresql
   encoding: utf8
