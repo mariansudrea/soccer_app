@@ -17,6 +17,7 @@ development:
   pool: 5
   username: postgres
   password: m111111
+  port: 5433
   host: /tmp
 test:
   adapter: postgresql
