@@ -1,0 +1,100 @@
+<players>
+	<player>
+    	<name>Brian T</name>
+    	<playerId>1</playerId>
+    	<position>G</position>
+    	<number>1</number>
+    	<country>US</country>
+	</player>
+	<player>
+    	<name>Marian U</name>
+    	<playerId>2</playerId>
+    	<position>D</position>
+    	<number>2</number>
+    	<country>RO</country>
+	</player>
+	<player>
+    	<name>Sani O</name>
+    	<playerId>3</playerId>
+    	<position>D</position>
+    	<number>3</number>
+    	<country>BA</country>
+	</player>
+	<player>
+    	<name>Asmir A</name>
+    	<playerId>4</playerId>
+    	<position>D</position>
+    	<number>4</number>
+    	<country>BA</country>
+	</player>
+	<player>
+    	<name>Mirza S</name>
+    	<playerId>14</playerId>
+    	<position>D</position>
+    	<number>14</number>
+    	<country>BA</country>
+	</player>
+	<player>
+    	<name>Salmir M</name>
+    	<playerId>5</playerId>
+    	<position>D</position>
+    	<number>5</number>
+    	<country>BA</country>
+	</player>
+	<player>
+    	<name>Brian M</name>
+    	<playerId>6</playerId>
+    	<position>M</position>
+    	<number>6</number>
+    	<country>US</country>
+	</player>
+	<player>
+    	<name>Paul B</name>
+    	<playerId>7</playerId>
+    	<position>M</position>
+    	<number>7</number>
+    	<country>US</country>
+	</player>
+	<player>
+    	<name>Asmir P</name>
+    	<playerId>8</playerId>
+    	<position>M</position>
+    	<number>8</number>
+    	<country>BA</country>
+	</player>
+	<player>
+    	<name>Alin O</name>
+    	<playerId>9</playerId>
+    	<position>M</position>
+    	<number>9</number>
+    	<country>BA</country>
+	</player>
+	<player>
+    	<name>Omar M</name>
+    	<playerId>10</playerId>
+    	<position>F</position>
+    	<number>10</number>
+    	<country>BA</country>
+	</player>
+	<player>
+    	<name>Nihad H</name>
+    	<playerId>11</playerId>
+    	<position>F</position>
+    	<number>11</number>
+    	<country>BA</country>
+	</player>
+	<player>
+    	<name>Turker S</name>
+    	<playerId>12</playerId>
+    	<position>F</position>
+    	<number>12</number>
+    	<country>DE</country>
+	</player>
+	<player>
+    	<name>Sanel S</name>
+    	<playerId>13</playerId>
+    	<position>F</position>
+    	<number>13</number>
+    	<country>BA</country>
+	</player>
+</players>

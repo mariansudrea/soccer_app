@@ -1,0 +1,217 @@
+0000000000000000000000000000000000000000 72a255518cca52e0ee74249e90caffe1bc955f9d smenarru <smenarru@smenarru-lenovo.(none)> 1387579742 -0800	commit (initial): ok-third-try
+72a255518cca52e0ee74249e90caffe1bc955f9d 72a255518cca52e0ee74249e90caffe1bc955f9d smenarru <smenarru@smenarru-lenovo.(none)> 1387580169 -0800	checkout: moving from master to messing-around
+72a255518cca52e0ee74249e90caffe1bc955f9d fbe530bee898fe7b6b4ccf636bc33aa556dcc342 smenarru <smenarru@smenarru-lenovo.(none)> 1387580368 -0800	commit: fourth-try
+fbe530bee898fe7b6b4ccf636bc33aa556dcc342 72a255518cca52e0ee74249e90caffe1bc955f9d smenarru <smenarru@smenarru-lenovo.(none)> 1387580417 -0800	checkout: moving from messing-around to master
+72a255518cca52e0ee74249e90caffe1bc955f9d fbe530bee898fe7b6b4ccf636bc33aa556dcc342 smenarru <smenarru@smenarru-lenovo.(none)> 1387580422 -0800	merge messing-around: Fast-forward
+fbe530bee898fe7b6b4ccf636bc33aa556dcc342 377624eb070e745c97b355f9a357044b142031ad smenarru <smenarru@smenarru-lenovo.(none)> 1388709301 -0800	commit: added github remote
+377624eb070e745c97b355f9a357044b142031ad fbe530bee898fe7b6b4ccf636bc33aa556dcc342 smenarru <smenarru@smenarru-lenovo.(none)> 1388709339 -0800	checkout: moving from master to messing-around
+fbe530bee898fe7b6b4ccf636bc33aa556dcc342 22e98f9860843a4d61b85a2dfab33da7bf092bb4 smenarru <smenarru@smenarru-lenovo.(none)> 1388709488 -0800	commit: bulshit
+22e98f9860843a4d61b85a2dfab33da7bf092bb4 377624eb070e745c97b355f9a357044b142031ad smenarru <smenarru@smenarru-lenovo.(none)> 1388709493 -0800	checkout: moving from messing-around to master
+377624eb070e745c97b355f9a357044b142031ad 8046c2e5df4a945fd07b78bb050d38f009dd7e34 smenarru <smenarru@smenarru-lenovo.(none)> 1388709590 -0800	commit: updated readme
+8046c2e5df4a945fd07b78bb050d38f009dd7e34 004d0b088cc1b99c2fa8f6295083dc147c741e5a smenarru <smenarru@smenarru-lenovo.(none)> 1388709678 -0800	commit: updated readme
+004d0b088cc1b99c2fa8f6295083dc147c741e5a 004d0b088cc1b99c2fa8f6295083dc147c741e5a smenarru <smenarru@smenarru-lenovo.(none)> 1388710260 -0800	checkout: moving from master to basic_models
+004d0b088cc1b99c2fa8f6295083dc147c741e5a 6aa91746ce80d60d31fde477a6df5fa4e279fdfb smenarru <smenarru@smenarru-lenovo.(none)> 1388797420 -0800	commit: preliminary models done
+6aa91746ce80d60d31fde477a6df5fa4e279fdfb 004d0b088cc1b99c2fa8f6295083dc147c741e5a smenarru <smenarru@smenarru-lenovo.(none)> 1388797427 -0800	checkout: moving from basic_models to master
+004d0b088cc1b99c2fa8f6295083dc147c741e5a 6aa91746ce80d60d31fde477a6df5fa4e279fdfb smenarru <smenarru@smenarru-lenovo.(none)> 1388797436 -0800	merge basic_models: Fast-forward
+6aa91746ce80d60d31fde477a6df5fa4e279fdfb 6aa91746ce80d60d31fde477a6df5fa4e279fdfb smenarru <smenarru@smenarru-lenovo.(none)> 1388868909 -0800	checkout: moving from master to view_controller_design
+6aa91746ce80d60d31fde477a6df5fa4e279fdfb 6aa91746ce80d60d31fde477a6df5fa4e279fdfb smenarru <smenarru@smenarru-lenovo.(none)> 1388868929 -0800	checkout: moving from view_controller_design to master
+6aa91746ce80d60d31fde477a6df5fa4e279fdfb 3050ee38693a089d3d7fdbe9256f0b1048f9d83b smenarru <smenarru@smenarru-lenovo.(none)> 1388869875 -0800	commit: ok_starting view and logic controller
+3050ee38693a089d3d7fdbe9256f0b1048f9d83b 3050ee38693a089d3d7fdbe9256f0b1048f9d83b smenarru <smenarru@smenarru-lenovo.(none)> 1388869896 -0800	checkout: moving from master to view_controller_design
+3050ee38693a089d3d7fdbe9256f0b1048f9d83b 5074b455f005a1c9693de453d3d144827185fb68 smenarru <smenarru@gmail.com> 1388988678 -0800	commit: first layout
+5074b455f005a1c9693de453d3d144827185fb68 3050ee38693a089d3d7fdbe9256f0b1048f9d83b smenarru <smenarru@gmail.com> 1388988684 -0800	checkout: moving from view_controller_design to master
+3050ee38693a089d3d7fdbe9256f0b1048f9d83b 5074b455f005a1c9693de453d3d144827185fb68 smenarru <smenarru@gmail.com> 1388988698 -0800	merge view_controller_design: Fast-forward
+5074b455f005a1c9693de453d3d144827185fb68 5074b455f005a1c9693de453d3d144827185fb68 smenarru <smenarru@gmail.com> 1389039689 -0800	checkout: moving from master to postgres_local
+5074b455f005a1c9693de453d3d144827185fb68 5074b455f005a1c9693de453d3d144827185fb68 smenarru <smenarru@gmail.com> 1389039719 -0800	checkout: moving from postgres_local to master
+5074b455f005a1c9693de453d3d144827185fb68 5074b455f005a1c9693de453d3d144827185fb68 smenarru <smenarru@gmail.com> 1389039781 -0800	checkout: moving from master to postgres_local
+5074b455f005a1c9693de453d3d144827185fb68 8e61e8240bfd7d02f131c7c12f16a3a58b6de588 smenarru <smenarru@gmail.com> 1389136313 -0800	commit: switch to postgresql + data import done
+8e61e8240bfd7d02f131c7c12f16a3a58b6de588 5074b455f005a1c9693de453d3d144827185fb68 smenarru <smenarru@gmail.com> 1389136346 -0800	checkout: moving from postgres_local to master
+5074b455f005a1c9693de453d3d144827185fb68 8e61e8240bfd7d02f131c7c12f16a3a58b6de588 smenarru <smenarru@gmail.com> 1389136353 -0800	merge postgres_local: Fast-forward
+8e61e8240bfd7d02f131c7c12f16a3a58b6de588 8e61e8240bfd7d02f131c7c12f16a3a58b6de588 smenarru <smenarru@gmail.com> 1389138050 -0800	checkout: moving from master to improve_design_logic
+8e61e8240bfd7d02f131c7c12f16a3a58b6de588 893047444efaa0362cd133d8309f8d8e21046a2e smenarru <smenarru@gmail.com> 1389339686 -0800	commit: preliminary design. back to db
+893047444efaa0362cd133d8309f8d8e21046a2e 8e61e8240bfd7d02f131c7c12f16a3a58b6de588 smenarru <smenarru@gmail.com> 1389339701 -0800	checkout: moving from improve_design_logic to master
+8e61e8240bfd7d02f131c7c12f16a3a58b6de588 893047444efaa0362cd133d8309f8d8e21046a2e smenarru <smenarru@gmail.com> 1389339707 -0800	merge improve_design_logic: Fast-forward
+893047444efaa0362cd133d8309f8d8e21046a2e 893047444efaa0362cd133d8309f8d8e21046a2e smenarru <smenarru@gmail.com> 1389339792 -0800	checkout: moving from master to database_uploaders
+893047444efaa0362cd133d8309f8d8e21046a2e a68f8ed3caf59f2b913364d2d593e6c1fde9d60f smenarru <smenarru@gmail.com> 1389564547 -0800	commit: initial release attempt
+a68f8ed3caf59f2b913364d2d593e6c1fde9d60f 893047444efaa0362cd133d8309f8d8e21046a2e smenarru <smenarru@gmail.com> 1389564557 -0800	checkout: moving from database_uploaders to master
+893047444efaa0362cd133d8309f8d8e21046a2e a68f8ed3caf59f2b913364d2d593e6c1fde9d60f smenarru <smenarru@gmail.com> 1389564561 -0800	merge database_uploaders: Fast-forward
+a68f8ed3caf59f2b913364d2d593e6c1fde9d60f dfbf1fd82b2fcc9eeb7203ddff27b33b988fd74d smenarru <smenarru@gmail.com> 1389565084 -0800	commit: Small adjustments for heroku
+dfbf1fd82b2fcc9eeb7203ddff27b33b988fd74d 928d1b050a4584e41d54b3955136cc37d667c734 smenarru <smenarru@gmail.com> 1389582666 -0800	commit: 1
+928d1b050a4584e41d54b3955136cc37d667c734 d6b70ede89f5b04c68cedf5538eeff3bd7dae1eb smenarru <smenarru@gmail.com> 1389582987 -0800	commit: 2
+d6b70ede89f5b04c68cedf5538eeff3bd7dae1eb 9e1d7694e453379c53fdc9cf17c6ee5f37c01805 smenarru <smenarru@gmail.com> 1389583125 -0800	commit: 3
+9e1d7694e453379c53fdc9cf17c6ee5f37c01805 8c0532c574c9651b77267e7812c535087c68757b smenarru <smenarru@gmail.com> 1389583206 -0800	commit: 3
+8c0532c574c9651b77267e7812c535087c68757b 83f86bf6fa6c65ff97c0f1a6a94a93ae0e161be4 smenarru <smenarru@gmail.com> 1389583589 -0800	commit: 3
+83f86bf6fa6c65ff97c0f1a6a94a93ae0e161be4 9c31da744185724b7bbe9c10bc67a2d09c569f4f smenarru <smenarru@gmail.com> 1389583618 -0800	commit: 3
+9c31da744185724b7bbe9c10bc67a2d09c569f4f fb50a03354f4eb70145f0609740eda0cd963781f smenarru <smenarru@gmail.com> 1389584110 -0800	commit: 5
+fb50a03354f4eb70145f0609740eda0cd963781f cf6e3ee2f67c9128cf6ce20f011811463d4424c2 smenarru <smenarru@gmail.com> 1389585136 -0800	commit: 6
+cf6e3ee2f67c9128cf6ce20f011811463d4424c2 c54cdab3c6f07e2cc68434c2283ffd78041927fc smenarru <smenarru@gmail.com> 1389585268 -0800	commit: 6
+c54cdab3c6f07e2cc68434c2283ffd78041927fc bdbfd670eaf844cc42c88c3c8daaab09069f449e smenarru <smenarru@gmail.com> 1389585505 -0800	commit: damit
+bdbfd670eaf844cc42c88c3c8daaab09069f449e f92f3842a464b134e2de424ca9fca78d38cd5112 smenarru <smenarru@gmail.com> 1389585802 -0800	commit: fudge
+f92f3842a464b134e2de424ca9fca78d38cd5112 bffe639e744d5b0c7efba9ce01be641737d1b98e smenarru <smenarru@gmail.com> 1389586302 -0800	commit: ...
+bffe639e744d5b0c7efba9ce01be641737d1b98e 17f546760901a1f776ff3cf143efa5a8776f1437 smenarru <smenarru@gmail.com> 1389586461 -0800	commit: ...
+17f546760901a1f776ff3cf143efa5a8776f1437 812c62e9f0740ff073f5d3bca96213c1383963c9 smenarru <smenarru@gmail.com> 1389586708 -0800	commit: ...
+812c62e9f0740ff073f5d3bca96213c1383963c9 d9180dfb8c2a0adcb45f670442ac54c5e7f42da8 smenarru <smenarru@gmail.com> 1389586960 -0800	commit: ...
+d9180dfb8c2a0adcb45f670442ac54c5e7f42da8 e5cd02977fb42c9cedc7842eb876ded47c436d7c smenarru <smenarru@gmail.com> 1389587322 -0800	commit: ...
+e5cd02977fb42c9cedc7842eb876ded47c436d7c 72d3eec6e7159c890152f9022356a70be015e92b smenarru <smenarru@gmail.com> 1389588162 -0800	commit: ...
+72d3eec6e7159c890152f9022356a70be015e92b 08a70e94c43b724f69d849c97572515b61ae0d19 smenarru <smenarru@gmail.com> 1389588929 -0800	commit: mof
+08a70e94c43b724f69d849c97572515b61ae0d19 381af6817543aca643ba45bd4f01eafe88f5023b smenarru <smenarru@gmail.com> 1389589584 -0800	commit: donemaybe
+381af6817543aca643ba45bd4f01eafe88f5023b 7addc1040431176b8e1ddbcc9ae1cad16970fa24 smenarru <smenarru@gmail.com> 1389589806 -0800	commit: ggege
+7addc1040431176b8e1ddbcc9ae1cad16970fa24 609d4629b1116cbf9f329d0eea42462da5518680 smenarru <smenarru@gmail.com> 1389591273 -0800	commit: finally working
+609d4629b1116cbf9f329d0eea42462da5518680 d56f407d349403b61649f46d47484d23e2f1b4a1 smenarru <smenarru@gmail.com> 1389591609 -0800	commit: finally working
+d56f407d349403b61649f46d47484d23e2f1b4a1 2e1945c96d78d2698301b9da1e4ff5a9174df2e5 smenarru <smenarru@gmail.com> 1389649350 -0800	commit: minor update
+2e1945c96d78d2698301b9da1e4ff5a9174df2e5 a5b6efe4f211a8f6e3ab7ae826f349a112d79b76 smenarru <smenarru@gmail.com> 1389660870 -0800	commit: layout improved
+a5b6efe4f211a8f6e3ab7ae826f349a112d79b76 bd10afc87c7b65d59b872dd9b9e0471c867265e6 smenarru <smenarru@gmail.com> 1389661028 -0800	commit: layout improved
+bd10afc87c7b65d59b872dd9b9e0471c867265e6 debc1877b66063c3e25a6e4f3add5b81e70dd916 smenarru <smenarru@gmail.com> 1389664330 -0800	commit: even better layout
+debc1877b66063c3e25a6e4f3add5b81e70dd916 a419d145049e08e415881b0532bdd95d468f0f59 smenarru <smenarru@gmail.com> 1389744148 -0800	commit: added xml response to schedule
+a419d145049e08e415881b0532bdd95d468f0f59 e317c993188a35b92e57d94b3183bea32c6951a1 smenarru <smenarru@gmail.com> 1389824356 -0800	commit: better xml
+e317c993188a35b92e57d94b3183bea32c6951a1 69bd0bd19ba65f7c190f6e128c3a20207f6d7eb7 smenarru <smenarru@gmail.com> 1389895202 -0800	commit: added_google_analytics
+69bd0bd19ba65f7c190f6e128c3a20207f6d7eb7 69bd0bd19ba65f7c190f6e128c3a20207f6d7eb7 smenarru <smenarru@gmail.com> 1389901669 -0800	checkout: moving from master to second_design_improve
+69bd0bd19ba65f7c190f6e128c3a20207f6d7eb7 2c2b8411137bc40c505e869ddbc6c5a6d38c0487 smenarru <smenarru@gmail.com> 1390006248 -0800	commit: design and xml improve
+2c2b8411137bc40c505e869ddbc6c5a6d38c0487 69bd0bd19ba65f7c190f6e128c3a20207f6d7eb7 smenarru <smenarru@gmail.com> 1390006267 -0800	checkout: moving from second_design_improve to master
+69bd0bd19ba65f7c190f6e128c3a20207f6d7eb7 2c2b8411137bc40c505e869ddbc6c5a6d38c0487 smenarru <smenarru@gmail.com> 1390006293 -0800	merge second_design_improve: Fast-forward
+2c2b8411137bc40c505e869ddbc6c5a6d38c0487 5ad920d130e4b23bffbdb5c3ce4562ee1b9e1021 smenarru <smenarru@gmail.com> 1390009325 -0800	commit: design and xml improve
+5ad920d130e4b23bffbdb5c3ce4562ee1b9e1021 fd829454d5f36f682f41c4c0455d2c3cf095b795 smenarru <smenarru@gmail.com> 1390009449 -0800	commit: design and xml improve
+fd829454d5f36f682f41c4c0455d2c3cf095b795 fd829454d5f36f682f41c4c0455d2c3cf095b795 smenarru <smenarru@gmail.com> 1390010677 -0800	checkout: moving from master to home_page_improvements
+fd829454d5f36f682f41c4c0455d2c3cf095b795 c643dcfe9bb3460e134bdec7908f704a15deb0fd smenarru <smenarru@gmail.com> 1390269030 -0800	commit: homepage_and_roster_xml
+c643dcfe9bb3460e134bdec7908f704a15deb0fd fd829454d5f36f682f41c4c0455d2c3cf095b795 smenarru <smenarru@gmail.com> 1390269047 -0800	checkout: moving from home_page_improvements to master
+fd829454d5f36f682f41c4c0455d2c3cf095b795 c643dcfe9bb3460e134bdec7908f704a15deb0fd smenarru <smenarru@gmail.com> 1390269050 -0800	merge home_page_improvements: Fast-forward
+c643dcfe9bb3460e134bdec7908f704a15deb0fd 05c7aac04bb74902bf2c5cbedd242e79549b8d8c smenarru <smenarru@gmail.com> 1390371326 -0800	commit: first_official_release_attempt
+05c7aac04bb74902bf2c5cbedd242e79549b8d8c 14271774913e2b145c17afe461dd5cc4d10ec69d smenarru <smenarru@gmail.com> 1390444967 -0800	commit: schedule_xml_reverse
+14271774913e2b145c17afe461dd5cc4d10ec69d 4dbf825c00fdb3df9374dec1089db4abc27e20e7 smenarru <smenarru@gmail.com> 1390542082 -0800	commit: first_release_with_feed
+4dbf825c00fdb3df9374dec1089db4abc27e20e7 825f54fabf25988c6bd3eba9b480cc1b608c8004 smenarru <smenarru@gmail.com> 1390544620 -0800	commit: first_release_with_feed
+825f54fabf25988c6bd3eba9b480cc1b608c8004 b1c51744160c63702bc2901230f6488af3abc057 smenarru <smenarru@gmail.com> 1390596506 -0800	commit: first_release_with_feed
+b1c51744160c63702bc2901230f6488af3abc057 b1c51744160c63702bc2901230f6488af3abc057 smenarru <smenarru@gmail.com> 1390598422 -0800	checkout: moving from master to better_links_and_views
+b1c51744160c63702bc2901230f6488af3abc057 ec0abcda67e226a44df3799d5d6125064c7c3ef1 smenarru <smenarru@gmail.com> 1390769929 -0800	commit: first_clean_design
+ec0abcda67e226a44df3799d5d6125064c7c3ef1 b1c51744160c63702bc2901230f6488af3abc057 smenarru <smenarru@gmail.com> 1390770040 -0800	checkout: moving from better_links_and_views to master
+b1c51744160c63702bc2901230f6488af3abc057 ec0abcda67e226a44df3799d5d6125064c7c3ef1 smenarru <smenarru@gmail.com> 1390770046 -0800	merge better_links_and_views: Fast-forward
+ec0abcda67e226a44df3799d5d6125064c7c3ef1 70f087bde4a1a3e33e165844dd3087b1bc83bdc8 smenarru <smenarru@gmail.com> 1390770194 -0800	commit: first_clean_design
+70f087bde4a1a3e33e165844dd3087b1bc83bdc8 748b19a28b81e49beee284ac67b8bb1df750774b smenarru <smenarru@gmail.com> 1390877930 -0800	commit: design_v2
+748b19a28b81e49beee284ac67b8bb1df750774b f805602d1bf5ee0144de31b6d47e498dfbc52878 smenarru <smenarru@gmail.com> 1390878035 -0800	commit: design_v2
+f805602d1bf5ee0144de31b6d47e498dfbc52878 5e862f6ec19f17cb1a8d51c6aa4c066ea53f57e1 smenarru <smenarru@gmail.com> 1390878483 -0800	commit: design_v2
+5e862f6ec19f17cb1a8d51c6aa4c066ea53f57e1 950e03c561fb7b917566c2b71351d46318455fdd smenarru <smenarru@gmail.com> 1390879984 -0800	commit: design_v2
+950e03c561fb7b917566c2b71351d46318455fdd c50344d78c0732b41f6ac7a35a52abfec3dfffcb smenarru <smenarru@gmail.com> 1390880276 -0800	commit: design_v2
+c50344d78c0732b41f6ac7a35a52abfec3dfffcb 896b019dddf31b7a083e3b054cb86bb8c0624608 smenarru <smenarru@gmail.com> 1390880839 -0800	commit: design_v2
+896b019dddf31b7a083e3b054cb86bb8c0624608 61fdb3211619a46bf3d98a3f7fb6c8baa9c70be4 smenarru <smenarru@gmail.com> 1390881350 -0800	commit: design_v2
+61fdb3211619a46bf3d98a3f7fb6c8baa9c70be4 f8279200c206fe30ae12304d10b4ac4bab36484d smenarru <smenarru@gmail.com> 1390881482 -0800	commit: design_v2
+f8279200c206fe30ae12304d10b4ac4bab36484d fc61d1fb55b8bdfb8ef4f3281774f56e1bf35ae8 smenarru <smenarru@gmail.com> 1390882199 -0800	commit: design_v2
+fc61d1fb55b8bdfb8ef4f3281774f56e1bf35ae8 23e09bcb896b7e8d84a9ececcb17d37617d2d9ec smenarru <smenarru@gmail.com> 1390882957 -0800	commit: design_v2
+23e09bcb896b7e8d84a9ececcb17d37617d2d9ec 18b71a6ab53d2c8e4aab683f2c3592ae36ff44ab smenarru <smenarru@gmail.com> 1390890649 -0800	commit: design v3
+18b71a6ab53d2c8e4aab683f2c3592ae36ff44ab aa61e192d574c104669389f28c625736a2c7bf2a smenarru <smenarru@gmail.com> 1390891222 -0800	commit: design v3
+aa61e192d574c104669389f28c625736a2c7bf2a 0d44905832c8bd57eeba8201e38b53b8ead1aa2e smenarru <smenarru@gmail.com> 1390892220 -0800	commit: design v3
+0d44905832c8bd57eeba8201e38b53b8ead1aa2e 0d44905832c8bd57eeba8201e38b53b8ead1aa2e smenarru <smenarru@gmail.com> 1391025269 -0800	checkout: moving from master to first_ajax_response_games
+0d44905832c8bd57eeba8201e38b53b8ead1aa2e 49fee3c2b67f0f849b16405cb3e0c0e626ab010a smenarru <smenarru@gmail.com> 1391132289 -0800	commit: first_ajax_complete
+49fee3c2b67f0f849b16405cb3e0c0e626ab010a 0d44905832c8bd57eeba8201e38b53b8ead1aa2e smenarru <smenarru@gmail.com> 1391132301 -0800	checkout: moving from first_ajax_response_games to master
+0d44905832c8bd57eeba8201e38b53b8ead1aa2e 49fee3c2b67f0f849b16405cb3e0c0e626ab010a smenarru <smenarru@gmail.com> 1391132306 -0800	merge first_ajax_response_games: Fast-forward
+49fee3c2b67f0f849b16405cb3e0c0e626ab010a f8b25254c86e038ae4885c223ceb288a65fe6133 smenarru <smenarru@gmail.com> 1391132461 -0800	commit: first_ajax_complete
+f8b25254c86e038ae4885c223ceb288a65fe6133 b3c4bf04550e7360bb3c503249fd8806aba033b8 smenarru <smenarru@gmail.com> 1391132867 -0800	commit: first_ajax_complete
+b3c4bf04550e7360bb3c503249fd8806aba033b8 49fee3c2b67f0f849b16405cb3e0c0e626ab010a smenarru <smenarru@gmail.com> 1391133093 -0800	checkout: moving from master to first_ajax_response_games
+49fee3c2b67f0f849b16405cb3e0c0e626ab010a b3c4bf04550e7360bb3c503249fd8806aba033b8 smenarru <smenarru@gmail.com> 1391133114 -0800	checkout: moving from first_ajax_response_games to master
+b3c4bf04550e7360bb3c503249fd8806aba033b8 49fee3c2b67f0f849b16405cb3e0c0e626ab010a smenarru <smenarru@gmail.com> 1391133142 -0800	checkout: moving from master to first_ajax_response_games
+49fee3c2b67f0f849b16405cb3e0c0e626ab010a b3c4bf04550e7360bb3c503249fd8806aba033b8 smenarru <smenarru@gmail.com> 1391133226 -0800	checkout: moving from first_ajax_response_games to master
+b3c4bf04550e7360bb3c503249fd8806aba033b8 49fee3c2b67f0f849b16405cb3e0c0e626ab010a smenarru <smenarru@gmail.com> 1391133296 -0800	checkout: moving from master to first_ajax_response_games
+49fee3c2b67f0f849b16405cb3e0c0e626ab010a b3c4bf04550e7360bb3c503249fd8806aba033b8 smenarru <smenarru@gmail.com> 1391133310 -0800	checkout: moving from first_ajax_response_games to master
+b3c4bf04550e7360bb3c503249fd8806aba033b8 7567b1032022d38ab4a3935bc269a79e09b1fbc4 smenarru <smenarru@gmail.com> 1391133424 -0800	commit: first_ajax_complete
+7567b1032022d38ab4a3935bc269a79e09b1fbc4 050d9c564199c179254b8a8775ca5ffd4ccc0beb smenarru <smenarru@gmail.com> 1391154199 -0800	commit: score_update
+050d9c564199c179254b8a8775ca5ffd4ccc0beb dd72c9e02607f00c2701eff8459b2109cf0e7a18 smenarru <smenarru@gmail.com> 1391157123 -0800	commit: score_update
+dd72c9e02607f00c2701eff8459b2109cf0e7a18 d05d8e029d740de3d4f1fc71250083503d472d16 smenarru <smenarru@gmail.com> 1391157210 -0800	commit: score_update
+d05d8e029d740de3d4f1fc71250083503d472d16 6cc6c7947f4292b580add53c3c1e0c3e67384428 smenarru <smenarru@gmail.com> 1391158202 -0800	commit: score_update
+6cc6c7947f4292b580add53c3c1e0c3e67384428 5d9104eab13a3212f7851982cee801d85b49d9a1 smenarru <smenarru@gmail.com> 1391210138 -0800	commit: score_update
+5d9104eab13a3212f7851982cee801d85b49d9a1 6ba61f544441e91d9689914ff7e00ed7c96e91bd smenarru <smenarru@gmail.com> 1391411230 -0800	commit: player_nav
+6ba61f544441e91d9689914ff7e00ed7c96e91bd 6da140098f63284b4fa4e0b6395d8942353876a1 smenarru <smenarru@gmail.com> 1391542885 -0800	commit: player_view_nav
+6da140098f63284b4fa4e0b6395d8942353876a1 6da140098f63284b4fa4e0b6395d8942353876a1 smenarru <smenarru@gmail.com> 1391556691 -0800	checkout: moving from master to colors_experiment
+6da140098f63284b4fa4e0b6395d8942353876a1 704d6c35d7f0057b8360fc4afab1e80982fab740 smenarru <smenarru@gmail.com> 1391728263 -0800	commit: design_v4
+704d6c35d7f0057b8360fc4afab1e80982fab740 6da140098f63284b4fa4e0b6395d8942353876a1 smenarru <smenarru@gmail.com> 1391728270 -0800	checkout: moving from colors_experiment to master
+6da140098f63284b4fa4e0b6395d8942353876a1 704d6c35d7f0057b8360fc4afab1e80982fab740 smenarru <smenarru@gmail.com> 1391728277 -0800	merge colors_experiment: Fast-forward
+704d6c35d7f0057b8360fc4afab1e80982fab740 3133d692798a4a7036470b22dfa4a15e527fd371 smenarru <smenarru@gmail.com> 1391728505 -0800	commit: design_v4
+3133d692798a4a7036470b22dfa4a15e527fd371 a221b88bba4de64dd976d9f8bc9a9ddeacd0c627 smenarru <smenarru@gmail.com> 1391728656 -0800	commit: design_v4
+a221b88bba4de64dd976d9f8bc9a9ddeacd0c627 c2590ca299418ad1ad428c708cc69f6c1eeb7465 smenarru <smenarru@gmail.com> 1391729046 -0800	commit: design_v4
+c2590ca299418ad1ad428c708cc69f6c1eeb7465 47a871cc5dbda7e90497e0b6c026cd75d374f2c0 smenarru <smenarru@gmail.com> 1391729446 -0800	commit: design_v4
+47a871cc5dbda7e90497e0b6c026cd75d374f2c0 00e3f73c0fed7b5fc75ab8e2c9418de45acfeadd smenarru <smenarru@gmail.com> 1392367808 -0800	commit: wins_update_home_feb_13
+00e3f73c0fed7b5fc75ab8e2c9418de45acfeadd 53832b7cfc3eb746bd97b585e561b2e873d3cafe smenarru <smenarru@gmail.com> 1392367893 -0800	commit: wins_update_home_feb_13
+53832b7cfc3eb746bd97b585e561b2e873d3cafe f1a9b0ca9770059f19688d6a113cdc0888eacfe8 smenarru <smenarru@gmail.com> 1392769945 -0800	commit: bcrypt_gem_added
+f1a9b0ca9770059f19688d6a113cdc0888eacfe8 f1a9b0ca9770059f19688d6a113cdc0888eacfe8 smenarru <smenarru@gmail.com> 1392769958 -0800	checkout: moving from master to first_authentication
+f1a9b0ca9770059f19688d6a113cdc0888eacfe8 f1a9b0ca9770059f19688d6a113cdc0888eacfe8 smenarru <smenarru@gmail.com> 1392971768 -0800	checkout: moving from first_authentication to master
+f1a9b0ca9770059f19688d6a113cdc0888eacfe8 f1a9b0ca9770059f19688d6a113cdc0888eacfe8 smenarru <smenarru@gmail.com> 1393021338 -0800	checkout: moving from master to first_authentication
+f1a9b0ca9770059f19688d6a113cdc0888eacfe8 f1a9b0ca9770059f19688d6a113cdc0888eacfe8 smenarru <smenarru@gmail.com> 1393021355 -0800	checkout: moving from first_authentication to master
+f1a9b0ca9770059f19688d6a113cdc0888eacfe8 f1a9b0ca9770059f19688d6a113cdc0888eacfe8 smenarru <smenarru@gmail.com> 1393022005 -0800	checkout: moving from master to f1a9b0ca9770059f19688d6a113cdc0888eacfe8
+f1a9b0ca9770059f19688d6a113cdc0888eacfe8 15cdbddb4b6b90952d2c79cccac7ec15a54cd0d6 smenarru <smenarru@gmail.com> 1393022051 -0800	commit: screwed_up
+15cdbddb4b6b90952d2c79cccac7ec15a54cd0d6 f1a9b0ca9770059f19688d6a113cdc0888eacfe8 smenarru <smenarru@gmail.com> 1393022237 -0800	checkout: moving from 15cdbddb4b6b90952d2c79cccac7ec15a54cd0d6 to master
+f1a9b0ca9770059f19688d6a113cdc0888eacfe8 53832b7cfc3eb746bd97b585e561b2e873d3cafe smenarru <smenarru@gmail.com> 1393022654 -0800	reset: moving to 53832b7cfc3eb746bd97b585e561b2e873d3cafe
+53832b7cfc3eb746bd97b585e561b2e873d3cafe 6b590a6127520d4812a161ce6a382bbb6bd19fd2 smenarru <smenarru@gmail.com> 1393025453 -0800	commit: season_closer_updates
+6b590a6127520d4812a161ce6a382bbb6bd19fd2 579b0c1a427f40527d35d7924f2e1523d2efbed5 smenarru <smenarru@gmail.com> 1393307457 -0800	commit: new_season_edits
+579b0c1a427f40527d35d7924f2e1523d2efbed5 426a158851aefa95c6956f8e587276274ff675d7 smenarru <smenarru@gmail.com> 1393576408 -0800	commit: first_game_2nd
+426a158851aefa95c6956f8e587276274ff675d7 e1302f2fc3751f2471599f0f0ac0bbafe5855001 smenarru <smenarru@gmail.com> 1393576549 -0800	commit: first_game_2nd
+e1302f2fc3751f2471599f0f0ac0bbafe5855001 9afc6bc99b59ab02a2cf3cb50f61981b21df52a6 smenarru <smenarru@gmail.com> 1393999245 -0800	commit: injury_updates
+9afc6bc99b59ab02a2cf3cb50f61981b21df52a6 9afc6bc99b59ab02a2cf3cb50f61981b21df52a6 smenarru <smenarru@gmail.com> 1394055294 -0800	checkout: moving from master to login_setup_march_5
+9afc6bc99b59ab02a2cf3cb50f61981b21df52a6 9afc6bc99b59ab02a2cf3cb50f61981b21df52a6 smenarru <smenarru@gmail.com> 1394144011 -0800	checkout: moving from login_setup_march_5 to master
+9afc6bc99b59ab02a2cf3cb50f61981b21df52a6 c7c632420a13c1576d597ef18c8c4be115eb7f55 smenarru <smenarru@gmail.com> 1394146267 -0800	commit: injury_updates
+c7c632420a13c1576d597ef18c8c4be115eb7f55 71e013ac3e8dc12f20cd21fb17f431887d54695d smenarru <smenarru@gmail.com> 1394162715 -0800	commit: pula
+71e013ac3e8dc12f20cd21fb17f431887d54695d eab33704e7829cc5b0c34488daa668e077f44500 smenarru <smenarru@gmail.com> 1394820817 -0700	commit: score_update_mar_13
+eab33704e7829cc5b0c34488daa668e077f44500 ea71501bdbff2b8422b1a5eb07c559fbd9263440 smenarru <smenarru@gmail.com> 1395375220 -0700	commit: score_update_mar_20
+ea71501bdbff2b8422b1a5eb07c559fbd9263440 31fd5cd38f0bac212c154b1651612a9ad3ba282d smenarru <smenarru@gmail.com> 1395386388 -0700	commit: score_update_mar_20
+31fd5cd38f0bac212c154b1651612a9ad3ba282d 96b1f0b35f047a34993798e3f8ee09ba7b0c7986 smenarru <smenarru@gmail.com> 1395704069 -0700	commit: css_updates
+96b1f0b35f047a34993798e3f8ee09ba7b0c7986 e44665bc8d39ca97fe07ade33e5ecdcac919bc39 smenarru <smenarru@gmail.com> 1395704506 -0700	commit: css_updates
+e44665bc8d39ca97fe07ade33e5ecdcac919bc39 4fba3c7380a31af54016989abe7ba1b98b7a105c smenarru <smenarru@gmail.com> 1395704973 -0700	commit: css_updates
+4fba3c7380a31af54016989abe7ba1b98b7a105c de83a99074ad24d133616567d04b3e92efb0e3b2 smenarru <smenarru@gmail.com> 1395705136 -0700	commit: css_updates
+de83a99074ad24d133616567d04b3e92efb0e3b2 4d65ee17458e7d459dbe850d1720579425f4c94b smenarru <smenarru@gmail.com> 1395996902 -0700	commit: mar_27_score_update
+4d65ee17458e7d459dbe850d1720579425f4c94b 9579d2e1b14ff729222b729b9e106a70ded20012 smenarru <smenarru@gmail.com> 1395997118 -0700	commit: mar_27_score_update
+9579d2e1b14ff729222b729b9e106a70ded20012 fc7dab4ecec12577bd2df7afa0eb550b15cefe35 smenarru <smenarru@gmail.com> 1396593005 -0700	commit: apr_3_score_update_and_bug_fix
+fc7dab4ecec12577bd2df7afa0eb550b15cefe35 a29b8579357e8b46c4db697c230746da13660f02 smenarru <smenarru@gmail.com> 1397454039 -0700	commit: game_apr_10
+a29b8579357e8b46c4db697c230746da13660f02 3995c7ddc18263e78911c1e227b52510bf6b08e1 smenarru <smenarru@gmail.com> 1397840564 -0700	commit: apr18_score_update
+3995c7ddc18263e78911c1e227b52510bf6b08e1 0b43b81a40c5c647de36f4b9108eccf7220875ed smenarru <smenarru@gmail.com> 1398410930 -0700	commit: new_season_apr_25
+0b43b81a40c5c647de36f4b9108eccf7220875ed 42673e57bd985df1eff1cb69c0aa29293a30fb28 smenarru <smenarru@gmail.com> 1398411323 -0700	commit: new_season_apr_25
+42673e57bd985df1eff1cb69c0aa29293a30fb28 964c78b281e14f0e477e2320455e32c2652ba9cb smenarru <smenarru@gmail.com> 1398411616 -0700	commit: new_season_apr_25
+964c78b281e14f0e477e2320455e32c2652ba9cb 36765014ed2b9e47ca0a2e8b15d38b0df0923f8c smenarru <smenarru@gmail.com> 1398411699 -0700	commit: new_season_apr_25
+36765014ed2b9e47ca0a2e8b15d38b0df0923f8c 9b8d4d34ebc6e958e796a96ecfe0c019b7b7c123 smenarru <smenarru@gmail.com> 1398468676 -0700	commit: new_season_apr_25
+9b8d4d34ebc6e958e796a96ecfe0c019b7b7c123 4494fbc52ee7ca1fec62d9c38359812166d57bdf smenarru <smenarru@gmail.com> 1398470607 -0700	commit: new_season_apr_25
+4494fbc52ee7ca1fec62d9c38359812166d57bdf d55b83975239c1228d770b72e065ae3da04f78be smenarru <smenarru@gmail.com> 1398797373 -0700	commit: iframe_change_apr_29
+d55b83975239c1228d770b72e065ae3da04f78be 0263672d87f6619c203edbfae868dd9b56baec33 smenarru <smenarru@gmail.com> 1399007587 -0700	commit: may_1_tie_and_score
+0263672d87f6619c203edbfae868dd9b56baec33 2b2078c0a753fdad251a59382f4dca78e5d7d25a smenarru <smenarru@gmail.com> 1399007636 -0700	commit: may_1_tie_and_score
+2b2078c0a753fdad251a59382f4dca78e5d7d25a 8a2e77ac5d3a89eaf3b3f82c93fcc4cde5a11d7d smenarru <smenarru@gmail.com> 1399007736 -0700	commit: may_1_tie_and_score
+8a2e77ac5d3a89eaf3b3f82c93fcc4cde5a11d7d 640647239a1f3c61f0767e34c3888c9c305c311a smenarru <smenarru@gmail.com> 1399012700 -0700	commit: may_1_tie_and_score
+640647239a1f3c61f0767e34c3888c9c305c311a 640647239a1f3c61f0767e34c3888c9c305c311a smenarru <smenarru@gmail.com> 1399518876 -0700	checkout: moving from master to _version_2_0_beta
+640647239a1f3c61f0767e34c3888c9c305c311a 640647239a1f3c61f0767e34c3888c9c305c311a smenarru <smenarru@gmail.com> 1399518891 -0700	checkout: moving from _version_2_0_beta to master
+640647239a1f3c61f0767e34c3888c9c305c311a 640647239a1f3c61f0767e34c3888c9c305c311a smenarru <smenarru@gmail.com> 1399518944 -0700	checkout: moving from master to _version_2_0_beta
+640647239a1f3c61f0767e34c3888c9c305c311a 640647239a1f3c61f0767e34c3888c9c305c311a smenarru <smenarru@gmail.com> 1399650072 -0700	checkout: moving from _version_2_0_beta to master
+640647239a1f3c61f0767e34c3888c9c305c311a d45521775c346f3f52d6ddc0c0265c1b3f40d2aa smenarru <smenarru@gmail.com> 1399650138 -0700	commit: score_update_may_8
+d45521775c346f3f52d6ddc0c0265c1b3f40d2aa 640647239a1f3c61f0767e34c3888c9c305c311a smenarru <smenarru@gmail.com> 1399873098 -0700	checkout: moving from master to _version_2_0_beta
+640647239a1f3c61f0767e34c3888c9c305c311a d45521775c346f3f52d6ddc0c0265c1b3f40d2aa smenarru <smenarru@gmail.com> 1399873205 -0700	checkout: moving from _version_2_0_beta to master
+d45521775c346f3f52d6ddc0c0265c1b3f40d2aa 31b49b50b790652bf5d79a955efe82b0f8df6ca8 smenarru <smenarru@gmail.com> 1399873348 -0700	revert: Revert "score_update_may_8"
+31b49b50b790652bf5d79a955efe82b0f8df6ca8 d45521775c346f3f52d6ddc0c0265c1b3f40d2aa smenarru <smenarru@gmail.com> 1399873377 -0700	checkout: moving from master to d45521775c346f3f52d6ddc0c0265c1b3f40d2aa
+d45521775c346f3f52d6ddc0c0265c1b3f40d2aa 4872abb02854fbd416e9724928c0e06375dfcf48 smenarru <smenarru@gmail.com> 1399873550 -0700	commit: stash_issues_may_11
+4872abb02854fbd416e9724928c0e06375dfcf48 31b49b50b790652bf5d79a955efe82b0f8df6ca8 smenarru <smenarru@gmail.com> 1399873655 -0700	checkout: moving from 4872abb02854fbd416e9724928c0e06375dfcf48 to master
+31b49b50b790652bf5d79a955efe82b0f8df6ca8 40c0cee815611613f70be0c636e58dc9a6182fc9 smenarru <smenarru@gmail.com> 1399874168 -0700	commit: fixed_stylesheet_may_11
+40c0cee815611613f70be0c636e58dc9a6182fc9 6863590b6bf7fe8eed163ccac8c37fc57a40de93 smenarru <smenarru@gmail.com> 1399874263 -0700	commit: fixed_stylesheet_may_11
+6863590b6bf7fe8eed163ccac8c37fc57a40de93 6c8a5aa2c0072e0915f1cd6988b9e6265ec18c37 smenarru <smenarru@gmail.com> 1399874477 -0700	commit: fixed_stylesheet_may_11
+6c8a5aa2c0072e0915f1cd6988b9e6265ec18c37 4c28f21ac79302640a25c0a564267f710bc26f63 smenarru <smenarru@gmail.com> 1399874757 -0700	commit: fixed_stylesheet_may_11
+4c28f21ac79302640a25c0a564267f710bc26f63 9105f0bb7c891cd0824c0a8ee3be348436a6ba7e smenarru <smenarru@gmail.com> 1400083922 -0700	commit: fixed_stylesheet_may_13
+9105f0bb7c891cd0824c0a8ee3be348436a6ba7e 94dff6c56217059a52e863c201d355200dc03ea6 smenarru <smenarru@gmail.com> 1400084006 -0700	commit: fixed_stylesheet_may_13
+94dff6c56217059a52e863c201d355200dc03ea6 accc4748deda2f80d82febcbee23ce20883ae6ff smenarru <smenarru@gmail.com> 1400209927 -0700	commit: may_15_score_update
+accc4748deda2f80d82febcbee23ce20883ae6ff c8407d332d8ab68c33259bb75b4ca14f5106718e smenarru <smenarru@gmail.com> 1400209987 -0700	commit: may_15_score_update
+c8407d332d8ab68c33259bb75b4ca14f5106718e 044e125019539106412057adeedcf8d5d8600c19 smenarru <smenarru@gmail.com> 1400219127 -0700	commit: may_15_score_update
+044e125019539106412057adeedcf8d5d8600c19 21f4d014f2ba03a7bcff53197baba4c8e45f28ab smenarru <smenarru@gmail.com> 1400254617 -0700	commit: injuries_and_roster_update_may_16
+21f4d014f2ba03a7bcff53197baba4c8e45f28ab 0c931b248ebf4e21e6596aae5b1be257a6784e4e smenarru <smenarru@gmail.com> 1401639097 -0700	commit: score_update_may_30
+0c931b248ebf4e21e6596aae5b1be257a6784e4e a86d1d48a3bc551485931df76c647e1e88f96264 smenarru <smenarru@gmail.com> 1401641407 -0700	commit: score_update_may_30
+a86d1d48a3bc551485931df76c647e1e88f96264 640647239a1f3c61f0767e34c3888c9c305c311a smenarru <smenarru@gmail.com> 1401650763 -0700	checkout: moving from master to _version_2_0_beta
+640647239a1f3c61f0767e34c3888c9c305c311a a86d1d48a3bc551485931df76c647e1e88f96264 smenarru <smenarru@gmail.com> 1401650914 -0700	checkout: moving from _version_2_0_beta to master
+a86d1d48a3bc551485931df76c647e1e88f96264 640647239a1f3c61f0767e34c3888c9c305c311a smenarru <smenarru@gmail.com> 1401650951 -0700	checkout: moving from master to _version_2_0_beta
+640647239a1f3c61f0767e34c3888c9c305c311a a86d1d48a3bc551485931df76c647e1e88f96264 smenarru <smenarru@gmail.com> 1401650954 -0700	checkout: moving from _version_2_0_beta to master
+a86d1d48a3bc551485931df76c647e1e88f96264 640647239a1f3c61f0767e34c3888c9c305c311a smenarru <smenarru@gmail.com> 1401650960 -0700	checkout: moving from master to _version_2_0_beta
+640647239a1f3c61f0767e34c3888c9c305c311a a86d1d48a3bc551485931df76c647e1e88f96264 smenarru <smenarru@gmail.com> 1401651099 -0700	checkout: moving from _version_2_0_beta to master
+a86d1d48a3bc551485931df76c647e1e88f96264 a86d1d48a3bc551485931df76c647e1e88f96264 smenarru <smenarru@gmail.com> 1401651171 -0700	checkout: moving from master to _ver_2_0_beta
+a86d1d48a3bc551485931df76c647e1e88f96264 a86d1d48a3bc551485931df76c647e1e88f96264 smenarru <smenarru@gmail.com> 1401651680 -0700	checkout: moving from _ver_2_0_beta to master
+a86d1d48a3bc551485931df76c647e1e88f96264 a86d1d48a3bc551485931df76c647e1e88f96264 smenarru <smenarru@gmail.com> 1401652309 -0700	checkout: moving from master to _ver_2_0_beta
+a86d1d48a3bc551485931df76c647e1e88f96264 e3a6e0730f26a2d738dcb45287f16e951ccc6051 smenarru <smenarru@gmail.com> 1402045667 -0700	commit: june_5_update
+e3a6e0730f26a2d738dcb45287f16e951ccc6051 a86d1d48a3bc551485931df76c647e1e88f96264 smenarru <smenarru@gmail.com> 1402045707 -0700	checkout: moving from _ver_2_0_beta to master
+a86d1d48a3bc551485931df76c647e1e88f96264 e3a6e0730f26a2d738dcb45287f16e951ccc6051 smenarru <smenarru@gmail.com> 1402045712 -0700	merge _ver_2_0_beta: Fast-forward
+e3a6e0730f26a2d738dcb45287f16e951ccc6051 787b07d087655629a59c7123dc98d3e1ea70e282 smenarru <smenarru@gmail.com> 1402639056 -0700	commit: jun_12_score_update
+787b07d087655629a59c7123dc98d3e1ea70e282 bf22e680da2073d303cf705bc7cd20a33e278c66 smenarru <smenarru@gmail.com> 1402645737 -0700	commit: jun_12_score_update
+bf22e680da2073d303cf705bc7cd20a33e278c66 ad130a48cb1413370b0fd72f5eb6fcb0dcad735b smenarru <smenarru@gmail.com> 1408090389 -0700	commit: back_to_playing
+ad130a48cb1413370b0fd72f5eb6fcb0dcad735b d23705c9127a2d0d64444ba681e27f5f97456fa6 smenarru <smenarru@gmail.com> 1408091152 -0700	commit: back_to_playing
+d23705c9127a2d0d64444ba681e27f5f97456fa6 6ab3b6ee1d6bc64748d459ad1fc6fc1880e91ddb smenarru <smenarru@gmail.com> 1408094247 -0700	commit: back_to_playing
+6ab3b6ee1d6bc64748d459ad1fc6fc1880e91ddb 48a6fc815b429c10ddcb7bb8e8cb1f49064dc759 smenarru <smenarru@gmail.com> 1408681520 -0700	commit: aug_21_score
+48a6fc815b429c10ddcb7bb8e8cb1f49064dc759 01d701b360d78c1c673aa75aa662807ff4e358a0 smenarru <smenarru@gmail.com> 1408681639 -0700	commit: aug_21_score
+01d701b360d78c1c673aa75aa662807ff4e358a0 84ae54505e2232327004bfd66bfff82511f5eb51 smenarru <smenarru@gmail.com> 1409375587 -0700	commit: score_aug_28_2014
+84ae54505e2232327004bfd66bfff82511f5eb51 373efcb4e59938f7716b494e92f1ce67035ebb6c smenarru <smenarru@gmail.com> 1409895673 -0700	commit: score_sep_4_14
+373efcb4e59938f7716b494e92f1ce67035ebb6c 4d6a0820dd5f980f5aa68a4720eba7e516fe84a5 smenarru <smenarru@gmail.com> 1409897502 -0700	commit: score_sep_4_14
+4d6a0820dd5f980f5aa68a4720eba7e516fe84a5 ea7284b2434b17b6bfcccf1fa716aa7131964d58 smenarru <smenarru@gmail.com> 1410636398 -0700	commit: sep_11_2014_score_update
+ea7284b2434b17b6bfcccf1fa716aa7131964d58 817798ab28fc7f165ac68d86b948df0c2dd80c80 smenarru <smenarru@gmail.com> 1411148405 -0700	commit: sep_19_score_and_roster_update
