@@ -13,12 +13,12 @@
 development:
   adapter: postgresql
   encoding: utf8
-  database: postgres 
+  database: mydb 
   pool: 5
   username: postgres
   password: m111111
-  port: 5433
-  host: /tmp
+  port: 5432
+#  host: /tmp
 test:
   adapter: postgresql
   encoding: utf8
