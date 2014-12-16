@@ -30,6 +30,7 @@ background: -webkit-linear-gradient(left,  rgba(198,129,130,1) 0%,rgba(204,204,2
 background: -o-linear-gradient(left,  rgba(198,129,130,1) 0%,rgba(204,204,204,1) 50%,rgba(191,112,114,1) 100%); /* Opera 11.10+ */
 background: -ms-linear-gradient(left,  rgba(198,129,130,1) 0%,rgba(204,204,204,1) 50%,rgba(191,112,114,1) 100%); /* IE10+ */
 background: linear-gradient(to right,  rgba(198,129,130,1) 0%,rgba(204,204,204,1) 50%,rgba(191,112,114,1) 100%); /* W3C */
+background-color:black;
 }
 .seasonDivider
 {

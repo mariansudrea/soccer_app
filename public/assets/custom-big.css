@@ -10,6 +10,17 @@ height:115px;
 margin-bottom:20px;
 border-radius:5px;
 }
+.rankingsEntry
+{
+color: black
+}
+.rankingsEntry:hover
+{
+color:grey;
+mouse:pointer;
+}
+a
+{color:inherit}
 #restoreButton
 {
 width:100%;
@@ -110,15 +121,17 @@ width:100%;
 text-align:center;
 height:30px;
 line-height:30px;
-font-weight:bold;
+font-weight:normal;
 border-bottom:1px solid black;
 }
 .assistName
 {
-width:130px;
-color:black;
+width:90px;
+margin-left:10px;
+color:inherit;
 position:relative;
 float:left;
+text-align:left;
 height:20px;
 line-height:20px;
 font-size:12px;
@@ -127,7 +140,7 @@ font-size:12px;
 .assistNumber
 {
 width:30px;
-color:black;
+color:inherit;
 position:relative;
 float:left;
 height:20px;
@@ -391,9 +404,9 @@ vertical-align:middle;
 {
 border:1px solid black;
 color:#680104;
--webkit-box-shadow: 0px 4px 19px 0px rgba(255, 255, 255, 0.75);
--moz-box-shadow:    0px 4px 19px 0px rgba(255, 255, 255, 0.75);
-box-shadow:         0px 4px 19px 0px rgba(255, 255, 255, 0.75);
+-webkit-box-shadow: 0px 0px 5px 0px rgba(255, 0, 0, 0.99);
+-moz-box-shadow:    0px 0px 5px 0px rgba(255, 0, 0, 0.99);
+box-shadow:         0px 0px 5px 0px rgba(255, 0, 0, 0.99);
 }
 .game
 {
@@ -604,7 +617,9 @@ border-radius:6px;
 }
 .formItem:hover
 {
-background-color:black;
+-webkit-box-shadow: 0px 0px 5px 0px rgba(255, 0, 0, 0.99);
+-moz-box-shadow:    0px 0px 5px 0px rgba(255, 0, 0, 0.99);
+box-shadow:         0px 0px 5px 0px rgba(255, 0, 0, 0.99);
 }
 
 .formItemSmall
@@ -613,6 +628,7 @@ position:relative;
 float:left;
 margin-left:6px;
 margin-top:3px;
+color:white;
 width:30px;
 text-align:center;
 height:40px;
@@ -624,8 +640,13 @@ background-color:green;
 border:1px solid black;
 border-radius:6px;
 }
+.formItemSmall:hover
+{
+-webkit-box-shadow: 0px 0px 5px 0px rgba(255, 0, 0, 0.99);
+-moz-box-shadow:    0px 0px 5px 0px rgba(255, 0, 0, 0.99);
+box-shadow:         0px 0px 5px 0px rgba(255, 0, 0, 0.99);
 
-
+}
 .homeMain
 {
 width:998px;
