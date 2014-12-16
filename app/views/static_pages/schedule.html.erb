@@ -6,9 +6,13 @@
 		%>
 
 		<% @schedule.each do |a| %>
-				<% if @seasonEnd.include?(a.played_at.to_date) %>
+
+				<% if @seasonEnd.include?(a.played_at.to_date) && params[:id].nil? %>
 					<div class="seasonDivider"></div>
 				<% end %>
+
+			<% if (a.home_team.id.to_s == params[:id].to_s || a.away_team.id.to_s == params[:id].to_s || params[:id].nil?) %>
+
 			<div class="game" title="Game Details" style="cursor:pointer" onclick="window.location.href='/games/<%= a.id %>'">
 					<div class="scheduleBox newLine"><b> <%= a.home_team.name %> </b></div>
 				<% if a.home_score %>
@@ -41,6 +45,7 @@
 					<%= a.played_at.to_date %> 
 				</b></div>
 			</div>
+			<% end %>
 		<% end %>
 	</div>
 </div>
