@@ -84,7 +84,7 @@ float:left;
 width:700px;
 height:73em;
 background-color:black !important;
-border:3px solid black;
+border:0px solid black;
 margin-top:-330px;
 overflow-x:hidden;
 overflow-y:scroll;
@@ -503,6 +503,10 @@ text-align:center;
 text-align:center;
 font-weight:bold;
 text-decoration:underline;
+}
+.score:hover
+{
+background-color:#D9DBDD;
 }
 .teamPadding
 {
