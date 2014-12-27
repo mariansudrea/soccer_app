@@ -1,0 +1,725 @@
+html:img
+{opacity:0.05
+}
+.playerDetails
+{
+padding-top:20px;
+position:relative;
+float:left;
+background-color:black;
+margin-left:30px;
+width:760px;
+height:115px;
+margin-bottom:20px;
+border-radius:5px;
+}
+.rankingsEntry
+{
+color: black
+}
+.rankingsEntry:hover
+{
+color:grey;
+mouse:pointer;
+}
+a
+{color:inherit}
+#restoreButton
+{
+width:100%;
+height:20px;
+background-color:none;
+color:black;
+margin-top:-40px;
+border:1px solid black;
+cursor:pointer;
+background: rgb(204,204,204); /* Old browsers */
+
+background: -moz-linear-gradient(top,  rgba(204,204,204,1) 0%, rgba(14,14,14,1) 100%); /* FF3.6+ */
+
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(204,204,204,1)), color-stop(100%,rgba(14,14,14,1))); /* Chrome,Safari4+ */
+
+background: -webkit-linear-gradient(top,  rgba(204,204,204,1) 0%,rgba(14,14,14,1) 100%); /* Chrome10+,Safari5.1+ */
+
+background: -o-linear-gradient(top,  rgba(204,204,204,1) 0%,rgba(14,14,14,1) 100%); /* Opera 11.10+ */
+
+background: -ms-linear-gradient(top,  rgba(204,204,204,1) 0%,rgba(14,14,14,1) 100%); /* IE10+ */
+
+background: linear-gradient(to bottom,  rgba(204,204,204,1) 0%,rgba(14,14,14,1) 100%); /* W3C */
+
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cccccc', endColorstr='#0e0e0e',GradientType=0 ); /* IE6-9 */
+
+
+}
+.scheduleHeader
+{
+background-color:white;
+font-size:31px;
+text-decoration:underline;
+}
+.homeHeader
+{
+position:relative;
+float:left;
+margin-left:20px;
+width:700px;
+min-height:150px;
+background-color:#680104;
+color:white;
+border-top-left-radius:10px;
+border-top-right-radius:10px;
+border:1px solid black;
+margin-left:-110px;
+font-size:72px;
+line-height:150px;
+}
+h3
+{
+color:white;
+}
+.blogFrame
+{
+position:relative;
+float:left;
+width:700px;
+height:73em;
+background-color:black !important;
+border:0px solid black;
+margin-top:-330px;
+overflow-x:hidden;
+overflow-y:scroll;
+
+}
+.prevButton
+{
+position:relative;
+text-decoration:none;
+width:50px;
+height:50px;
+font-size:32px;
+font-weight:bold;
+line-height:50px;
+float:left;
+background-color:black;
+color:white;
+border-radius:25px;
+border:1px solid white;
+cursor:pointer;
+}
+.nextButton
+{
+text-decoration:none;
+cursor:pointer;
+background-color:black;
+color:white;
+position:relative;
+border-radius:25px;
+font-weight:bold;
+width:50px;
+height:50px;
+padding:0;
+margin:0 0 0 600px;
+font-size:32px;
+line-height:50px;
+border:1px solid white;
+float:right;
+}
+.nextGameDiv
+{
+width:100%;
+text-align:center;
+height:30px;
+line-height:30px;
+font-weight:normal;
+border-bottom:1px solid black;
+}
+.assistName
+{
+width:90px;
+margin-left:10px;
+color:inherit;
+position:relative;
+float:left;
+text-align:left;
+height:20px;
+line-height:20px;
+font-size:12px;
+
+}
+.assistNumber
+{
+width:30px;
+color:inherit;
+position:relative;
+float:left;
+height:20px;
+line-height:20px;
+font-size:12px;
+
+}
+.standingsName
+{
+clear:left;
+color:black;
+font-weight:normal;
+position:relative;
+float:left;
+width:305px;
+border:1px solid black;
+border-left:none;
+margin-left:15px;
+height:25px;
+}
+.standingsNumberPts
+{
+border:1px solid black;
+border-right:none;
+background-color:blue;
+background: rgb(235,241,246); /* Old browsers */
+
+background: -moz-linear-gradient(top,  rgba(235,241,246,1) 0%, rgba(171,211,238,1) 72%, rgba(137,195,235,1) 90%, rgba(213,235,251,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(235,241,246,1)), color-stop(72%,rgba(171,211,238,1)), color-stop(90%,rgba(137,195,235,1)), color-stop(100%,rgba(213,235,251,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(235,241,246,1) 0%,rgba(171,211,238,1) 72%,rgba(137,195,235,1) 90%,rgba(213,235,251,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(235,241,246,1) 0%,rgba(171,211,238,1) 72%,rgba(137,195,235,1) 90%,rgba(213,235,251,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(235,241,246,1) 0%,rgba(171,211,238,1) 72%,rgba(137,195,235,1) 90%,rgba(213,235,251,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(235,241,246,1) 0%,rgba(171,211,238,1) 72%,rgba(137,195,235,1) 90%,rgba(213,235,251,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebf1f6', endColorstr='#d5ebfb',GradientType=0 ); /* IE6-9 */
+
+}
+.standingsNumber
+{
+color:black;
+position:relative;
+float:left;
+width:71px;
+height:25px;
+border-bottom:1px solid black;
+border-top:1px solid black;
+
+}
+.headerFont
+{
+text-align:left;
+font-size:32px;
+line-height:200px;
+margin-left:40px;
+color:black;
+font-family: 'Diplomata SC', cursive;
+}
+.container
+{
+position:relative;
+width:1300px;
+margin-left:auto;
+margin-right:auto;
+}
+.playerPic
+{
+width:100px;
+height:130px;
+background-color:pink;
+border: 1px solid black;
+position:relative;
+float:left;
+border-radius:5px;
+}
+.flagSmall
+{
+height:12px;
+line-height:6px;
+margin-top:-4px;
+background-color:white;
+vertical-align:middle;
+}
+.controls
+{
+padding:0;
+height:39px;
+vertical-align:middle;
+min-width:998px;
+background-color:transparent;
+border-bottom:1px solid black;
+
+
+
+}
+.first
+{
+margin-left:100px;
+}
+body
+{
+text-align:center;
+width:100%;
+min-width:1300px;
+margin:0;
+padding:0;
+background:url('bar_logo_notext1.png');
+background-size:20%;
+opacity:0.8;
+
+
+
+}
+.seasonDivider
+{
+width:900px;
+height:4px;
+background-color:black;
+float:left;
+position:relative;
+margin-bottom:5px;
+margin-top:5px;
+}
+.win
+{
+color:green !important;
+}
+.loss
+{
+color:red !important;
+}
+.tie
+{
+color:blue !important;
+
+}
+.teamContainer
+{
+min-height:500px;
+width:998px;
+position:relative;
+background:url("field.png");
+background-size:cover;
+border:1px solid black;
+}
+.gameContainer
+{
+width:820px;
+overflow:hide;
+padding-left:180px;
+background:url('newspaper.jpeg');
+background-size:100% 100%;
+background-repeat:no-repeat;
+text-align:center;
+padding-bottom:400px;
+}
+.mainContainer
+{
+min-height:600px;
+float:left;
+padding:10px 149px 10px 149px;
+border:1px solid black;
+-webkit-box-shadow: 7px 7px 30px 0px rgba(185, 29, 47, 0.75);
+-moz-box-shadow:    7px 7px 30px 0px rgba(185, 29, 47, 0.75);
+box-shadow:         7px 7px 30px 0px rgba(185, 29, 47, 0.75);
+width:700px;
+overflow:hide;
+text-align:center;
+background-color:white;
+
+
+
+
+
+
+}
+.scheduleContainer
+{
+padding:10px 49px 10px 49px;
+border:1px solid black;
+-webkit-box-shadow: 7px 7px 30px 0px rgba(185, 29, 47, 0.75);
+-moz-box-shadow:    7px 7px 30px 0px rgba(185, 29, 47, 0.75);
+box-shadow:         7px 7px 30px 0px rgba(185, 29, 47, 0.75);
+width:900px;
+min-height:900px;
+overflow:hide;
+text-align:center;
+background-color:white;
+
+}
+h1
+{
+margin-top:60px;
+color:BLACK;
+font-weight:normal;
+font-family: 'Russo One', sans-serif;
+color:black;
+text-decoration:underline;
+text-align:left;
+font-size:70px;
+}
+h2
+{
+font-family:'The Girl Next Door', cursive;
+font-size:22px;
+text-align:center;
+font-style:italic;
+color:black;
+}
+p
+{
+font-weight:bold;
+font-size:18px;
+font-family:'The Girl Next Door', cursive;
+color:black;
+}
+.leftPan
+{
+clear:left;
+position:relative;
+width:205px;
+min-height:2px;
+float:left;
+background-color:none;
+height:auto;
+font-size:2em;
+}
+.rightPan
+{
+position:relative;
+float: left;
+}
+.logo
+{
+border-top:1px solid black;
+padding:20px 0 0 0;
+margin:0;
+text-align:center;
+background:url('flagpost.png');
+background-size:9em 5.5em;
+background-repeat:no-repeat;
+background-position:center top;
+height:180px;
+}
+.navLink
+{
+font-weight:normal;
+font-family: 'Russo One', sans-serif;
+color:black;
+text-decoration:none;
+margin-left:20px;
+text-align:center;
+line-height:39px;
+font-size:24px;
+height:39px;
+width:170px;
+float:left;
+position:relative;
+border:1px solid transparent;
+vertical-align:middle;
+}
+.navLink:hover
+{
+border:1px solid black;
+color:#680104;
+-webkit-box-shadow: 0px 0px 5px 0px rgba(255, 0, 0, 0.99);
+-moz-box-shadow:    0px 0px 5px 0px rgba(255, 0, 0, 0.99);
+box-shadow:         0px 0px 5px 0px rgba(255, 0, 0, 0.99);
+}
+.game
+{
+position:relative;
+float:left;
+border-radius:0px;
+margin-bottom:2px;
+clear:left;
+padding:5px 0 5px 0;
+border-bottom:1px solid black;
+height:40px;
+background-color:white;
+width:900px
+}
+.gameHeader
+{
+color:black;
+position:relative;
+float:left;
+margin-bottom:2px;
+clear:left;
+padding:5px 0 5px 0;
+text-align:center;
+width:900px;
+}
+.titleBox
+{
+font-size:12px;
+width: 120px;
+float:left;
+text-align:center;
+height:20px;
+position:relative;
+margin-right:10px;
+margin-left:10px;
+margin:0 10px 20px 10px;
+line-height:20px;
+font-family:sans-serif;
+}
+.playerBox
+{
+font-size:18px;
+color:black;
+width: 150px;
+float:left;
+text-align:center;
+height:40px;
+position:relative;
+margin-right:10px;
+margin-left:10px;
+line-height:40px;
+}
+.scheduleBox
+{
+font-size:18px;
+width: 200px;
+float:left;
+text-align:center;
+height:40px;
+position:relative;
+margin-right:10px;
+margin-left:10px;
+line-height:40px;
+}
+.playerNumber
+{
+width:60px;
+text-align:center;
+font-weight:bold;
+position:relative;
+float:left;
+}
+.playerName
+{
+width:300px;
+font-weight:bold;
+position:relative;
+float:left;
+text-align:center;
+}
+.score
+{
+text-align:center;
+font-weight:bold;
+text-decoration:underline;
+}
+.score:hover
+{
+background-color:#D9DBDD;
+}
+.teamPadding
+{
+position:relative;
+float:left;
+width:100%;
+height:220px;
+}
+.newLine
+{
+clear:left;
+}
+.teamSkip
+{
+position:relative;
+float:left;
+width:120px;
+height:20px;
+margin-bottom:3px;
+}
+.teamSkipQuarter
+{
+position:relative;
+float:left;
+width:30px;
+height:20px;
+margin-bottom:3px;
+}
+.teamMap
+{
+color:white;
+text-decoration:none;
+cursor:pointer;
+position:relative;
+margin-bottom:3px;
+float:left;
+font-size:11px;
+line-height:25px;
+width:120px;
+height:20px;
+border-radius:5px;
+text-align:center;
+background: -moz-linear-gradient(top,  rgba(140,61,63,0) 0%, rgba(140,61,63,0.9) 90%, rgba(165,0,2,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(140,61,63,0)), color-stop(90%,rgba(140,61,63,0.9)), color-stop(100%,rgba(165,0,2,1))); /*Chrome,Safari4+*/
+background: -webkit-linear-gradient(top,  rgba(140,61,63,0) 0%,rgba(140,61,63,0.9) 90%,rgba(165,0,2,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(140,61,63,0) 0%,rgba(140,61,63,0.9) 90%,rgba(165,0,2,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(140,61,63,0) 0%,rgba(140,61,63,0.9) 90%,rgba(165,0,2,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(140,61,63,0) 0%,rgba(140,61,63,0.9) 90%,rgba(165,0,2,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#008c3d3f', endColorstr='#a50002',GradientType=0 ); /* IE6-9 */
+
+}
+.teamMap:hover
+{
+-webkit-box-shadow: 4px 4px 30px 0px rgba(50, 50, 50, 0.75);
+-moz-box-shadow:    4px 4px 30px 0px rgba(50, 50, 50, 0.75);
+box-shadow:         4px 4px 30px 0px rgba(50, 50, 50, 0.75);
+}
+iframe
+{
+margin-bottom:10px;
+}
+.homeFeed
+{
+border-top:3px solid black;
+margin-left:-110px;
+text-align:left;
+position:relative;
+float:left;
+width:700px;
+padding:25px ;
+
+}
+.widget
+{
+position:relative;
+float:left;
+margin-left:20px;
+margin-bottom:10px;
+width:200px;
+min-height:120px;
+background-color:#F28789;
+color:white;
+border-top-left-radius:10px;
+border-top-right-radius:10px;
+border:1px solid black;
+background: rgb(232,234,232); /* Old browsers */
+
+background: -moz-linear-gradient(top,  rgba(232,234,232,1) 0%, rgba(214,186,188,1) 47%, rgba(186,161,164,1) 100%); /* FF3.6+ */
+
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(232,234,232,1)), color-stop(47%,rgba(214,186,188,1)), color-stop(100%,rgba(186,161,164,1))); /* Chrome,Safari4+ */
+
+background: -webkit-linear-gradient(top,  rgba(232,234,232,1) 0%,rgba(214,186,188,1) 47%,rgba(186,161,164,1) 100%); /* Chrome10+,Safari5.1+ */
+
+background: -o-linear-gradient(top,  rgba(232,234,232,1) 0%,rgba(214,186,188,1) 47%,rgba(186,161,164,1) 100%); /* Opera 11.10+ */
+
+background: -ms-linear-gradient(top,  rgba(232,234,232,1) 0%,rgba(214,186,188,1) 47%,rgba(186,161,164,1) 100%); /* IE10+ */
+
+background: linear-gradient(to bottom,  rgba(232,234,232,1) 0%,rgba(214,186,188,1) 47%,rgba(186,161,164,1) 100%); /* W3C */
+
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e8eae8', endColorstr='#baa1a4',GradientType=0 ); /* IE6-9 */
+
+
+
+}
+.formItem
+{
+color:white;
+text-decoration:none;
+position:relative;
+float:left;
+margin-left:6px;
+margin-top:3px;
+width:30px;
+text-align:center;
+height:40px;
+line-height:50px;
+margin-top:10px;
+margin-bottom:10px;
+font-size:22px;
+background-color:green;
+border:1px solid black;
+border-radius:6px;
+}
+.formItem:hover
+{
+-webkit-box-shadow: 0px 0px 5px 0px rgba(255, 0, 0, 0.99);
+-moz-box-shadow:    0px 0px 5px 0px rgba(255, 0, 0, 0.99);
+box-shadow:         0px 0px 5px 0px rgba(255, 0, 0, 0.99);
+}
+
+.formItemSmall
+{
+position:relative;
+float:left;
+margin-left:6px;
+margin-top:3px;
+color:white;
+width:30px;
+text-align:center;
+height:40px;
+line-height:20px;
+margin-top:10px;
+margin-bottom:10px;
+font-size:12px;
+background-color:green;
+border:1px solid black;
+border-radius:6px;
+}
+.formItemSmall:hover
+{
+-webkit-box-shadow: 0px 0px 5px 0px rgba(255, 0, 0, 0.99);
+-moz-box-shadow:    0px 0px 5px 0px rgba(255, 0, 0, 0.99);
+box-shadow:         0px 0px 5px 0px rgba(255, 0, 0, 0.99);
+
+}
+.homeMain
+{
+width:998px;
+margin: 0 0 0;
+height:200px;
+background-color:grey;
+border:1px solid black;
+border-bottom:3px solid black;
+background:url('banner.png');
+background-repeat:no-repeat;
+background-size: 100% 100%;
+z-index:10;
+
+
+
+}
+
+.footer
+{
+width:999px;
+border:1px solid black;
+height:40px;
+background-color:grey;
+float:left;
+position:relative;
+}
+
+h4
+{
+color:black;
+width:100%;
+margin-top:0;
+margin-bottom:0;
+border-top-left-radius:7px;
+border-top-right-radius:7px;
+background: rgb(254,255,255); /* Old browsers */
+
+background: -moz-linear-gradient(top,  rgba(254,255,255,1) 28%, rgba(73,73,73,1) 100%); /* FF3.6+ */
+
+background: -webkit-gradient(linear, left top, left bottom, color-stop(28%,rgba(254,255,255,1)), color-stop(100%,rgba(73,73,73,1))); /* Chrome,Safari4+ */
+
+background: -webkit-linear-gradient(top,  rgba(254,255,255,1) 28%,rgba(73,73,73,1) 100%); /* Chrome10+,Safari5.1+ */
+
+background: -o-linear-gradient(top,  rgba(254,255,255,1) 28%,rgba(73,73,73,1) 100%); /* Opera 11.10+ */
+
+background: -ms-linear-gradient(top,  rgba(254,255,255,1) 28%,rgba(73,73,73,1) 100%); /* IE10+ */
+
+background: linear-gradient(to bottom,  rgba(254,255,255,1) 28%,rgba(73,73,73,1) 100%); /* W3C */
+
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffff', endColorstr='#494949',GradientType=0 ); /* IE6-9 */
+
+
+
+}
+.teamLink
+{
+cursor:pointer;
+text-decoration:underline;
+}
+.teamLink:hover
+{
+color:grey;
+}
