@@ -44,11 +44,26 @@
 			<div class="playerBox newLine">
 				<%= s.game.home_team.name %>
 			</div>
-			<div class="playerBox">
-				<%= s.game.home_score %>
-					-	
-				<%= s.game.away_score %>
-			</div>
+ <div style="cursor:pointer" title="Game Details" onclick="window.location.href='/games/<%= s.game.id %>'" class="playerBox score
+                        <% if s.game.home_team.id == 8 && s.game.home_score > s.game.away_score %>
+                        <%= "win" %>
+                        <% elsif s.game.away_team.id == 8 && s.game.home_score < s.game.away_score %>
+                        <%= "win" %>
+                        <% elsif s.game.away_team.id == 8 && s.game.home_score == s.game.away_score %>
+                        <%= "tie" %>
+                        <% elsif s.game.home_team.id == 8 && s.game.home_score == s.game.away_score %>
+                        <%= "tie" %>
+                        <% else %>
+                        <%= "loss" %>
+                        <% end %>">
+                        <b> <%= s.game.home_score %> </b>
+                        <b> - </b>
+                        <b><%= s.game.away_score %></b>
+                        <% if s.game.stats.any? %>
+                            <%= image_tag('ball.png', width: '25') %>
+                        <% end %>
+                </div>
+
 			<div class="playerBox">
 				<%= s.game.away_team.name %>
 			</div>
