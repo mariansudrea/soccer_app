@@ -2,58 +2,76 @@
 	<div class="playerPic">
 	</div>
 	<div class="playerDetails">
-	<h3 style="position:relative;float:left;text-decoration:none;margin: 0px 0 0 30px">
-		<%= @player.name %>
-	</h3>
-	<h6 style="position:relative;float:left;text-decoration:none;margin: 10px 0 0 30px;clear:left;color:white">
-		Goals per Game : <%= @gpg %>
-	</h6>
-	<h6 style="position:relative;float:left;text-decoration:none;margin: 10px 0 0 30px;clear:left;color:white">
-		Assists per Game : <%= @apg %>
-	</h6>
+    <h3 style="position:relative;float:left;text-decoration:none;margin: 0px 0 0 30px">
+        <%= @player.name %>
+    </h3>
+    <h6 style="position:relative;float:left;text-decoration:none;margin: 10px 0 0 30px;clear:left;color:white">
+        Goals per Game : <%= @gpg %>
+    </h6>
+    <h6 style="position:relative;float:left;text-decoration:none;margin: 10px 0 0 30px;clear:left;color:white">
+        Assists per Game : <%= @apg %>
+    </h6>
 	</div>
-	<div style="clear:left;position:relative;width:100%">
-	</div>
-        <% if User.all.select { |s| s.id < @player.id }.sort_by { |s| s.id }.any? then %>
+        <% if User.all.select { |s| s.id < @player.id }.sort { |s| s.id }.any? then %>
             <% b = User.all.select { |s| s.id < @player.id }.sort_by { |s| s.id }.last.id %> 
                 <%= link_to "<", "/players/"+b.to_s, remote: true, class: "prevButton" %>
         <% end %>
-        <% if User.all.select { |s| s.id > @player.id }.sort_by { |s| s.id }.any? then %>
+        <% if User.all.select { |s| s.id > @player.id }.sort { |s| s.id }.any? then %>
             <% c = User.all.select { |s| s.id > @player.id }.sort_by { |s| s.id }.first.id %> 
                 <%= link_to ">", "/players/"+c.to_s, remote: true, class: "nextButton" %>
         <% end %>
 
 	<div class="seasonDivider" style="width:895px;float:left;clear:left;margin: 15px 0 15px 5px">
 	</div>
-	<div class="playerBox newline" style="color:white">
-		Home
+	<div class="playerBox newline" style="color:black">
+		
+		<b>HOME</b>
 	</div>
-	<div class="playerBox" style="color:white">
+	<div class="playerBox" style="color:black">
 	</div>
-	<div class="playerBox" style="color:white">
-		Away
+	<div class="playerBox" style="color:black">
+		<b>AWAY</b>
 	</div>
-	<div class="playerBox" style="color:white">
-		Goals
+	<div class="playerBox" style="color:black">
+		<b>GOALS</b>
 	</div>
-	<div class="playerBox" style="color:white">
-		Assists
+	<div class="playerBox" style="color:black">
+		<b>ASSISTS</b>
 	</div>
 	</br></br>
 	<% if @player.stats.any? %>
 		<% @player.stats.sort_by { |b| b.game.played_at }.reverse.each do |s| %>
 		<div class="game">
+
 			<div class="playerBox newLine">
 				<%= s.game.home_team.name %>
 			</div>
-			<div class="playerBox">
-				<%= s.game.home_score %>
-					-	
-				<%= s.game.away_score %>
-			</div>
+                <div style="cursor:pointer" title="Game Details" onclick="window.location.href='/games/<%= s.game.id %>'" class="playerBox score
+                        <% if s.game.home_team.id == 8 && s.game.home_score > s.game.away_score %>
+                        <%= "win" %>
+                        <% elsif s.game.away_team.id == 8 && s.game.home_score < s.game.away_score %>
+                        <%= "win" %>
+                        <% elsif s.game.away_team.id == 8 && s.game.home_score == s.game.away_score %>
+                        <%= "tie" %>
+                        <% elsif s.game.home_team.id == 8 && s.game.home_score == s.game.away_score %>
+                        <%= "tie" %>
+                        <% else %>
+                        <%= "loss" %>
+                        <% end %>">
+                        <b> <%= s.game.home_score %> </b>
+                        <b> - </b>
+                        <b><%= s.game.away_score %></b>
+                        <% if s.game.stats.any? %>
+                            <%= image_tag('ball.png', width: '25') %>
+                        <% end %>
+                </div>
 			<div class="playerBox">
 				<%= s.game.away_team.name %>
 			</div>
+
+
+
+
 			<div class="playerBox">
 				<%= s.goals %>
 			</div>
