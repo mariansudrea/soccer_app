@@ -1,4 +1,21 @@
-<div class="rightPan mainContainer" style="width:898px;padding:50px">
+<div class="rightPan mainContainer" style="width:898px;padding:50px;overflow:hidden">
+	<div class="slide" style="width:2994px;margin-left:-998px">
+		<div class="inner1" style="position:relative;float:left;width:898px;min-height:1px;margin-left:50px;margin-right:50px">
+			<div class="playerPic">
+			</div>
+			<div class="playerDetails">
+    			<h3 style="position:relative;float:left;text-decoration:none;margin: 0px 0 0 30px">
+        			<%= @player.name %>
+    			</h3>
+    			<h6 style="position:relative;float:left;text-decoration:none;margin: 10px 0 0 30px;clear:left;color:white">
+        			Goals per Game : <%= @gpg %>
+    			</h6>
+    			<h6 style="position:relative;float:left;text-decoration:none;margin: 10px 0 0 30px;clear:left;color:white">
+        			Assists per Game : <%= @apg %>
+    			</h6>
+			</div>
+		</div>
+		<div class="inner2" style="position:relative;float:left;width:898px">
 	<div class="playerPic">
 	</div>
 	<div class="playerDetails">
@@ -14,11 +31,13 @@
 	</div>
         <% if User.all.select { |s| s.id < @player.id }.sort { |s| s.id }.any? then %>
             <% b = User.all.select { |s| s.id < @player.id }.sort_by { |s| s.id }.last.id %> 
-                <%= link_to "<", "/players/"+b.to_s, remote: true, class: "prevButton" %>
+				<a onclick="prevPlayer(<%=b.to_s%>)" class="prevButton"><</a>
+                <!--%= link_to "<", "/players/"+b.to_s, remote: true, class: "prevButton" %-->
         <% end %>
         <% if User.all.select { |s| s.id > @player.id }.sort { |s| s.id }.any? then %>
             <% c = User.all.select { |s| s.id > @player.id }.sort_by { |s| s.id }.first.id %> 
-                <%= link_to ">", "/players/"+c.to_s, remote: true, class: "nextButton" %>
+                <!--%= link_to ">", "/players/"+c.to_s, remote: true, class: "nextButton" %-->
+				<a onclick="nextPlayer(<%=c.to_s%>)" class="nextButton">></a>
         <% end %>
 
 	<div class="seasonDivider" style="width:895px;float:left;clear:left;margin: 15px 0 15px 5px">
@@ -81,5 +100,91 @@
 		</div>
 		<% end %>
 	<% end %>	
+		</div>
+
+		<div class="inner3" style="position:relative;float:left;width:898px;min-height:1px;padding-left:50px">
+			<div class="playerPic">
+			</div>
+			<div class="playerDetails">
+    			<h3 style="position:relative;float:left;text-decoration:none;margin: 0px 0 0 30px">
+        			<%= @player.name %>
+    			</h3>
+    			<h6 style="position:relative;float:left;text-decoration:none;margin: 10px 0 0 30px;clear:left;color:white">
+        			Goals per Game : <%= @gpg %>
+    			</h6>
+    			<h6 style="position:relative;float:left;text-decoration:none;margin: 10px 0 0 30px;clear:left;color:white">
+        			Assists per Game : <%= @apg %>
+    			</h6>
+			</div>
+		</div>
+	</div>
 
 </div>
+<script>
+var v,c;
+function nextPlayer(d){
+    v = 944;
+		<%	        
+	        if params[:id].to_i < 20  
+				@player = User.find(params[:id].to_i+1)
+			end
+        @gpg = 0
+        @apg = 0
+        @player.stats.each do |stat|
+            @gpg = stat.goals.to_i + @gpg||0.00
+            @apg = stat.assists.to_i + @apg||0.00
+        end
+        @gpg = (@gpg.to_f / @player.stats.length).round(2)
+        @apg = (@apg.to_f / @player.stats.length).round(2)
+	%>
+	$('.inner3').html("<%= escape_javascript(render :partial => '/players/view2.html.erb' ) %>");
+
+    a = setInterval(function(){movePlayerLeft(d)}, 20);
+}
+
+function movePlayerLeft(d)
+{
+    if ( v >= 1946 ) v=1946;
+    else v+=80;
+    c = "-"+v+"px";
+    $('.slide').css("margin-left",c);
+    if ( v == 1946)
+        {
+            clearInterval(a);
+			document.location.href="/players/"+d;
+			
+        }
+}
+function prevPlayer(e){
+    v = 998;
+	//alert("<%=params[:id]%>");
+	<%	h = params[:id].to_i - 1 		
+	        if h > 0  
+				@player = User.find(h) 
+			end 
+        @gpg = 0
+        @apg = 0
+        @player.stats.each do |stat|
+            @gpg = stat.goals.to_i + @gpg||0.00
+            @apg = stat.assists.to_i + @apg||0.00
+        end
+        @gpg = (@gpg.to_f / @player.stats.length).round(2)
+        @apg = (@apg.to_f / @player.stats.length).round(2)
+	%>
+	$('.inner1').html("<%= escape_javascript(render :partial => '/players/view2.html.erb' ) %>");
+    a = setInterval(function(){movePlayerRight(e)}, 20);
+}
+
+function movePlayerRight(e)
+{
+    if ( v <= 50 ) v=50;
+    else v-=80;
+    c = "-"+v+"px";
+    $('.slide').css("margin-left",c);
+    if ( v == 50)
+        {
+            clearInterval(a);
+			document.location.href="/players/"+e;
+        }
+}
+</script>
