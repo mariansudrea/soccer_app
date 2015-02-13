@@ -112,7 +112,8 @@ include ActionView::Helpers::NumberHelper
 	
 	@goalRankings = Array.new()
 	@season_start = Array.new()
-	@season_start[122]=9000;
+	@season_start[123]=9000;
+	@season_start[122]=600;
 	@season_start[121]=568;
 	@season_start[120]=536;
 	@season_start[119]=507;
