@@ -18,11 +18,12 @@
 						<% if a.home_team.id.to_s != "8" %>
 							teamLink" 
 							onclick="window.location.href='/schedule?id=<%= a.home_team.id.to_s %>'"
-							title="vs <%= a.home_team.name %>"
+							title="vs <%= a.home_team.name.upcase %>"
+							style="text-decoration:none"
 						<% else %>
-							"
+							bar"
 						<% end %>
-					><b> <%= a.home_team.name %> </b>
+					><b> <%= a.home_team.name.upcase %> </b>
 				</div>
 
 				<% if a.home_score %>
@@ -54,11 +55,12 @@
 						<% if a.away_team.id.to_s != "8" %>
 							teamLink" 
 							onclick="window.location.href='/schedule?id=<%= a.away_team.id.to_s %>'"
-							title="vs <%= a.away_team.name %>"
+							title="vs <%= a.away_team.name.upcase %>"
+							style="text-decoration:none"
 						<% else %>
-							"
+							bar"
 						<% end %>
-					><b> <%= a.away_team.name %> </b>
+					><b> <%= a.away_team.name.upcase %> </b>
 				</div>
 				<div class="scheduleBox away"><b> 
 					<%= a.played_at.to_date.strftime("%b %d, %Y") %> 

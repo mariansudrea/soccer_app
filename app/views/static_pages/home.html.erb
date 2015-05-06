@@ -1,9 +1,7 @@
 <div class="rightPan mainContainer" style="padding-right:0px;width:849px">
-	<div class="homeHeader"> NEWS 
-	</div>	
-	<div class="widget">
-		<h4>Form</h4>
-		<% @lastFive.each do |x| %>
+	
+	<div class="widget" style="width:920px;margin-left:-110px;height:135px;border:none;background:none !important">
+		<% @lastFifteen.each do |x| %>
 			<% if x.home_team.id == 8 && x.home_score > x.away_score %>
 				<%= link_to "W", "/games/"+x.id.to_s, :class => "formItem " %>
 			<% elsif x.home_team.id != 8 && x.home_score < x.away_score %>	
@@ -16,9 +14,10 @@
 				<%= link_to "T", "/games/"+x.id.to_s, :class => "formItem tie" %>
 			<% end %>
 		<% end %>
-		<% @lastFive.each do |x| %>
+		<%= image_tag("arrow.png", width: '910',height: '17',style: 'margin-top:3px;position:relative;float:left') %>
+		<% @lastFifteen.each do |x| %>
 			<% if x.home_team.id == 8 && x.home_score > x.away_score %>
-				<%= link_to (raw x.played_at.strftime("%b")+"</br>"+x.played_at.strftime("%e")), "/games/"+x.id.to_s, :class => "formItemSmall " %>
+				<%= link_to (raw x.played_at.strftime("%b")+"</br>"+x.played_at.strftime("%e")), "/games/"+x.id.to_s, { :class => "formItemSmall ", :title => "&Pscr;&Bopf;".html_safe } %>
 			<% elsif x.home_team.id != 8 && x.home_score < x.away_score %>	
 				<%= link_to (raw x.played_at.strftime("%b")+"</br>"+x.played_at.strftime("%e")), "/games/"+x.id.to_s, :class => "formItemSmall " %>
 			<% elsif x.home_team.id != 8 && x.home_score > x.away_score %>	
@@ -30,16 +29,92 @@
 			<% end %>
 		<% end %>
 	</div>
+	<!--div class="homeHeader" style="height:40px"> NEWS 
+	</div-->	
 	<div class="homeFeed" style="padding:0;overflow:hidden">
-		<iframe class="blogFrame" width="700" height="1000" src="https://fcbarunited.wordpress.com/2015/4/" frameBorder="0" seamless='seamless'>
-	</iframe>
+		<!--iframe class="blogFrame" width="700" height="1000" src="https://fcbarunited.wordpress.com/2015/4/" frameBorder="0" seamless='seamless'>
+	</iframe-->
+		<div class="blogFrame" width="700" height="1300">
+
+<!--****************************************************************************** THIS NEEDS TO GO TO CONTROLLER -->
+<!--****************************************************************************** + REWRITE WITH LOOP  -->
+
+<%  system('curl https://fcbarunited.wordpress.com/ > sample_text')
+    a = File.read('sample_text')
+    system('rm sample_text')
+    b=a.scan(/"entry-content[^!]+!/)
+    d=a.scan(/\/" rel="bookmark">[^\/]+\//)
+    c=b[0].split("entry-content\">")
+    e=d[0].split("/\" rel=\"bookmark\">")
+    f=b[1].split("entry-content\">")
+    g=d[1].split("/\" rel=\"bookmark\">")
+    h=b[2].split("entry-content\">")
+    i=d[2].split("/\" rel=\"bookmark\">")
+    j=b[3].split("entry-content\">")
+    k=d[3].split("/\" rel=\"bookmark\">")
+    l=b[4].split("entry-content\">")
+    m=d[4].split("/\" rel=\"bookmark\">")
+        %>
+
+<!--*************************************************************************-->
+
+<h2 style="text-align:left"> &nbsp;&Nopf;&eopf;&wopf;&sopf; </h2>
+	<div class="homePost" style="height:340px !important">
+		<div style="font-family:Sans-Serif;font-weight:bold"><p style="text-align:left;text-decoration:underline">  
+			<%= e[1].html_safe %></p>
+		</div>
+		<div style="font-family:Sans-Serif">    
+			<%= c[1].html_safe %>       
+		</div>
+	</div>
+	<div class="homePost">
+		<div style="font-family:Sans-Serif;font-weight:bold"><p style="text-align:left;text-decoration:underline">  
+			<%= g[1].html_safe %></p>
+		</div>
+		<div style="font-family:Sans-Serif">    
+			<%= f[1].html_safe %>       
+		</div>
+	</div>
+	<div class="homePost">
+		<div style="font-family:Sans-Serif;font-weight:bold"><p style="text-align:left;text-decoration:underline">  
+			<%= i[1].html_safe %></p>
+		</div>
+		<div style="font-family:Sans-Serif">    
+			<%= h[1].html_safe %>       
+		</div>
+	</div>
+	<div class="homePost">
+		<div style="font-family:Sans-Serif;font-weight:bold"><p style="text-align:left;text-decoration:underline">  
+			<%= k[1].html_safe %></p>
+		</div>
+		<div style="font-family:Sans-Serif">    
+			<%= j[1].html_safe %>       
+		</div>
+	</div>
+	<div class="homePost">
+		<div style="font-family:Sans-Serif;font-weight:bold"><p style="text-align:left;text-decoration:underline">  
+			<%= m[1].html_safe %></p>
+		</div>
+		<div style="font-family:Sans-Serif">    
+			<%= l[1].html_safe %>       
+		</div>
+_______________________________________________</br>
+<b>For more stories, please visit the FC Bar United Archives at our <a href="https://fcbarunited.wordpress.com">wordpress</a> location.</b>
+	</div>
+
+
+
+
+
+
+		</div>
 	</div>
 <% if !(@nextGame.nil?) %>
 	<div class="widget" style="color:black">
 		<h4>Next Game</h4>
-		<div class="nextGameDiv"> <%= @nextGame.away_team.name.upcase %> </div>
+		<div class="nextGameDiv" style="font-weight:bold"> <%= @nextGame.away_team.name.upcase %> </div>
 		<div class="nextGameDiv"> vs </div>
-		<div class="nextGameDiv"> <%= @nextGame.home_team.name.upcase %> </div>
+		<div class="nextGameDiv" style="font-weight:bold"> <%= @nextGame.home_team.name.upcase %> </div>
 		<div class="nextGameDiv"> <%= @nextGame.played_at.strftime("%a, %b %d %I:%M%p") %> </div>
 		<div class="nextGameDiv"> Field <%= @nextGame.field %> </div>
 	</div>
@@ -70,7 +145,7 @@
 		<% @goalRankings.compact.each do |x| %>
 		<div class="rankingsEntry">
 			<div class="assistName">
-	   			<%= link_to User.find(x[:id]).name, "/players/"+x[:id].to_s, title: "Player Details" %>
+	   			<%= link_to User.find(x[:id]).name.upcase, "/players/"+x[:id].to_s, title: "Player Details" %>
 			</div>
 			<div class="assistNumber">
 				<%= x[:goals] %>
@@ -103,7 +178,7 @@
 		<% @assistRankings.compact.each do |x| %>
 		<div class="rankingsEntry">
 			<div class="assistName">
-				<%= link_to User.find(x[:id]).name, "/players/"+x[:id].to_s, title: "Player Details" %>
+				<%= link_to User.find(x[:id]).name.upcase, "/players/"+x[:id].to_s, title: "Player Details" %>
 			</div>
 			<div class="assistNumber">
 				<%= x[:assists] %>
