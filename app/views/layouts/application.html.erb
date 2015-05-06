@@ -28,20 +28,22 @@
 		<div class="rightPan controls" style="z-index:2">
 					<%= link_to raw("HOME"), root_path , :class => "navLink" %>
 					<%= link_to raw("SCHEDULE"), schedule_path , :class => "navLink" %>
-					<%= link_to raw("STATS"), "/season?id=122" , :class => "navLink" %>
+					<%= link_to raw("STATS"), "/season?id=123" , :class => "navLink" %>
 					<%= link_to raw("TEAM"), team_path , :class => "navLink" %>
 					<%= link_to raw("VIDEO"), feed_path , :class => "navLink" %>
 					<%= link_to raw("ABOUT"), about_path , :class => "navLink" %>
 		</div>
-		<div class="leftPan logo" style="border-bottom:3px solid black">
-			<%= link_to image_tag("m1.gif", width: "120"), root_path %>
+		<div class="leftPan logo" style="border-bottom:3px solid black;height:130px">
+			<%= link_to image_tag("m1.gif", width: "90"), root_path %>
 		</div>
 	    <div class="rightPan homeMain">
-			<div class="headerFont">
-				FC BAR UNITED
-			</div>
 	    </div>
 		<div class="leftPan">
+			</br>
+			<%= image_tag("facebook.png", height: "55", onclick: "window.location.href='https://www.facebook.com/pages/FC-Bar-United/290507198157'", title: "FC Bar United on Facebook", style: "cursor:pointer" ) %>
+			</br>
+			</br>
+			<%= image_tag("wordpress.png", height: "30", onclick: "window.location.href='https://fcbarunited.wordpress.com'", style: "cursor:pointer", title: "FC Bar United Press Archives") %>
 		</div>
 		<div id="mainContainer">
 	    	<%= yield %>
@@ -49,8 +51,8 @@
 		<div class="leftPan">
 		</div>
 		<div class="footer">
-			<div style="text-align:center;line-height:40px">
-				&copy;FC Bar United 2014
+			<div style="text-align:center;line-height:39px">
+				&copy;FC Bar United 2015&nbsp;&nbsp;&nbsp;</br>
 			</div>
 		</div>
     </div>

@@ -61,17 +61,16 @@ text-decoration:underline;
 {
 position:relative;
 float:left;
+text-align:left;
+font-weight:bold;
+text-decoration:underline;
 margin-left:20px;
 width:700px;
-min-height:150px;
-background-color:#680104;
-color:white;
-border-top-left-radius:10px;
-border-top-right-radius:10px;
-border:1px solid black;
+min-height:50px;
+color:black;
 margin-left:-110px;
-font-size:72px;
-line-height:150px;
+font-size:22px;
+line-height:50px;
 }
 h3
 {
@@ -82,12 +81,10 @@ color:white;
 position:relative;
 float:left;
 width:700px;
-height:73em;
-background-color:black !important;
+height:1200px;
+background-color:#D6D6D6 !important;
 border:0px solid black;
-margin-top:-330px;
-overflow-x:hidden;
-overflow-y:scroll;
+overflow:scroll;
 
 }
 .prevButton
@@ -358,10 +355,14 @@ color:black;
 }
 p
 {
-font-weight:bold;
-font-size:18px;
-font-family:'The Girl Next Door', cursive;
+font-size:14px;
 color:black;
+text-align:left;
+}
+p.story
+{
+font-family:'The Girl Next Door', cursive;
+font-size:18px;
 }
 .leftPan
 {
@@ -421,13 +422,11 @@ box-shadow:         0px 0px 5px 0px rgba(255, 0, 0, 0.99);
 position:relative;
 float:left;
 border-radius:10px;
-border-top-left-radius:40px;
-border-top-right-radius:40px;
 margin-bottom:2px;
 clear:left;
 padding:5px 0 5px 0;
 border:1px solid black;
-height:40px;
+height:30px;
 background-color:white;
 width:900px
 background: #f0f9ff; /* Old browsers */
@@ -488,15 +487,15 @@ line-height:40px;
 }
 .scheduleBox
 {
-font-size:18px;
+font-size:14px;
 width: 200px;
 float:left;
 text-align:center;
-height:40px;
+height:36px;
 position:relative;
 margin-right:10px;
 margin-left:10px;
-line-height:40px;
+line-height:36px;
 }
 .playerNumber
 {
@@ -517,12 +516,12 @@ text-align:center;
 .score
 {
 text-align:center;
-font-weight:bold;
 text-decoration:underline;
+font-size:18px;
 }
 .score:hover
 {
-background-color:#D9DBDD;
+text-shadow: 2px 2px gray;
 }
 .teamPadding
 {
@@ -580,6 +579,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#008c3d3f', e
 -moz-box-shadow:    4px 4px 30px 0px rgba(50, 50, 50, 0.75);
 box-shadow:         4px 4px 30px 0px rgba(50, 50, 50, 0.75);
 }
+.bar
+{
+color:red;
+text-transform:uppercase;
+}
 iframe
 {
 margin-bottom:10px;
@@ -594,7 +598,15 @@ position:relative;
 float:left;
 width:700px;
 padding:25px ;
-
+}
+.homePost
+{
+padding:10px;
+margin:10px;
+border-radius:10px;
+border:1px solid black;
+height:auto;
+background-color:white;
 }
 .widget
 {
@@ -603,7 +615,7 @@ float:left;
 margin-left:20px;
 margin-bottom:10px;
 width:200px;
-min-height:120px;
+min-height:100px;
 background-color:#F28789;
 color:white;
 border-top-left-radius:10px;
@@ -630,20 +642,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e8eae8', end
 }
 .formItem
 {
-color:white;
+font-weight:bold;
+color:#1EFF00;
 text-decoration:none;
 position:relative;
 float:left;
-margin-left:6px;
+margin-left:15px;
 margin-top:3px;
-width:30px;
+width:43px;
 text-align:center;
 height:40px;
 line-height:50px;
-margin-top:10px;
-margin-bottom:10px;
-font-size:22px;
-background-color:green;
+margin-bottom:2px;
+font-size:28px;
+background-color:gray;
 border:1px solid black;
 border-radius:6px;
 }
@@ -656,19 +668,21 @@ box-shadow:         0px 0px 5px 0px rgba(255, 0, 0, 0.99);
 
 .formItemSmall
 {
+font-weight:bold;
 position:relative;
+text-transform:uppercase;
 float:left;
-margin-left:6px;
-margin-top:3px;
-color:white;
-width:30px;
+margin-left:15px;
+margin-top:0px;
+color:black !important;
+width:43px;
 text-align:center;
 height:40px;
 line-height:20px;
 margin-top:10px;
 margin-bottom:10px;
-font-size:12px;
-background-color:green;
+font-size:14px;
+background-color:gray;
 border:1px solid black;
 border-radius:6px;
 }
@@ -683,11 +697,11 @@ box-shadow:         0px 0px 5px 0px rgba(255, 0, 0, 0.99);
 {
 width:998px;
 margin: 0 0 0;
-height:200px;
+height:150px;
 background-color:grey;
 border:1px solid black;
 border-bottom:3px solid black;
-background:url('banner.png');
+background:url('bar_blended_header.jpg');
 background-repeat:no-repeat;
 background-size: 100% 100%;
 z-index:10;
