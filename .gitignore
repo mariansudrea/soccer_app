@@ -1,6 +1,6 @@
 gnore bundler config.
 /.bundle
-
+.gitignore
 # Ignore the default SQLite database.
 /db/*.sqlite3
 /db/*.sqlite3-journal
@@ -11,6 +11,7 @@ gnore bundler config.
 
 # Ignore other unneeded files.
 database.yml
+/config/database.yml
 doc/
 *.swp
 *~
