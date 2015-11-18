@@ -108,7 +108,7 @@ include ActionView::Helpers::NumberHelper
   def contact
   end
 
-  def season
+  def stats 
 	
 	@goalRankings = Array.new()
 	@season_start = Array.new()

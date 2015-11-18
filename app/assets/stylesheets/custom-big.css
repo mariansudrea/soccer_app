@@ -297,6 +297,9 @@ position:relative;
 background:url("field.png");
 background-size:cover;
 border:1px solid black;
+-webkit-box-shadow: 7px 7px 30px 0px rgba(185, 29, 47, 0.75);
+-moz-box-shadow:    7px 7px 30px 0px rgba(185, 29, 47, 0.75);
+box-shadow:         7px 7px 30px 0px rgba(185, 29, 47, 0.75);
 }
 .gameContainer
 {
@@ -331,15 +334,18 @@ background-color: rgba(256, 256, 256, 0.2);
 }
 .scheduleContainer
 {
-padding:10px 49px 10px 49px;
+padding:10px 44px 10px 44px;
 -webkit-box-shadow: 7px 7px 30px 0px rgba(185, 29, 47, 0.75);
 -moz-box-shadow:    7px 7px 30px 0px rgba(185, 29, 47, 0.75);
 box-shadow:         7px 7px 30px 0px rgba(185, 29, 47, 0.75);
-width:900px;
+width:910px;
 min-height:900px;
 overflow:hide;
 text-align:center;
 background-color: rgba(256, 256, 256, 0.2);
+-webkit-box-shadow: 7px 7px 30px 0px rgba(185, 29, 47, 0.75);
+-moz-box-shadow:    7px 7px 30px 0px rgba(185, 29, 47, 0.75);
+box-shadow:         7px 7px 30px 0px rgba(185, 29, 47, 0.75);
 
 }
 h1
@@ -419,7 +425,7 @@ vertical-align:middle;
 }
 .navLink:hover
 {
-border:1px solid black;
+border:1px solid transparent;
 color:#680104;
 -webkit-box-shadow: 0px 0px 5px 0px rgba(255, 0, 0, 0.99);
 -moz-box-shadow:    0px 0px 5px 0px rgba(255, 0, 0, 0.99);
@@ -436,7 +442,7 @@ padding:5px 0 5px 0;
 border:0px solid black;
 height:36px;
 background-color:white;
-width:900px
+width:910px;
 background: #f0f9ff; /* Old browsers */
 
 background: -moz-linear-gradient(top,  #f0f9ff 0%, #e8e8e8 48%, #bfbfbf 100%); /* FF3.6+ */
@@ -564,6 +570,7 @@ margin-bottom:3px;
 {
 color:white;
 text-decoration:none;
+text-transform:uppercase;
 cursor:pointer;
 position:relative;
 margin-bottom:3px;
@@ -738,9 +745,9 @@ z-index:10;
 .footer
 {
 width:999px;
-border:1px solid black;
+font-weight:bold;
+border-top:1px solid black;
 height:40px;
-background-color:grey;
 float:left;
 position:relative;
 }
