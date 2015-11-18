@@ -81,10 +81,8 @@ color:white;
 position:relative;
 float:left;
 width:700px;
-height:1200px;
-background-color:#D6D6D6 !important;
+min-height:1200px;
 border:0px solid black;
-overflow:scroll;
 
 }
 .prevButton
@@ -121,14 +119,24 @@ line-height:50px;
 border:1px solid white;
 float:right;
 }
+.large
+{
+font-size:25px;
+padding:10px;
+border-bottom:1px solid black;
+}
 .nextGameDiv
 {
-width:100%;
+width:270px;
+margin-left:10px;
+position:relative;
+float:left;
 text-align:center;
 height:30px;
 line-height:30px;
 font-weight:normal;
-border-bottom:1px solid black;
+padding-left:10px;
+padding-right:10px;
 }
 .assistName
 {
@@ -164,12 +172,12 @@ float:left;
 width:305px;
 border:1px solid black;
 border-left:none;
+border-top:none;
 margin-left:15px;
 height:25px;
 }
 .standingsNumberPts
 {
-border:1px solid black;
 border-right:none;
 background-color:blue;
 background: rgb(235,241,246); /* Old browsers */
@@ -191,7 +199,6 @@ float:left;
 width:71px;
 height:25px;
 border-bottom:1px solid black;
-border-top:1px solid black;
 
 }
 .headerFont
@@ -247,6 +254,7 @@ margin-left:100px;
 body
 {
 text-align:center;
+font-family:sans-serif;
 width:100%;
 min-width:1300px;
 margin:0;
@@ -421,12 +429,12 @@ box-shadow:         0px 0px 5px 0px rgba(255, 0, 0, 0.99);
 {
 position:relative;
 float:left;
-border-radius:10px;
+border-radius:23px;
 margin-bottom:2px;
 clear:left;
 padding:5px 0 5px 0;
-border:1px solid black;
-height:30px;
+border:0px solid black;
+height:36px;
 background-color:white;
 width:900px
 background: #f0f9ff; /* Old browsers */
@@ -476,7 +484,7 @@ font-family:sans-serif;
 {
 font-size:18px;
 color:black;
-width: 150px;
+width: 159px;
 float:left;
 text-align:center;
 height:40px;
@@ -521,7 +529,9 @@ font-size:18px;
 }
 .score:hover
 {
-text-shadow: 2px 2px gray;
+-webkit-box-shadow: 0px 0px 6px 0px rgba(50, 74, 50, 0.75);
+-moz-box-shadow:    0px 0px 6px 0px rgba(50, 74, 50, 0.75);
+box-shadow:         0px 0px 6px 0px rgba(50, 74, 50, 0.75);
 }
 .teamPadding
 {
@@ -591,20 +601,24 @@ background-opacity:0.7;
 }
 .homeFeed
 {
-border-top:3px solid black;
+/*border-top:3px solid black;*/
 margin-left:-110px;
 text-align:left;
 position:relative;
 float:left;
 width:700px;
-padding:25px ;
+-webkit-box-shadow: 0px 0px 6px 0px rgba(50, 74, 50, 0.75);
+-moz-box-shadow:    0px 0px 6px 0px rgba(50, 74, 50, 0.75);
+box-shadow:         0px 0px 6px 0px rgba(50, 74, 50, 0.75);
+overflow:hide;
+border-radius:10px;
 }
 .homePost
 {
 padding:10px;
 margin:10px;
 border-radius:10px;
-border:1px solid black;
+border:0px solid black;
 height:auto;
 background-color:white;
 }
@@ -615,34 +629,43 @@ float:left;
 margin-left:20px;
 margin-bottom:10px;
 width:200px;
-min-height:100px;
-background-color:#F28789;
+min-height:130px;
 color:white;
-border-top-left-radius:10px;
-border-top-right-radius:10px;
-border:1px solid black;
-background: rgb(232,234,232); /* Old browsers */
+border-radius:10px;
+border:0px solid black;
+-webkit-box-shadow: 0px 0px 6px 0px rgba(50, 74, 50, 0.75);
+-moz-box-shadow:    0px 0px 6px 0px rgba(50, 74, 50, 0.75);
+box-shadow:         0px 0px 6px 0px rgba(50, 74, 50, 0.75);
+/*background: rgb(232,234,232); /* Old browsers */
 
-background: -moz-linear-gradient(top,  rgba(232,234,232,1) 0%, rgba(214,186,188,1) 47%, rgba(186,161,164,1) 100%); /* FF3.6+ */
+/*background: -moz-linear-gradient(top,  rgba(232,234,232,1) 0%, rgba(214,186,188,1) 47%, rgba(186,161,164,1) 100%); /* FF3.6+ */
 
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(232,234,232,1)), color-stop(47%,rgba(214,186,188,1)), color-stop(100%,rgba(186,161,164,1))); /* Chrome,Safari4+ */
+/*background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(232,234,232,1)), color-stop(47%,rgba(214,186,188,1)), color-stop(100%,rgba(186,161,164,1))); /* Chrome,Safari4+ */
 
-background: -webkit-linear-gradient(top,  rgba(232,234,232,1) 0%,rgba(214,186,188,1) 47%,rgba(186,161,164,1) 100%); /* Chrome10+,Safari5.1+ */
+/*background: -webkit-linear-gradient(top,  rgba(232,234,232,1) 0%,rgba(214,186,188,1) 47%,rgba(186,161,164,1) 100%); /* Chrome10+,Safari5.1+ */
 
-background: -o-linear-gradient(top,  rgba(232,234,232,1) 0%,rgba(214,186,188,1) 47%,rgba(186,161,164,1) 100%); /* Opera 11.10+ */
+/*background: -o-linear-gradient(top,  rgba(232,234,232,1) 0%,rgba(214,186,188,1) 47%,rgba(186,161,164,1) 100%); /* Opera 11.10+ */
 
-background: -ms-linear-gradient(top,  rgba(232,234,232,1) 0%,rgba(214,186,188,1) 47%,rgba(186,161,164,1) 100%); /* IE10+ */
+/*background: -ms-linear-gradient(top,  rgba(232,234,232,1) 0%,rgba(214,186,188,1) 47%,rgba(186,161,164,1) 100%); /* IE10+ */
 
-background: linear-gradient(to bottom,  rgba(232,234,232,1) 0%,rgba(214,186,188,1) 47%,rgba(186,161,164,1) 100%); /* W3C */
+/*background: linear-gradient(to bottom,  rgba(232,234,232,1) 0%,rgba(214,186,188,1) 47%,rgba(186,161,164,1) 100%); /* W3C */
 
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e8eae8', endColorstr='#baa1a4',GradientType=0 ); /* IE6-9 */
+/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e8eae8', endColorstr='#baa1a4',GradientType=0 ); /* IE6-9 */
 
 
+
+}
+.widgetWide
+{
+width:920px;
+color:black;
+margin-left:-110px;
 
 }
 .formItem
 {
 font-weight:bold;
+font-family:sans-serif;
 color:#1EFF00;
 text-decoration:none;
 position:relative;
@@ -651,7 +674,7 @@ margin-left:15px;
 margin-top:3px;
 width:43px;
 text-align:center;
-height:40px;
+height:48px;
 line-height:50px;
 margin-bottom:2px;
 font-size:28px;
@@ -661,14 +684,15 @@ border-radius:6px;
 }
 .formItem:hover
 {
--webkit-box-shadow: 0px 0px 5px 0px rgba(255, 0, 0, 0.99);
--moz-box-shadow:    0px 0px 5px 0px rgba(255, 0, 0, 0.99);
-box-shadow:         0px 0px 5px 0px rgba(255, 0, 0, 0.99);
+-webkit-box-shadow: 0px 0px 6px 0px rgba(50, 74, 50, 0.75);
+-moz-box-shadow:    0px 0px 6px 0px rgba(50, 74, 50, 0.75);
+box-shadow:         0px 0px 6px 0px rgba(50, 74, 50, 0.75);
 }
 
 .formItemSmall
 {
 font-weight:bold;
+font-family:sans-serif;
 position:relative;
 text-transform:uppercase;
 text-decoration:none;
@@ -689,9 +713,9 @@ border-radius:6px;
 }
 .formItemSmall:hover
 {
--webkit-box-shadow: 0px 0px 5px 0px rgba(255, 0, 0, 0.99);
--moz-box-shadow:    0px 0px 5px 0px rgba(255, 0, 0, 0.99);
-box-shadow:         0px 0px 5px 0px rgba(255, 0, 0, 0.99);
+-webkit-box-shadow: 0px 0px 6px 0px rgba(50, 74, 50, 0.75);
+-moz-box-shadow:    0px 0px 6px 0px rgba(50, 74, 50, 0.75);
+box-shadow:         0px 0px 6px 0px rgba(50, 74, 50, 0.75);
 
 }
 .homeMain

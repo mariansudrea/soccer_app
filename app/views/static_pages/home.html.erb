@@ -31,10 +31,31 @@
 	</div>
 	<!--div class="homeHeader" style="height:40px"> NEWS 
 	</div-->	
-	<div class="homeFeed" style="padding:0;overflow:hidden">
+	<!--div class="homeFeed" style="padding:0;overflow:hidden"-->
 		<!--iframe class="blogFrame" width="700" height="1000" src="https://fcbarunited.wordpress.com/2015/4/" frameBorder="0" seamless='seamless'>
 	</iframe-->
-		<div class="blogFrame" width="700" height="1300">
+	<% if !(@nextGame.nil?) %>
+	<div class="widget widgetWide">
+		<h4>Next Game</h4>
+		<div class="nextGameDiv large" style="font-weight:bold"> <%= @nextGame.away_team.name.upcase %> </div>
+		<div class="nextGameDiv large" > vs </div>
+		<div class="nextGameDiv large" style="font-weight:bold"> <%= @nextGame.home_team.name.upcase %> </div>
+		<div class="nextGameDiv"> </div>
+		<div class="nextGameDiv"> <%= @nextGame.played_at.strftime("%a, %b %d %I:%M%p") %> </div>
+		<div class="nextGameDiv"> </div>
+		<div class="nextGameDiv"> </div>
+		<div class="nextGameDiv"> Field <%= @nextGame.field %> </div>
+	</div>
+<% else %>
+	<div class="widget widgetWide" >
+		<h4>Next Game</h4>
+		<div class="nextGameDiv"> </div>
+		<div class="nextGameDiv"> SCHEDULE PENDING </div>
+	</div>
+
+<% end %>
+	<div class="homeFeed">
+	<div class="blogFrame" width="700" height="1300">
 
 <!--****************************************************************************** THIS NEEDS TO GO TO CONTROLLER -->
 <!--****************************************************************************** + REWRITE WITH LOOP  -->
@@ -58,7 +79,8 @@
 
 <!--*************************************************************************-->
 
-<h1 style="text-align:left;text-decoration:none;font-size:26px"> News </h1>
+<!--h1 style="text-align:left;text-decoration:none;font-size:26px"> News </h1-->
+<h4 style="text-indent:15px">News</h4>
 	<div class="homePost">
 		<div style="font-family:Sans-Serif;font-weight:bold"><p style="text-align:left;text-decoration:underline">  
 			<%= e[1].html_safe %></p>
@@ -102,30 +124,8 @@ _______________________________________________</br>
 <b>For more stories, please visit the FC Bar United Archives at our <a href="https://fcbarunited.wordpress.com">wordpress</a> location.</b>
 	</div>
 
-
-
-
-
-
 		</div>
 	</div>
-<% if !(@nextGame.nil?) %>
-	<div class="widget" style="color:black">
-		<h4>Next Game</h4>
-		<div class="nextGameDiv" style="font-weight:bold"> <%= @nextGame.away_team.name.upcase %> </div>
-		<div class="nextGameDiv"> vs </div>
-		<div class="nextGameDiv" style="font-weight:bold"> <%= @nextGame.home_team.name.upcase %> </div>
-		<div class="nextGameDiv"> <%= @nextGame.played_at.strftime("%a, %b %d %I:%M%p") %> </div>
-		<div class="nextGameDiv"> Field <%= @nextGame.field %> </div>
-	</div>
-<% else %>
-	<div class="widget" style="color:black">
-		<h4>Next Game</h4>
-		<div class="nextGameDiv"> </div>
-		<div class="nextGameDiv"> SCHEDULE PENDING </div>
-	</div>
-
-<% end %>
 	<div class="widget">
 		<h4>GOALS</h4>
 		<div style="color:black">
@@ -194,73 +194,5 @@ _______________________________________________</br>
 
 		
 	</div>
-	<div class="widget" style="width:922px;margin-left:-120px;">
-		<h4>Standings</h4>
-		<div class="standingsName">
-		</div>
-		<div class="standingsNumber">
-			GP
-		</div>
-		<div class="standingsNumber">
-			W
-		</div>
-		<div class="standingsNumber">
-			T
-		</div>
-		<div class="standingsNumber">
-			L
-		</div>
-		<div class="standingsNumber">
-			GF	
-		</div>
-		<div class="standingsNumber">
-			GA
-		</div>
-		<div class="standingsNumber">
-			GD
-		</div>
-		<div class="standingsNumber">
-			PTS
-		</div>
-		<!--% g = @a.compact.sort_by { |hsh| hsh[:gf]-hsh[:ga] || 0 } %-->
-		<% b = @a.compact.sort_by { |hsh| [ hsh[:pts]|| 0 , hsh[:gf]-hsh[:ga] ] }.reverse %>
-		<% b.each do |team|	%>
-			<% if !(team.nil?) then %>
-				<div class="standingsName">
-					<% if team[:id] == 8 %>
-						<b>
-					<% end %>
-						<%= Team.find(team[:id]).name %>
-					<% if team[:id] == 8 %>
-						</b>
-					<% end %>
-				</div>
-				<div class="standingsNumber">
-					<%= team[:gp]||0 %>
-				</div>
-				<div class="standingsNumber">
-					<%= team[:w]||0 %>
-				</div>
-				<div class="standingsNumber">
-					<%= team[:t]||0 %>
-				</div>
-				<div class="standingsNumber">
-					<%= team[:l]||0 %>
-				</div>
-				<div class="standingsNumber">
-					<%= team[:gf] %>
-				</div>
-				<div class="standingsNumber">
-					<%= team[:ga] %>
-				</div>
-				<div class="standingsNumber">
-					<%= team[:gf] - team[:ga] %>
-				</div>
-				<div class="standingsNumber standingsNumberPts">
-					<%= team[:pts]||0 %>
-				</div>
-			<% end %>
-		<% end %>
-	</div>
-
+	
 </div>
