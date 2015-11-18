@@ -1,0 +1,26 @@
+        <div class="widget" style="overflow:hide;margin:20px 0 20px 10px;padding:0;width:470px;color:black;min-height:400px;">
+            <h4 style="padding:0">Results</h4>
+            <% Game.where(id: @season_start[params[:id].to_i]..@season_start[params[:id].to_i+1]-1).collect.each do |s| %>
+                <% if (s.home_team_id == "8" || s.away_team_id == "8") %>
+            <div class="assistName" style="clear:left;width:100px;">
+                    <%= s.played_at.strftime("%F") %>
+            </div>
+            <div class="assistName" style="width:130px">
+                    <%= s.home_team.name.upcase %>
+            </div>
+            <div class="assistNumber">
+                    <%= s.home_score %>
+            </div>
+            <div class="assistNumber" style="width:20px">
+                -
+            </div>
+            <div class="assistNumber">
+                    <%= s.away_score %>
+            </div>
+            <div class="assistName" style="width:130px">
+                    <%= s.away_team.name.upcase %>
+            </div>
+                <% end %>
+            <% end %>
+        </div>
+

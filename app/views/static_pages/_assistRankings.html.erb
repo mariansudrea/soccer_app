@@ -1,0 +1,34 @@
+<div class="widget" style="margin:20px 0 20px 20px;width:250px;min-height:400px">
+            <h4>ASSISTS</h4>
+            <div style="color:black">
+                <div class="assistName">
+                    <b>NAME</b>
+                </div>
+                <div class="assistNumber">
+                    <b title="Total Assists">TA</b>
+                </div>
+                <div class="assistNumber">
+                    <b title="Games Played">GP</b>
+                </div>
+                <div class="assistNumber">
+                    <b title="Assists Per Game">APG</b>
+                </div>
+            </div>
+            <% @assistRankings.compact.each do |x| %>
+            <div class="rankingsEntry">
+                <div class="assistName">
+                    <%= link_to User.find(x[:id]).name.upcase, "/players/"+x[:id].to_s, title: "Player Details" %>
+                </div>
+                <div class="assistNumber">
+                    <%= x[:assists] %>
+                </div>
+                <div class="assistNumber">
+                    <%= x[:gp] %>
+                </div>
+                <div class="assistNumber">
+                    <%= x[:apg] %>
+                </div>
+            </div>
+            <% end %>
+        </div>
+

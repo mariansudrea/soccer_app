@@ -1,0 +1,68 @@
+      <div class="widget" style="width:952px;margin-left:-120px;">
+            <h4>Standings</h4>
+            <div class="standingsName">
+            </div>
+            <div class="standingsNumber">
+                GP
+            </div>
+            <div class="standingsNumber">
+                W
+            </div>
+        <div class="standingsNumber">
+            T
+        </div>
+        <div class="standingsNumber">
+            L
+        </div>
+        <div class="standingsNumber">
+            GF
+        </div>
+        <div class="standingsNumber">
+            GA
+        </div>
+        <div class="standingsNumber">
+            GD
+        </div>
+        <div class="standingsNumber">
+            PTS
+        </div>
+        <% b = @a.compact.sort_by { |hsh| [ hsh[:pts]|| 0 , hsh[:gf]-hsh[:ga] ] }.reverse %>
+        <% b.each do |team| %>
+            <% if !(team.nil?) then %>
+                <div class="standingsName">
+                    <% if team[:id] == 8 %>
+                        <b>
+                    <% end %>
+                        <%= Team.find(team[:id]).name %>
+                    <% if team[:id] == 8 %>
+                        </b>
+                    <% end %>
+                </div>
+                <div class="standingsNumber">
+                    <%= team[:gp]||0 %>
+                </div>
+                <div class="standingsNumber">
+                    <%= team[:w]||0 %>
+                </div>
+                <div class="standingsNumber">
+                    <%= team[:t]||0 %>
+                </div>
+                <div class="standingsNumber">
+                    <%= team[:l]||0 %>
+                </div>
+                <div class="standingsNumber">
+                    <%= team[:gf] %>
+                </div>
+                <div class="standingsNumber">
+                    <%= team[:ga] %>
+                </div>
+                <div class="standingsNumber">
+                    <%= team[:gf] - team[:ga] %>
+                </div>
+                <div class="standingsNumber standingsNumberPts">
+                    <%= team[:pts]||0 %>
+                </div>
+            <% end %>
+        <% end %>
+    </div>
+
