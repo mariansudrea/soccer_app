@@ -34,7 +34,7 @@
 	<% @stats.each do |s| %>
 		<div class="game">
 			<div class="scheduleBox" style="margin-left:100px">
-				<%= link_to s.user.name, "/players/"+s.user_id.to_s, title: "Player Stats" %>
+				<%= link_to s.user.name.upcase, "/players/"+s.user_id.to_s, title: "Player Stats" %>
 			</div>
 			<div class="scheduleBox">
 				<%= s.goals %>

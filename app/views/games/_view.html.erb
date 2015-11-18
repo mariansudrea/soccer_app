@@ -11,17 +11,11 @@
 		</h1>
 		<% if !(Team.find(8).matches.select { |s| s.id < @game.id }.last.nil?) then %>
 			<% b = Team.find(8).matches.sort_by { |s| s.id }.collect.select { |s| s.id < @game.id }.last.id %>
-				<!--div class="prevButton" title="Previous Game" onclick="window.location.href='/games/<%= b %>'">	
-					<	
-				</div-->
 				<%= link_to "<", "/games/"+b.to_s, remote: true, class: "prevButton" %>
 		<% end %>
 		<% if !(Team.find(8).matches.select { |s| s.id > @game.id }.last.nil?) then %>
 			<% c = Team.find(8).matches.sort_by { |s| s.id }.collect.select { |s| s.id > @game.id }.first.id %>
-				<!--div class="nextButton" remote="true" title="Next Game" onclick="window.location.href='/games/<%= c %>'">	
-					>	
-				</div-->
-				<%= link_to ">", "/games/"+c.to_s, remote: true, class: "nextButton" %>
+				<%= link_to ">", "/games/"+c.to_s+"?sloboz=fji", remote: true, class: "nextButton" %>
 		<% end %>
 	</div>
 	<div class="game">
@@ -34,11 +28,13 @@
 		<div class="scheduleBox">
 			Assists
 		</div>
+		<div class="scheduleBox">
+		</div>
 	</div>
 	<% @stats.each do |s| %>
 		<div class="game">
 			<div class="scheduleBox" style="margin-left:100px">
-				<%= link_to s.user.name, "/players/"+s.user_id.to_s, title: "Player Stats" %>
+				<%= link_to s.user.name.upcase, "/players/"+s.user_id.to_s, title: "Player Stats" %>
 			</div>
 			<div class="scheduleBox">
 				<%= s.goals %>
@@ -46,6 +42,11 @@
 			<div class="scheduleBox">
 				<%= s.assists %>
 			</div>
+			<div class="scheduleBox">
+			</div>
 		</div>
+	<% end %>
+	<% if !(@sloboz == nil) %>
+			<div> <%= @sloboz %></div>
 	<% end %>
 </div>
