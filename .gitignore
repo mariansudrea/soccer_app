@@ -13,6 +13,7 @@ gnore bundler config.
 database.yml
 /config/database.yml
 doc/
+lib/
 *.swp
 *~
 .project
