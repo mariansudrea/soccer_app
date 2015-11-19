@@ -733,7 +733,7 @@ height:150px;
 background-color:grey;
 border:1px solid black;
 border-bottom:3px solid black;
-background:url('bar_blended_header.jpg');
+background:url('assets/bar_blended_header.jpg');
 background-repeat:no-repeat;
 background-size: 100% 100%;
 z-index:10;
