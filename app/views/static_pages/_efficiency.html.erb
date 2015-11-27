@@ -1,32 +1,26 @@
 <div class="widget" style="margin:20px 0 0 25px; min-height:200px">
-            <h4>ASSISTS</h4>
+            <h4>EFFICIENCY</h4>
             <div style="color:black">
                 <div class="assistName">
                     <b>NAME</b>
                 </div>
-                <div class="assistNumber onclick boxShadow1" onclick="getHref(null,'0')">
-                    <b title="Total Assists">TA</b>
+                <div class="assistNumber">
+                    <b title="Games Played"> +- </b>
                 </div>
                 <div class="assistNumber">
-                    <b title="Games Played">GP</b>
-                </div>
-                <div class="assistNumber onclick boxShadow1" onclick="getHref(null,1)">
-                    <b title="Assists Per Game">APG</b>
+                    <b title="Games Played"> GP </b>
                 </div>
             </div>
-            <% @assistRankings.compact.each do |x| %>
+            <% @efficiencyRankings.each do |x| %>
             <div class="rankingsEntry">
                 <div class="assistName">
                     <%= link_to User.find(x[:id]).name.upcase, "/stats?id=0&who=1&user="+x[:id].to_s, title: "Player Details" %>
                 </div>
                 <div class="assistNumber">
-                    <%= x[:assists] %>
+                    <%= x[:eff] %>
                 </div>
                 <div class="assistNumber">
                     <%= x[:gp] %>
-                </div>
-                <div class="assistNumber">
-                    <%= x[:apg] %>
                 </div>
             </div>
             <% end %>

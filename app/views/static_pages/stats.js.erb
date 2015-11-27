@@ -1,0 +1,24 @@
+<% if params[:id].to_i > 0 %>
+	var d = "<%= escape_javascript render 'teamRankings' %>";
+<% else %>
+	var d = "";
+<% end %>
+<% if @who == 0 %>
+var a = "<%= escape_javascript render 'goalRankings' %>";
+var b = "<%= escape_javascript render 'assistRankings' %>";
+var c = "<%= escape_javascript render 'attendance' %>";
+var e = "<%= escape_javascript render 'results' %>";
+var f = "<%= escape_javascript render 'efficiency' %>";
+<% else %>
+var g = "<%= escape_javascript render 'player' %>";
+<% end %>
+var test = <%= @who %>;
+var test1 = <%= params[:id] %>;
+
+if ( parseInt(test) > 0 && parseInt(test1) == 0)	{
+	$('#statDisplay').html(g);
+}
+else	{
+	$('#statDisplay').html(d+a+b+c+f+e);
+}
+//alert(test +" -- " + test1);

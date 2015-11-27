@@ -3,14 +3,14 @@ html:img
 }
 .playerDetails
 {
+color:black;
 padding-top:20px;
 position:relative;
 float:left;
-background-color:black;
 margin-left:30px;
 width:760px;
-height:115px;
-margin-bottom:20px;
+height:105px;
+margin-bottom:0px;
 border-radius:5px;
 }
 .rankingsEntry
@@ -53,9 +53,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cccccc', end
 }
 .scheduleHeader
 {
-background-color:white;
-font-size:31px;
-text-decoration:underline;
+border-radius:15px;
+text-align:center;
+font-size:25px;
+font-weight:bold;
+border-bottom:1px solid black;
+padding:20px 0 20px;
+margin-bottom:20px;
+-webkit-box-shadow: 0px 0px 6px 0px rgba(50, 74, 50, 0.75);
+-moz-box-shadow:    0px 0px 6px 0px rgba(50, 74, 50, 0.75);
+box-shadow:         0px 0px 6px 0px rgba(50, 74, 50, 0.75);
 }
 .homeHeader
 {
@@ -140,41 +147,46 @@ padding-right:10px;
 }
 .assistName
 {
-width:90px;
+text-align:center;
+width:84px;
 margin-left:10px;
 color:inherit;
 position:relative;
 float:left;
-text-align:left;
+text-align:center;
 height:20px;
 line-height:20px;
 font-size:12px;
+margin-top:2px;
 
 }
 .assistNumber
 {
-width:30px;
+text-align:center;
+width:34px;
 color:inherit;
 position:relative;
 float:left;
 height:20px;
 line-height:20px;
 font-size:12px;
-
+margin-top:2px;
 }
 .standingsName
 {
+text-align:center;
 clear:left;
 color:black;
 font-weight:normal;
 position:relative;
 float:left;
-width:305px;
+width:245px;
 border:1px solid black;
 border-left:none;
 border-top:none;
 margin-left:15px;
 height:25px;
+line-height:25px;
 }
 .standingsNumberPts
 {
@@ -193,12 +205,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebf1f6', end
 }
 .standingsNumber
 {
+text-align:center;
 color:black;
 position:relative;
 float:left;
-width:71px;
+width:77px;
 height:25px;
 border-bottom:1px solid black;
+line-height:25px;
 
 }
 .headerFont
@@ -278,7 +292,7 @@ margin-top:5px;
 }
 .win
 {
-color:green !important;
+color:#15B000 !important;
 }
 .loss
 {
@@ -417,7 +431,7 @@ text-align:center;
 line-height:39px;
 font-size:24px;
 height:39px;
-width:140px;
+width:170px;
 float:left;
 position:relative;
 border:1px solid transparent;
@@ -459,6 +473,9 @@ background: linear-gradient(to bottom,  #f0f9ff 0%,#e8e8e8 48%,#bfbfbf 100%); /*
 
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f9ff', endColorstr='#bfbfbf',GradientType=0 ); /* IE6-9 */
 
+-webkit-box-shadow: 0px 0px 6px 0px rgba(50, 74, 50, 0.75);
+-moz-box-shadow:    0px 0px 6px 0px rgba(50, 74, 50, 0.75);
+box-shadow:         0px 0px 6px 0px rgba(50, 74, 50, 0.75);
 
 }
 .gameHeader
@@ -532,6 +549,7 @@ text-align:center;
 text-align:center;
 text-decoration:underline;
 font-size:18px;
+border-radius:10px;
 }
 .score:hover
 {
@@ -605,6 +623,7 @@ iframe
 {
 margin-bottom:10px;
 background-opacity:0.7;
+border-radius:20px;
 }
 .homeFeed
 {
@@ -643,23 +662,6 @@ border:0px solid black;
 -webkit-box-shadow: 0px 0px 6px 0px rgba(50, 74, 50, 0.75);
 -moz-box-shadow:    0px 0px 6px 0px rgba(50, 74, 50, 0.75);
 box-shadow:         0px 0px 6px 0px rgba(50, 74, 50, 0.75);
-/*background: rgb(232,234,232); /* Old browsers */
-
-/*background: -moz-linear-gradient(top,  rgba(232,234,232,1) 0%, rgba(214,186,188,1) 47%, rgba(186,161,164,1) 100%); /* FF3.6+ */
-
-/*background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(232,234,232,1)), color-stop(47%,rgba(214,186,188,1)), color-stop(100%,rgba(186,161,164,1))); /* Chrome,Safari4+ */
-
-/*background: -webkit-linear-gradient(top,  rgba(232,234,232,1) 0%,rgba(214,186,188,1) 47%,rgba(186,161,164,1) 100%); /* Chrome10+,Safari5.1+ */
-
-/*background: -o-linear-gradient(top,  rgba(232,234,232,1) 0%,rgba(214,186,188,1) 47%,rgba(186,161,164,1) 100%); /* Opera 11.10+ */
-
-/*background: -ms-linear-gradient(top,  rgba(232,234,232,1) 0%,rgba(214,186,188,1) 47%,rgba(186,161,164,1) 100%); /* IE10+ */
-
-/*background: linear-gradient(to bottom,  rgba(232,234,232,1) 0%,rgba(214,186,188,1) 47%,rgba(186,161,164,1) 100%); /* W3C */
-
-/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e8eae8', endColorstr='#baa1a4',GradientType=0 ); /* IE6-9 */
-
-
 
 }
 .widgetWide
@@ -673,7 +675,7 @@ margin-left:-110px;
 {
 font-weight:bold;
 font-family:sans-serif;
-color:#1EFF00;
+color:#15B000;
 text-decoration:none;
 position:relative;
 float:left;
@@ -731,7 +733,7 @@ width:998px;
 margin: 0 0 0;
 height:150px;
 background-color:grey;
-border:1px solid black;
+border-top:1px solid black;
 border-bottom:3px solid black;
 background:url('../assets/bar_blended_header.jpg');
 background-repeat:no-repeat;
@@ -756,6 +758,7 @@ h4
 {
 color:black;
 width:100%;
+text-align:center;
 margin-top:0;
 margin-bottom:0;
 border-top-left-radius:7px;
@@ -787,4 +790,162 @@ text-decoration:underline;
 .teamLink:hover
 {
 color:grey;
+}
+.statsHeader
+{
+width:910px;
+font-size:45px;
+text-align:center;
+font-weight:bold;
+background-color:gray;
+height:70px;
+}
+.leftMiniBar
+{
+margin-top:30px;
+width:910px;
+height:70px;
+position:relative;
+float:left;
+border-top-left-radius:30px;
+text-align:center;
+font-size:30px;
+line-height:70px;
+}
+.rightMiniBar
+{
+margin-top:30px;
+width:0px;
+height:70px;
+position:relative;
+float:left;
+border-top-right-radius:30px;
+text-align:center;
+font-size:30px;
+line-height:70px;
+}
+.statFilterArea
+{
+text-align:center;
+position:relative;
+float:left;
+width:900px;
+padding-left:5px;
+padding-right:5px;
+height:100px;
+-webkit-box-shadow: 0px 0px 6px 0px rgba(50, 74, 50, 0.75);
+-moz-box-shadow:    0px 0px 6px 0px rgba(50, 74, 50, 0.75);
+box-shadow:         0px 0px 6px 0px rgba(50, 74, 50, 0.75);
+margin-right:10px;
+border-radius:10px;
+margin-bottom:10px;
+}
+.statDisplay
+{
+position:relative;
+float:left;
+width:910px;
+min-height:600px;
+-webkit-box-shadow: 0px 0px 6px 0px rgba(50, 74, 50, 0.75);
+-moz-box-shadow:    0px 0px 6px 0px rgba(50, 74, 50, 0.75);
+box-shadow:         0px 0px 6px 0px rgba(50, 74, 50, 0.75);
+}
+.visible
+{
+width:150px;
+}
+.invisible 
+{
+width:0px;
+}
+.filter
+{
+height:30px;
+overflow:hide;
+position:relative;
+margin-left:10px;
+margin-top:10px;
+float:left;
+border-radius:10px;
+}
+select
+{
+border-radius:10px;
+border:0px;
+width:100%;
+min-width:0px;
+font-size:15px;
+margin:0;
+padding:0;
+overflow:hide;
+-webkit-box-shadow: 0px 0px 6px 0px rgba(50, 74, 50, 0.75);
+-moz-box-shadow:    0px 0px 6px 0px rgba(50, 74, 50, 0.75);
+box-shadow:         0px 0px 6px 0px rgba(50, 74, 50, 0.75);
+/*    -moz-appearance: none;
+    text-overflow: '';*/
+}
+.filterSet
+{
+width:100%;
+}
+.resultsWidget
+{
+position:relative;
+float:left;
+margin: 20px 0 0 10px;
+width:890px;
+min-height:130px;
+color:black;
+border-radius:10px;
+border:0px solid black;
+-webkit-box-shadow: 0px 0px 6px 0px rgba(50, 74, 50, 0.75);
+-moz-box-shadow:    0px 0px 6px 0px rgba(50, 74, 50, 0.75);
+box-shadow:         0px 0px 6px 0px rgba(50, 74, 50, 0.75);
+}
+.smallAssistName
+{
+width: 260px;
+font-size:16px;
+height:25px;
+line-height:25px;
+position:relative;
+float:left;
+text-align:center;
+border-bottom:1px solid black;
+}
+.smallAssistNumber
+{
+font-size:16px;
+line-height:25px;
+text-align:center;
+width: 30px;
+height:25px;
+position:relative;
+float:left;
+border-bottom:1px solid black;
+}
+.onclick:hover
+{
+cursor:pointer;
+}
+.boxShadow1
+{
+-webkit-box-shadow: 0px 0px 6px 0px rgba(50, 74, 50, 0.75);
+-moz-box-shadow:    0px 0px 6px 0px rgba(50, 74, 50, 0.75);
+box-shadow:         0px 0px 6px 0px rgba(50, 74, 50, 0.75);
+border-radius:10px;
+}
+.boxShadow1:hover
+{
+-webkit-box-shadow: 0px 0px 9px 0px rgba(50, 74, 50, 0.75);
+-moz-box-shadow:    0px 0px 9px 0px rgba(50, 74, 50, 0.75);
+box-shadow:         0px 0px 9px 0px rgba(50, 74, 50, 0.75);
+}
+.opaque
+{
+opacity:0;
+}
+.not_opaque
+{
+opacity:1;
 }

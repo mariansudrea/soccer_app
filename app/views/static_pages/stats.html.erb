@@ -1,9 +1,72 @@
-<div class="mainContainer" >
-	<%= render 'options' %>
-	<h4 style="background:none;font-size:24px">SEASON <%= params[:id] %></h4>
-	<div style="width:1300px">
+<div class="rightPan scheduleContainer" style="text-align:left">
+	<div class="scheduleHeader" style="width:890px">
+		BAR UNITED STATS CENTRAL
+	</div>
+	<div class="statFilterArea"> 
+		<div class="filterSet visible" id="teamsFilter">
+			<div class="filter visible">
+				<%= render 'options' %>
+			</div>
+			<div class="filter visible" id="whoSelect">
+				<select id="whoVal">
+					<option selected="selected" value="0">Team</option>
+					<option value="1">Individual</option>
+				</select>
+			</div>
+			<div class="filter visible" id="fieldSelect">
+				<select id="fieldVal">
+					<option value="0">All Fields</option>
+					<option value="1">Field 1</option>
+					<option value="2">Field 2</option>
+				</select>
+			</div>
+			<div class="filter visible" id="opponentSelect">
+				<select id="opponentVal">
+					<option value="0"> All Opponents </option>
+					<%	@opponents.sort! { |a,b| a.name <=> b.name }.each do |opponent| %>
+					<option value="<%= opponent.id %>"> <%= opponent.name %> </option>
+					<% 	end %>
+				</select>
+			</div>
+			<div class="filter invisible" id="playerSelect">
+				<select id="playerVal">
+					<%	@players.sort!{|a,b| a.name <=> b.name}.each do |player| %>
+					<option value="<%= player.id %>"> <%= player.name %> </option>
+					<% 	end %>
+				</select>
+			</div>
+			<div id="disclaimer" class="opaque" style="position:relative;float:left;clear:left;width:250px;height:20px;color:red;font-size:12px;line-height:20px;margin-top:10px">
+			*Field data only available since Feb 2014
+			</div>
+			<div  onclick="getHref()" class="filter visible onclick boxShadow1" style="margin-left:130px;line-height:20px;height:20px;font-size:18px;background-color:#15B000">
+			<span>GO--&gt;</span>
+			</div>
+			<div class="filter invisible" style="display:none">
+				<select id="gpgVal">
+					<option value="0">GS</option>
+					<option value="1">GPG</option>
+				</select>
+			</div>
+			<div class="filter invisible" style="display:none">
+				<select id="apgVal">
+					<option value="0">AS</option>
+					<option value="1">APG</option>
+				</select>
+			</div>
+		</div>
+	</div>
+	<div id="statDisplay" class="not_opaque statDisplay">
+		
+	<% if params[:id].to_i > 0 %>
+		<%= render 'teamRankings' %>
+	<% elsif params[:id] == "0" and params[:user] == "0" %>	
 		<%= render 'goalRankings' %>
 		<%= render 'assistRankings' %>
+		<%= render 'attendance' %>
+		<%= render 'efficiency' %>
 		<%= render 'results' %>
-		<%= render 'teamRankings' %>
+	<% else %>
+		<%= render 'player' %>
+	<% end %>
 	</div>
+</div>

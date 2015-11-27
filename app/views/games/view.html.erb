@@ -9,14 +9,6 @@
 		<h1 style="width:900px;font-size:18px;color:black;text-align:center;margin:0;padding:0">
 			OffTheWall Arena, Santa Clara
 		</h1>
-		<% if !(Team.find(8).matches.select { |s| s.id < @game.id }.last.nil?) then %>
-			<% b = Team.find(8).matches.sort_by { |s| s.id }.collect.select { |s| s.id < @game.id }.last.id %>
-				<%= link_to "<", "/games/"+b.to_s, remote: true, class: "prevButton" %>
-		<% end %>
-		<% if !(Team.find(8).matches.select { |s| s.id > @game.id }.last.nil?) then %>
-			<% c = Team.find(8).matches.sort_by { |s| s.id }.collect.select { |s| s.id > @game.id }.first.id %>
-				<%= link_to ">", "/games/"+c.to_s, remote: true, class: "nextButton" %>
-		<% end %>
 	</div>
 	<div class="game">
 		<div class="scheduleBox" style="margin-left:100px">
@@ -34,7 +26,7 @@
 	<% @stats.each do |s| %>
 		<div class="game">
 			<div class="scheduleBox" style="margin-left:100px">
-				<%= link_to s.user.name.upcase, "/players/"+s.user_id.to_s, title: "Player Stats" %>
+				<%= link_to s.user.name.upcase, "/stats?id=0&who=1&user="+s.user_id.to_s, title: "Player Stats" %>
 			</div>
 			<div class="scheduleBox">
 				<%= s.goals %>

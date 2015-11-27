@@ -109,8 +109,14 @@ include ActionView::Helpers::NumberHelper
   end
 
   def stats 
-	
+	@players = User.all()
+	@opponents = Team.where.not(id: 8)
 	@goalRankings = Array.new()
+	@assistRankings = Array.new()
+	@efficiencyRankings = Array.new()
+
+
+
 	@season_start = Array.new()
 	@season_start[128]=1667;
 	@season_start[127]=767;
@@ -133,33 +139,118 @@ include ActionView::Helpers::NumberHelper
 	@season_start[110]=154;
 	@season_start[108]=86;
 	@season_start[107]=8;
-	 
-	Stat.where(game_id: @season_start[params[:id].to_i]..@season_start[params[:id].to_i+1]-1).collect.each do |s|
+
+###################	INIT BASED ON REQUEST PARAMETERS #######################
+	@seasonId = params[:id].to_i || 0
+	@who = params[:who].to_i || 0
+	@field = params[:field].to_i || 0
+	@opp = params[:opp].to_i || 0
+	@user = params[:user].to_i || 0
+
+	if @seasonId > 0  
+		@title = "Filter: Sesssion " + @seasonId.to_s
+ 		@stat = Stat.where(game_id: @season_start[params[:id].to_i]..@season_start[params[:id].to_i+1]-1)
+		@games = Game.where(id: @season_start[params[:id].to_i]..@season_start[params[:id].to_i+1]-1).collect  
+	elsif @seasonId == 0 && @who == 0
+		if @field == 0 && @opp == 0
+			@games = Game.all.sort{ |a,b| a.id <=> b.id }
+			@title = "Filter: All Stats"
+			@stat = Stat.all
+		elsif @field == 0 && @opp > 0
+			@games = (Game.where(home_team_id: @opp.to_s, away_team_id: "8")	+ Game.where(home_team_id: "8", away_team_id: @opp.to_s)).sort{ |a,b| a.id <=> b.id }
+			@title = "Filter: All Stats vs " + Team.find(@opp).name
+			@containerArray = Array.new
+			@games.each do |game|
+				game.stats.each do |stat|
+					@containerArray.push(stat)
+				end
+			end  
+			@stat = @containerArray 	
+		elsif @field > 0 && @opp == 0
+			@containerArray = Array.new
+			@title = "Filter: All Stats, Field " + @field.to_s + "(field data available since 2014)"
+			@games = ((Team.find(8).home_games) + (Team.find(8).away_games)).select{ |x| x.field == @field }.sort{ |a,b| a.id <=> b.id }
+			@games.each do |game|
+				Game.find(game.id).stats.each do |stat|
+					@containerArray.push(stat)
+				end
+			end  
+			@stat = @containerArray 
+		elsif @field > 0 && @opp > 0
+			@containerArray = Array.new
+			@title = "Filter: vs" + Team.find(@opp).name + ", Field " + @field.to_s + "(field data available since 2014)"
+			@games = (Game.where(home_team_id: @opp.to_s, away_team_id: "8")	+ Game.where(home_team_id: "8", away_team_id: @opp.to_s)).sort{ |a,b| a.id <=> b.id }
+			@games = @games.select { |x| x.field == @field}
+			@games.each do |game|
+				Game.find(game.id).stats.each do |stat|
+					@containerArray.push(stat)
+				end
+			end  
+			@stat = @containerArray 
+		end
+	elsif @seasonId == 0 && @who > 0
+        @player = User.find(params[:user])
+        @gpg = 0
+        @apg = 0
+        @player.stats.each do |stat|
+            @gpg = stat.goals.to_i + @gpg||0.00
+            @apg = stat.assists.to_i + @apg||0.00
+        end
+        @gpg = (@gpg.to_f / @player.stats.length).round(2)
+        @apg = (@apg.to_f / @player.stats.length).round(2)
+	end
+
+################### END INIT ###############################
+  if @who == 0
+	@stat.collect.each do |s|
 		@goalRankings[s.user_id.to_i] = Hash.new() unless !(@goalRankings[s.user_id.to_i].nil?)
 		@goalRankings[s.user_id.to_i][:id] = s.user_id
 		@goalRankings[s.user_id.to_i][:goals] = !(@goalRankings[s.user_id.to_i][:goals].nil?) ? @goalRankings[s.user_id.to_i][:goals] + s.goals : s.goals||0
 		@goalRankings[s.user_id.to_i][:gp] = !(@goalRankings[s.user_id.to_i][:gp].nil?) ? @goalRankings[s.user_id.to_i][:gp] + 1 : 1
+		@assistRankings[s.user_id.to_i] = Hash.new() unless !(@assistRankings[s.user_id.to_i].nil?)
+		@assistRankings[s.user_id.to_i][:id] = s.user_id
+		@assistRankings[s.user_id.to_i][:assists] = !(@assistRankings[s.user_id.to_i][:assists].nil?) ? @assistRankings[s.user_id.to_i][:assists] + s.assists : s.assists||0
+		@assistRankings[s.user_id.to_i][:gp] = !(@assistRankings[s.user_id.to_i][:gp].nil?) ? @assistRankings[s.user_id.to_i][:gp] + 1 : 1
+		@efficiencyRankings[s.user_id.to_i] = Hash.new() unless !(@efficiencyRankings[s.user_id.to_i].nil?)
+		@efficiencyRankings[s.user_id.to_i][:id] = s.user_id
+		@efficiencyRankings[s.user_id.to_i][:gp] = !(@efficiencyRankings[s.user_id.to_i][:gp].nil?) ? @efficiencyRankings[s.user_id.to_i][:gp] + 1 : 1
+		a = Game.find(s.game_id)
+		if a.home_team.id.to_s == "8"
+			@efficiencyRankings[s.user_id.to_i][:eff] = !(@efficiencyRankings[s.user_id.to_i][:eff].nil?) ? @efficiencyRankings[s.user_id.to_i][:eff] + a.home_score.to_i - a.away_score.to_i : a.home_score.to_i - a.away_score.to_i || 0
+		else
+			@efficiencyRankings[s.user_id.to_i][:eff] = !(@efficiencyRankings[s.user_id.to_i][:eff].nil?) ? @efficiencyRankings[s.user_id.to_i][:eff] + a.away_score.to_i - a.home_score.to_i : a.away_score.to_i - a.home_score.to_i||0
+		end
 	end
 	@goalRankings.compact.each do |x|
 		f=(x[:goals].to_f/x[:gp]).round(2)
 		x[:gpg] = number_with_precision(f, :precision => 2)
 	end
-	@goalRankings = @goalRankings.compact.sort_by { |x| [x[:goals],x[:gpg]] }.reverse
-	
-	@assistRankings = Array.new()
-	Stat.where(game_id: @season_start[params[:id].to_i]..@season_start[params[:id].to_i+1]-1).collect.each do |s|
-		@assistRankings[s.user_id.to_i] = Hash.new() unless !(@assistRankings[s.user_id.to_i].nil?)
-		@assistRankings[s.user_id.to_i][:id] = s.user_id
-		@assistRankings[s.user_id.to_i][:assists] = !(@assistRankings[s.user_id.to_i][:assists].nil?) ? @assistRankings[s.user_id.to_i][:assists] + s.assists : s.assists||0
-		@assistRankings[s.user_id.to_i][:gp] = !(@assistRankings[s.user_id.to_i][:gp].nil?) ? @assistRankings[s.user_id.to_i][:gp] + 1 : 1
+	@goalRankings = @goalRankings.compact.sort_by { |x| [x[:goals]] }.reverse
+	if params[:gpg].to_i == 1
+		@goalRankings = @goalRankings.compact.sort_by { |x| [x[:gpg]] }.reverse
 	end
 	@assistRankings.compact.each do |x|
 		f=(x[:assists].to_f/x[:gp]).round(2)
 		x[:apg] = number_with_precision(f, :precision => 2)
 	end
-	@assistRankings = @assistRankings.compact.sort_by { |x| [x[:assists],x[:apg]] }.reverse
-	@season = Game.where(id: @season_start[params[:id].to_i]..@season_start[params[:id].to_i+1]-1)
+	@efficiencyRankings.compact.each do |x|
+		f=(x[:eff].to_f/x[:gp]).round(2)
+		x[:eff] = number_with_precision(f, :precision => 2)
+	end
 
+
+
+
+	@assistRankings = @assistRankings.compact.sort_by { |x| [x[:assists]] }.reverse
+	@efficiencyRankings = @efficiencyRankings.compact.sort! { |a,b| a[:eff].to_f <=> b[:eff].to_f }.reverse
+	if params[:apg].to_i == 1
+		@assistRankings = @assistRankings.compact.sort_by { |x| [x[:apg]] }.reverse
+	end
+	if params[:id] != "0" && params[:id]
+		@season = Game.where(id: @season_start[params[:id].to_i]..@season_start[params[:id].to_i+1]-1)
+	else
+		@season = Game.all()
+	end
 	@a = Array.new
 	@season.each do |game|
 	  if game.home_score
@@ -189,10 +280,12 @@ include ActionView::Helpers::NumberHelper
 			@a[game.home_team_id.to_i][:l] = !(@a[game.home_team_id.to_i][:l].nil?) ? @a[game.home_team_id.to_i][:l].to_i + 1 : 1
 			@a[game.away_team_id.to_i][:pts] = !(@a[game.away_team_id.to_i][:pts].nil?) ? @a[game.away_team_id.to_i][:pts].to_i + 3 : 3
 		end
-		@a
 	  end
 	end
-	
-
+  end
+	respond_to do |format|
+		format.html
+      	format.js 
+    end
   end
 end

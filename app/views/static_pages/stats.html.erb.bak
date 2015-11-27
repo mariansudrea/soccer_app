@@ -1,0 +1,9 @@
+<div class="mainContainer" >
+	<%= render 'options' %>
+	<h4 style="background:none;font-size:24px">SEASON <%= params[:id] %></h4>
+	<div style="width:1300px">
+		<%= render 'goalRankings' %>
+		<%= render 'assistRankings' %>
+		<%= render 'results' %>
+		<%= render 'teamRankings' %>
+	</div>

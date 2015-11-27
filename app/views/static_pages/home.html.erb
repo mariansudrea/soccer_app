@@ -145,7 +145,7 @@ _______________________________________________</br>
 		<% @goalRankings.compact.each do |x| %>
 		<div class="rankingsEntry">
 			<div class="assistName">
-	   			<%= link_to User.find(x[:id]).name.upcase, "/players/"+x[:id].to_s, title: "Player Details" %>
+	   			<%= link_to User.find(x[:id]).name.upcase, "/stats?id=0&who=1&user="+x[:id].to_s, title: "Player Details" %>
 			</div>
 			<div class="assistNumber">
 				<%= x[:goals] %>
@@ -178,7 +178,7 @@ _______________________________________________</br>
 		<% @assistRankings.compact.each do |x| %>
 		<div class="rankingsEntry">
 			<div class="assistName">
-				<%= link_to User.find(x[:id]).name.upcase, "/players/"+x[:id].to_s, title: "Player Details" %>
+				<%= link_to User.find(x[:id]).name.upcase, "/stats?id=0&who=1&user="+x[:id].to_s, title: "Player Details" %>
 			</div>
 			<div class="assistNumber">
 				<%= x[:assists] %>

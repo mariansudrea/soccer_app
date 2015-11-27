@@ -1,0 +1,85 @@
+		<div class="inner2" style="position:relative;float:left;width:890;margin:10px 0 0 10px">
+	<div class="playerPic">
+	</div>
+	<div class="playerDetails">
+    <h3 style="color:black;position:relative;float:left;text-decoration:none;margin: 0px 0 0 30px">
+        <%= @player.name %>
+    </h3>
+    <h6 style="color:black;position:relative;float:left;text-decoration:none;margin: 10px 0 0 30px;clear:left">
+        Goals per Game : <%= @gpg %>
+    </h6>
+    <h6 style="color:black;position:relative;float:left;text-decoration:none;margin: 10px 0 0 30px;clear:left">
+        Assists per Game : <%= @apg %>
+    </h6>
+	</div>
+   
+	<div class="seasonDivider" style="width:890px;float:left;clear:left;margin: 15px 0 15px 5px">
+	</div>
+	<div class="playerBox newline" style="color:black;width:100px">
+		<b>DATE</b>
+	</div>
+	<div class="playerBox" style="color:black">
+		<b>HOME</b>
+	</div>
+	<div class="playerBox" style="color:black">
+	</div>
+	<div class="playerBox" style="color:black">
+		<b>AWAY</b>
+	</div>
+	<div class="playerBox" style="color:black;width:80px">
+		<b>GOALS</b>
+	</div>
+	<div class="playerBox" style="color:black;width:80px">
+		<b>ASSISTS</b>
+	</div>
+	</br></br>
+	<% if @player.stats.any? %>
+		<% @player.stats.sort_by { |b| b.game.played_at }.reverse.each do |s| %>
+		<div class="game" style="width:890px">
+
+			<div class="playerBox newline" style="width:100px;border-right:1px solid black;font-size:13px;font-weight:bold">
+				<%= s.game.played_at.strftime("%F") %>
+			</div>
+			<div class="playerBox">
+				<%= s.game.home_team.name %>
+			</div>
+                <div style="cursor:pointer" title="Game Details" onclick="window.location.href='/games/<%= s.game.id %>'" class="playerBox score
+                        <% if s.game.home_team.id == 8 && s.game.home_score > s.game.away_score %>
+                        <%= "win" %>
+                        <% elsif s.game.away_team.id == 8 && s.game.home_score < s.game.away_score %>
+                        <%= "win" %>
+                        <% elsif s.game.away_team.id == 8 && s.game.home_score == s.game.away_score %>
+                        <%= "tie" %>
+                        <% elsif s.game.home_team.id == 8 && s.game.home_score == s.game.away_score %>
+                        <%= "tie" %>
+                        <% else %>
+                        <%= "loss" %>
+                        <% end %>">
+                        <b> <%= s.game.home_score %> </b>
+                        <b> - </b>
+                        <b><%= s.game.away_score %></b>
+                        <% if s.game.stats.any? %>
+                            <%= image_tag('ball1.png', width: '25') %>
+                        <% end %>
+                </div>
+			<div class="playerBox">
+				<%= s.game.away_team.name %>
+			</div>
+
+
+
+
+			<div class="playerBox" style="width:80px">
+				<%= s.goals %>
+			</div>
+			<div class="playerBox" style="width:80px">
+				<%= s.assists %>
+			</div>
+		</div>
+		<% end %>
+	<% end %>	
+		</div>
+
+	</div>
+
+</div>

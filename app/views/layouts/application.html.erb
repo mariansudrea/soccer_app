@@ -5,12 +5,13 @@
 	<meta charset="utf-8">
 	<meta name="description" content="fc bar united santa clara -- official site" />
     <%= stylesheet_link_tag "custom-big", "data-turbolinks-track" => true %>
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<!--script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script-->
 	<link href='http://fonts.googleapis.com/css?family=Diplomata+SC' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Ewert' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=The+Girl+Next+Door' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Emblema+One' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Russo+One' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.8.24/themes/base/jquery-ui.css">
     <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
     <%= csrf_meta_tags %>
     <%= render 'layouts/shim' %>
@@ -28,8 +29,7 @@
 		<div class="rightPan controls" style="z-index:2">
 					<%= link_to raw("HOME"), root_path , :class => "navLink" %>
 					<%= link_to raw("SCHEDULE"), schedule_path , :class => "navLink" %>
-					<%= link_to raw("STATS"), "/stats?id=127" , :class => "navLink" %>
-					<%= link_to raw("TEAM"), team_path , :class => "navLink" %>
+					<%= link_to raw("STATS"+"<span style='font-size:10px;color:red'>beta</span>"), "/stats?id=0&who=0&opp=0&field=0&user=0" , :class => "navLink" %>
 					<%= link_to raw("VIDEO"), feed_path , :class => "navLink" %>
 					<%= link_to raw("ABOUT"), about_path , :class => "navLink" %>
 		</div>
@@ -65,6 +65,8 @@
 			</div>
 		</div>
     </div>
+	<script src="//code.jquery.com/jquery-1.8.2.js"></script>
+	<script src="//code.jquery.com/ui/1.8.24/jquery-ui.js"></script>
   </body>
 </html>
 <script>
