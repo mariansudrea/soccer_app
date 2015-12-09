@@ -1,5 +1,7 @@
 class StaticPagesController < ApplicationController
-include ActionView::Helpers::NumberHelper
+	include ActionView::Helpers::NumberHelper
+	force_ssl
+  
   def home
 	@team = Team.find(8)
 	@schedule = Team.find(8).matches.first(5).collect.sort_by { |c| c.played_at }.reverse
