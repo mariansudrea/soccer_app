@@ -12,6 +12,7 @@
                 </div>
             </div>
             <% @efficiencyRankings.each do |x| %>
+			<% if x[:gp].to_i > 5 or @seasonId.to_i != 0 %>
             <div class="rankingsEntry">
                 <div class="assistName">
                     <%= link_to User.find(x[:id]).name.upcase, "/stats?id=0&who=1&user="+x[:id].to_s, title: "Player Details" %>
@@ -23,6 +24,7 @@
                     <%= x[:gp] %>
                 </div>
             </div>
+            <% end %>
             <% end %>
         </div>
 

@@ -1,6 +1,8 @@
 class StaticPagesController < ApplicationController
 	include ActionView::Helpers::NumberHelper
-	force_ssl
+	force_ssl if Rails.env.production?
+
+
   
   def home
 	@team = Team.find(8)
