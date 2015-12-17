@@ -1,6 +1,6 @@
 class StaticPagesController < ApplicationController
 	include ActionView::Helpers::NumberHelper
-	force_ssl if Rails.env.production?
+#	force_ssl if Rails.env.production?
 
 
   

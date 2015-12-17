@@ -15,7 +15,7 @@
                 </div>
             </div>
             <% @assistRankings.compact.each do |x| %>
-            <% if x[:gp].to_i > 5 or @seasonId.to_i != 0 %>
+			<% unless x[:gp].to_i < 5 and ( @seasonId.to_i == 0 and @opp == 0 ) %>
 
             <div class="rankingsEntry">
                 <div class="assistName">
