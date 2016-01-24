@@ -122,7 +122,8 @@ class StaticPagesController < ApplicationController
 
 
 	@season_start = Array.new()
-	@season_start[128]=1667;
+	@season_start[129]=1667;
+	@season_start[128]=799;
 	@season_start[127]=767;
 	@season_start[126]=735;
 	@season_start[125]=699;
