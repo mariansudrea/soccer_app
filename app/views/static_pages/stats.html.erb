@@ -1,5 +1,5 @@
 <div class="rightPan scheduleContainer" style="text-align:left">
-	<div class="scheduleHeader" style="width:890px">
+	<div class="scheduleHeader" style="width:910px">
 		BAR UNITED STATS CENTRAL
 	</div>
 	<div class="statFilterArea"> 
@@ -41,6 +41,9 @@
 			<div  onclick="getHref()" class="filter visible onclick boxShadow1" style="margin-left:130px;line-height:20px;height:20px;font-size:18px;background-color:#15B000">
 			<span>GO--&gt;</span>
 			</div>
+			<div id="loading" class="filter visible onclick" style="clear:left;position:relative;margin-left:380px;line-height:20px;height:20px;font-size:18px">
+
+			</div>
 			<div class="filter invisible" style="display:none">
 				<select id="gpgVal">
 					<option value="0">GS</option>
@@ -59,6 +62,11 @@
 		
 	<% if params[:id].to_i > 0 %>
 		<%= render 'teamRankings' %>
+		<%= render 'goalRankings' %>
+		<%= render 'assistRankings' %>
+		<%= render 'attendance' %>
+		<%= render 'efficiency' %>
+		<%= render 'results' %>
 	<% elsif params[:id] == "0" and params[:user] == "0" %>	
 		<%= render 'goalRankings' %>
 		<%= render 'assistRankings' %>

@@ -14,7 +14,50 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
-var u,v;
+
+var links = [
+	"https://www.youtube.com/embed/OtrzWO3pz68",
+	"https://www.youtube.com/embed/9mnZGyyIQ_o",
+	"https://www.youtube.com/embed/Y35TJVKNarA",
+	"https://www.youtube.com/embed/RD6cePCZYSU",
+	"https://www.youtube.com/embed/L5BGbjtJ1mo",
+	"https://www.youtube.com/embed/LNhAfNz0Zc0",
+	"https://www.youtube.com/embed/GlrG1JPgCXI",
+	"https://www.youtube.com/embed/UuKcRudMMmg",
+	"https://www.youtube.com/embed/7RgbM1YDgXU",
+	"https://www.youtube.com/embed/0EFBqqIJbcQ",
+	"https://www.youtube.com/embed/opJzDOMIiHA",
+	"https://www.youtube.com/embed/Fkd7HqPlO_k",
+	"https://www.youtube.com/embed/jHqhy8pxXSg",
+	"https://www.youtube.com/embed/wuDCAkoZSYo",
+	"https://www.youtube.com/embed/qfTUkzlAU60",
+	"https://www.youtube.com/embed/oUeRsFxqmqQ",
+	"https://www.youtube.com/embed/AlaUYfvTaZE",
+	"https://www.youtube.com/embed/SqgWrJlA7no",
+	"https://www.youtube.com/embed/JwfUS0sjBIk",
+	"https://www.youtube.com/embed/9WKDDuDoQt4",
+	"https://www.youtube.com/embed/i12WtnRuObQ",
+	"https://www.youtube.com/embed/O6AjQXq_z0Q",
+	"https://www.youtube.com/embed/w5yZ_JC39Fw",
+
+	"https://www.youtube.com/embed/Pj2RzpY2kMg",
+	"https://www.youtube.com/embed/U0-ygB6s5XE",
+	"https://www.youtube.com/embed/UbJfPrUBQjw",
+	"https://www.youtube.com/embed/evqQN5M8IWU",
+	"https://www.youtube.com/embed/prghAteSCqI",
+	"https://www.youtube.com/embed/Rzi27iVyjQE",
+	"https://www.youtube.com/embed/BEicap0EJog",
+];
+function changeSource(link_index){
+	$('.videoAppMovie').attr('src' , links[link_index]); 
+}
+function showSeason(season){
+	$('#videoAppSeason').css('height','21px');
+	$('.gameVideo').css('display',"none");
+	$('.s'+season).css('display',"block");
+}
+var dots = 0;
+var u,v,loadingInterval;
 function restoreTeam(){
 	v = 605;
 
@@ -66,10 +109,21 @@ function restoreState(){
 	console.log('state loaded.');
 }	
 function fadeInStats(){
+	clearInterval(loadingInterval);
+	$('#loading').html('');		
 	$('#statDisplay').switchClass("opaque","not_opaque",250);
 }
 function fadeOutStats(){
 	$('#statDisplay').switchClass("not_opaque","opaque",50);
+	loadingInterval = setInterval(function(){
+		var dots_string = "";
+		dots = dots % 5;
+		for ( i = 0 ; i <= dots ; i++)	{
+			dots_string = dots_string + ".";
+		}
+		$('#loading').html(dots_string + 'loading' + dots_string);		
+		dots = dots + 1;
+	}, 140)
 }
 function getHref(a,b){
 	if (id > 0){
@@ -160,6 +214,23 @@ var ready = function(){
 			$('#disclaimer').switchClass('not_opaque','opaque');
 		}
 	});
+	$('#seasonToggler').click(function(){
+		var pHeight = $('#videoAppSeason').css('height');
+		var childrenCount = $('#seasonToggler').parent().children().length;
+		if ( pHeight.split('px')[0] > 21 ) {
+			$('#videoAppSeason').css('height','21px');
+		}
+		else {
+			$('#videoAppSeason').css('height', (childrenCount * 21) + "px");
+		}
+//		$('#seasonToggler').parent().css('overflow','visible');
+//		alert($('#seasonToggler').parent().children().length);
+//		if($('#seasonToggler').parent().css('height') == );
+	});
+	function changeSource(link_index){
+		alert('pula');
+	//	$('.videoAppMovie').attr('src' , links[0]); 
+	}
 };
 $(document).ready(ready)
 $(document).on('page:load', ready);

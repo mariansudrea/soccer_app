@@ -275,7 +275,7 @@ margin:0;
 padding:0;
 background:url('../assets/bar_logo_notext1.png');
 background-size:20%;
-opacity:0.8;
+opacity:0.9;
 
 
 
@@ -375,22 +375,26 @@ font-size:70px;
 }
 h2
 {
-font-family:'The Girl Next Door', cursive;
+position:relative;
+float:left;
+width:100%;
 font-size:22px;
 text-align:center;
-font-style:italic;
 color:black;
+padding-top:20px;
 }
 p
 {
 font-size:14px;
 color:black;
-text-align:left;
 }
 p.story
 {
-font-family:'The Girl Next Door', cursive;
+text-align:center;
+position:relative;
+float:left;
 font-size:18px;
+line-height:28px;
 }
 .leftPan
 {
@@ -832,7 +836,7 @@ float:left;
 width:900px;
 padding-left:5px;
 padding-right:5px;
-height:100px;
+height:auto;
 -webkit-box-shadow: 0px 0px 6px 0px rgba(50, 74, 50, 0.75);
 -moz-box-shadow:    0px 0px 6px 0px rgba(50, 74, 50, 0.75);
 box-shadow:         0px 0px 6px 0px rgba(50, 74, 50, 0.75);
@@ -865,6 +869,7 @@ overflow:hide;
 position:relative;
 margin-left:10px;
 margin-top:10px;
+margin-bottom:10px;
 float:left;
 border-radius:10px;
 }
@@ -949,3 +954,129 @@ opacity:0;
 {
 opacity:1;
 }
+.flags
+{
+width:100%;
+min-height:100px;
+position:relative;
+float:left;
+margin-bottom:40px;
+padding-bottom:20px;
+border-radius:10px;
+
+}
+.flagAbout
+{
+width:110px;
+height:70px;
+position:relative;
+float:left;
+margin-left:92px;
+margin-top:20px;
+border-radius:5px;
+
+}
+.videoAppContainer
+{
+width:900px;
+height:482px;
+position:relative;
+float:left;
+}
+.videoAppControls
+{
+width:180px;
+height:480px;
+position:relative;
+float:left;
+}
+.videoAppMovie
+{
+width:710px;
+height:480px;
+position:relative;
+float:left;
+border-radius:20px;
+margin-left:5px;
+}
+.videoAppSeasonOption
+{
+width:180px;
+height:20px;
+position:relative;
+float:left;
+border-bottom:1px solid black;
+font-size:11px;
+text-transform:uppercase;
+line-height:20px;
+}
+.videoAppSeasonOption:hover
+{
+color:green;
+}
+.videoAppSeason
+{
+width:180px;
+height:21px;
+position:relative;
+float:left;
+overflow:hidden;
+transition:0.2s all;
+-webkit-transition:0.2s all ;
+
+z-index:10;
+border-radius:9px 9px 0 0 ;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f8ffe8+0,e3f5ab+33,b7df2d+100;Green+3D+%234 */
+
+background: rgb(248,255,232); /* Old browsers */
+
+background: -moz-linear-gradient(top,  rgba(248,255,232,1) 0%, rgba(227,245,171,1) 33%, rgba(183,223,45,1) 100%); /* FF3.6-15 */
+
+background: -webkit-linear-gradient(top,  rgba(248,255,232,1) 0%,rgba(227,245,171,1) 33%,rgba(183,223,45,1) 100%); /* Chrome10-25,Safari5.1-6 */
+
+background: linear-gradient(to bottom,  rgba(248,255,232,1) 0%,rgba(227,245,171,1) 33%,rgba(183,223,45,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8ffe8', endColorstr='#b7df2d',GradientType=0 ); /* IE6-9 */
+
+
+}
+.videoAppSeason:hover
+{
+cursor:pointer;
+}
+.games
+{
+position:absolute;
+margin-top:40px;
+width:180px;
+height:360px;
+border-radius:10px;
+}
+.gameVideo
+{
+padding:10px 0 10px;
+position:relative;
+float:left;
+height:30px;
+width:100%;
+display:none;
+border-radius:10px;
+}
+.gameVideo:hover
+{
+cursor:pointer;
+-webkit-box-shadow: 0px 0px 14px 0px rgba(50, 50, 50, 0.92);
+-moz-box-shadow:    0px 0px 14px 0px rgba(50, 50, 50, 0.92);
+box-shadow:         0px 0px 14px 0px rgba(50, 50, 50, 0.92);
+}
+.gameVideoHalf
+{
+width:95%;
+margin-left:2%;
+height:15px;
+line-height:15px;
+font-size:12px;
+}
+
+
+

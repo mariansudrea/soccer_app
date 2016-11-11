@@ -40,19 +40,23 @@
 	    </div>
 		<div class="leftPan">
 			</br>
-			<%= image_tag("facebook.png", height: "55", onclick: "window.location.href='https://www.facebook.com/pages/FC-Bar-United/290507198157'", title: "FC Bar United on Facebook", style: "cursor:pointer" ) %>
+			<%= image_tag("facebook.png", height: "55", onclick: "window.open('https://www.facebook.com/pages/FC-Bar-United/290507198157')", title: "FC Bar United on Facebook", style: "cursor:pointer" ) %>
 			</br>
 			</br>
 			</br>
-			<%= image_tag("wordpress.png", height: "30", onclick: "window.location.href='https://fcbarunited.wordpress.com'", style: "cursor:pointer", title: "FC Bar United Press Archives") %>
+			<%= image_tag("wordpress.png", height: "30", onclick: "window.open('https://fcbarunited.wordpress.com')", style: "cursor:pointer", title: "FC Bar United Press Archives") %>
 			</br>
 			</br>
 			</br>
-			<%= image_tag("instagram.png", height: "30", onclick: "window.location.href='https://www.instagram.com/fcbarunited'", style: "cursor:pointer", title: "FC Bar United Gallery") %>
+			<%= image_tag("instagram.png", height: "30", onclick: "window.open('https://www.instagram.com/fcbarunited')", style: "cursor:pointer", title: "FC Bar United Gallery") %>
 			</br>
 			</br>
 			</br>
-			<%= image_tag("play.png", height: "30", onclick: "window.location.href='https://play.google.com/store/apps/details?id=com.moskovko.barutdapp&hl=en'", style: "cursor:pointer", title: "FC Bar United App for Android") %>
+			<%= image_tag("play.png", height: "30", onclick: "window.open('https://play.google.com/store/apps/details?id=com.moskovko.barutdapp&hl=en')", style: "cursor:pointer", title: "FC Bar United App for Android") %>
+			</br>
+			</br>
+			</br>
+			<%= image_tag("youtube2.png", height: "30", onclick: "window.open('https://www.youtube.com/channel/UCOe8k3PE5wn1iQUN5zDCCjA')", style: "cursor:pointer", title: "FC Bar United App for Android") %>
 		</div>
 		<div id="mainContainer">
 	    	<%= yield %>
