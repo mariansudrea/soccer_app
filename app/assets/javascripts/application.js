@@ -47,6 +47,18 @@ var links = [
 	"https://www.youtube.com/embed/prghAteSCqI",
 	"https://www.youtube.com/embed/Rzi27iVyjQE",
 	"https://www.youtube.com/embed/BEicap0EJog",
+	"https://www.youtube.com/embed/dhhZFSnMkMk",
+	"https://www.youtube.com/embed/iWxnx6Pc6tE",
+	"https://www.youtube.com/embed/Xj-c_bl1w9M",
+	"https://www.youtube.com/embed/km8sY5PqQnM",
+	"https://www.youtube.com/embed/Kq0mzoiWETs",
+	"https://www.youtube.com/embed/-Bn6tDQ8mj0",
+	"https://www.youtube.com/embed/gKMEXO0Tjh8",
+	"https://www.youtube.com/embed/N6xG6h9E3g0",
+	"https://www.youtube.com/embed/dPY1Jd2rUPE",
+	"https://www.youtube.com/embed/cqTpr-Eix9E",
+	"https://www.youtube.com/embed/_puNHSkgGtE",
+	"https://www.youtube.com/embed/4noqj0933Os"
 ];
 function changeSource(link_index){
 	$('.videoAppMovie').attr('src' , links[link_index]); 
