@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 #ruby '1.9.3'
-ruby '5.2'
+ruby '2.5.3'
 #ruby-gemset=railstutorial_rails_4_0
 
 #gem 'railties', "~> 4.0.3"
