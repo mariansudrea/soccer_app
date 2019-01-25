@@ -5,7 +5,7 @@ ruby '2.5.3'
 
 #gem 'railties', "~> 4.0.3"
 gem 'rake', '10.1.1'
-gem 'rails', '4.0.0'
+gem 'rails', '4.0.6'
 gem 'bootstrap-sass', '2.3.2.0'
 gem 'pg', '0.15.1'
 
