@@ -23,14 +23,14 @@
 			<div class="filter visible" id="opponentSelect">
 				<select id="opponentVal">
 					<option value="0"> All Opponents </option>
-					<%	@opponents.sort! { |a,b| a.name <=> b.name }.each do |opponent| %>
+					<%	@opponents.sort { |a,b| a.name <=> b.name }.each do |opponent| %>
 					<option value="<%= opponent.id %>"> <%= opponent.name %> </option>
 					<% 	end %>
 				</select>
 			</div>
 			<div class="filter invisible" id="playerSelect">
 				<select id="playerVal">
-					<%	@players.sort!{|a,b| a.name <=> b.name}.each do |player| %>
+					<%	@players.sort{|a,b| a.name <=> b.name}.each do |player| %>
 					<option value="<%= player.id %>"> <%= player.name %> </option>
 					<% 	end %>
 				</select>
