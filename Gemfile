@@ -4,7 +4,7 @@ ruby '2.5.3'
 #ruby-gemset=railstutorial_rails_4_0
 
 #gem 'railties', "~> 4.0.3"
-gem 'rake', '10.1.1'
+gem 'rake', '12.3.3'
 gem 'rails', '4.2.11'
 gem 'bootstrap-sass', '2.3.2.0'
 gem 'pg', '0.15.1'
